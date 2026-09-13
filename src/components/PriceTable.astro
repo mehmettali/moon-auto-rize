@@ -1,11 +1,11 @@
 ---
-import { SERVICES, formatTL } from '../data/services';
+import { SERVICES, priceLabel } from '../data/services';
 ---
 <div class="table-wrap">
   <table class="table">
     <thead><tr><th>Hizmet</th><th>Başlangıç Fiyatı</th><th>Süre</th><th>Not</th></tr></thead>
     <tbody>
-      {SERVICES.map((s) => <tr><td><a href={`/${s.slug}/`}>{s.name}</a></td><td class="price">{formatTL(s.priceFrom)}'den</td><td>{s.duration}</td><td style="color:var(--muted)">{s.priceNote}</td></tr>)}
+      {SERVICES.map((s) => <tr><td><a href={`/${s.slug}/`}>{s.name}</a></td><td class="price">{priceLabel(s.priceFrom)}</td><td>{s.duration}</td><td style="color:var(--muted)">{s.priceNote}</td></tr>)}
     </tbody>
   </table>
 </div>

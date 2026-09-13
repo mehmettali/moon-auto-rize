@@ -273,8 +273,43 @@ export const SERVICES: Service[] = [
     ],
     related: ['rize-pasta-cila', 'rize-seramik-kaplama', 'rize-oto-yikama'],
   },
+  {
+    slug: 'rize-oto-cekici', key: 'oto-cekici', name: 'Oto Çekici & Yol Yardım',
+    h1: 'Rize Oto Çekici ve Yol Yardım',
+    title: 'Rize Oto Çekici | Yol Yardım, Çayeli, Ardeşen, Pazar – Moon Auto',
+    description: "Rize'de oto çekici ve yol yardım: çözüm ortaklarımızla Merkez, Çayeli, Ardeşen, Pazar ve tüm ilçelerde aracınızı güvenle taşıyoruz. Stüdyomuza veya istediğiniz servise teslim. Hemen arayın.",
+    short: 'Aracınız yolda kaldıysa Rize genelindeki çekici çözüm ortaklarımızı devreye alıyoruz; aracınız stüdyomuza veya istediğiniz servise taşınır.',
+    icon: '🚚', priceFrom: 0, priceNote: 'Mesafe ve araç tipine göre telefonla teklif', duration: 'Aynı gün',
+    intro: [
+      "Rize'nin dar vadi yolları, dik yayla rampaları ve sahil yolundaki yoğun trafikte araç yolda kalabilir, kaza geçirebilir ya da çalışmaz hale gelebilir. Moon Auto olarak Rize genelinde çalışan çekici çözüm ortaklarımızla bu anlarda tek telefonla yanınızdayız: aracınızı bulunduğu noktadan alıp stüdyomuza, anlaşmalı servise veya istediğiniz adrese taşıyoruz.",
+      "Çekici hizmetimiz detailing paketlerimizle de birleşiyor: kaza veya arıza sonrası aracınız bize taşınır, onarım dönüşünde iç-dış temizlik, pasta cila veya boya koruma ile ilk günkü haline getirilir. Hasarsız araç taşıma (kaplamalı, alçak veya klasik araçlar) için düz platformlu çekici talep edebilirsiniz.",
+    ],
+    benefits: [
+      'Rize Merkez ve tüm ilçelerde çözüm ortağı ağı',
+      'Düz platform (kaydırmalı) çekici seçeneği: kaplamalı ve alçak araçlar için hasarsız taşıma',
+      'Stüdyomuza, anlaşmalı servise veya istediğiniz adrese teslim',
+      'Kaza sonrası araç toplama ve sigorta süreci için fotoğraflı teslim tutanağı',
+      'Arıza dönüşünde detailing paketleriyle avantajlı fiyat',
+    ],
+    steps: [
+      'Bizi arayın veya WhatsApp\'tan konum gönderin',
+      'Araç tipi ve durumuna göre en yakın çözüm ortağı yönlendirilir',
+      'Tahmini varış süresi ve fiyat telefonda onaylanır',
+      'Araç platforma alınır, fotoğraflı tutanak tutulur',
+      'Stüdyomuza veya belirttiğiniz adrese teslim',
+    ],
+    faqs: [
+      { q: 'Çekici hizmeti Moon Auto\'nun kendi aracı mı?', a: 'Hayır. Rize genelinde çalışan, güvendiğimiz çekici çözüm ortaklarımızla hizmet veriyoruz; koordinasyonu biz yapıyoruz, tek muhatabınız biziz.' },
+      { q: 'Fiyat nasıl belirleniyor?', a: 'Aracın bulunduğu nokta ile teslim noktası arasındaki mesafe, araç tipi (binek, SUV, ticari) ve platform türüne göre telefonda net fiyat verilir. Sürpriz ücret yoktur.' },
+      { q: 'Seramik veya PPF kaplamalı araç çekiciyle zarar görür mü?', a: 'Düz platformlu çekici talep edin; araç çekilmez, platforma alınır. Kaplamalı araçlarımızda bunu standart olarak öneriyoruz.' },
+      { q: 'Hangi ilçelere gidiliyor?', a: 'Merkez, Çayeli, Ardeşen, Pazar, Güneysu, Derepazarı, İyidere, Kalkandere, Fındıklı ve diğer ilçeler. Uzak ilçelerde varış süresi değişir.' },
+    ],
+    related: ['rize-oto-yikama', 'rize-pasta-cila', 'rize-detayli-ic-temizlik'],
+  },
 ];
 
 export const getService = (slug: string) => SERVICES.find((s) => s.slug === slug);
+/** priceFrom 0 ise fiyat mesafeye/teklife bağlıdır */
+export const priceLabel = (n: number) => (n > 0 ? formatTL(n) + "'den" : 'Mesafeye göre teklif');
 export const FEATURED = SERVICES.filter((s) => s.featured);
 export const formatTL = (n: number) => n.toLocaleString('tr-TR') + ' TL';

@@ -10,12 +10,14 @@ import { SITE } from '../../config/site';
 import { DISTRICT_DETAILS } from '../../data/districtDetails';
 import { getService } from '../../data/services';
 import { REVIEWS } from '../../data/reviews';
+import TowingCard from '../../components/TowingCard.astro';
 
 export function getStaticPaths() { return DISTRICTS.map((d) => ({ params: { district: d.slug }, props: { d } })); }
 const { d } = Astro.props;
 const title = `${d.name} Oto Kuaför ve Seramik Kaplama | Moon Auto Rize`;
-const description = `${d.name}'den ${d.driveMin} dakika: Moon Auto Rize'de seramik kaplama, PPF, pasta cila, detaylı iç temizlik ve premium yıkama. ${d.name} müşterilerine esnek teslim saati.`;
+const description = `${d.name}'den ${d.driveMin} dakika: Moon Auto Rize'de seramik kaplama, PPF, pasta cila, detaylı iç temizlik, premium yıkama ve ${d.name} oto çekici / yol yardım. Esnek teslim saati.`;
 const faqs = [
+  { q: `${d.name}'de oto çekici hizmetiniz var mı?`, a: `Evet. ${d.name} dahil Rize genelinde çekici çözüm ortaklarımızla yol yardım sağlıyoruz; aracınız stüdyomuza veya istediğiniz servise düz platformla taşınır. Fiyat mesafeye göre telefonda netleşir.` },
   { q: `${d.name}'den Moon Auto'ya nasıl gelirim?`, a: `Sahil yolu üzerinden Rize Merkez İslampaşa'ya yaklaşık ${d.distanceKm} km, ${d.driveMin} dakika. Adres: ${SITE.address.full}.` },
   { q: `${d.name}'de yerinde hizmet veriyor musunuz?`, a: 'Seramik, PPF ve detaylı iç temizlik kapalı ve tozsuz alan gerektirdiği için stüdyomuzda yapılır. Uzun işlemlerde araç teslim ve alım saatini sizinle birlikte planlıyoruz.' },
   { q: `${d.name}'den gelince aynı gün teslim olur mu?`, a: 'Yıkama, far parlatma ve tek aşamalı pasta cila aynı gün teslim edilir. Seramik ve PPF için 1–4 gün planlayın.' },
@@ -47,9 +49,10 @@ const ld = { '@context': 'https://schema.org', '@type': 'Service', name: `${d.na
           <p><a class="btn btn-outline" href={SITE.mapsShare} target="_blank" rel="noopener">Google Haritalar'da yol tarifi</a></p>
           <h2>{d.name}'de araçları yıpratan koşullar</h2>
           <ul class="checks checks--x">{dd.conditions.map((c) => <li>{c}</li>)}</ul>
+          <TowingCard place={d.name} />
           <h2>{d.name}'den gelen müşterilerimizin en çok tercih ettiği hizmetler</h2>
           <div class="grid grid-3">
-            {popular.map((p) => <div class="card"><h3><a href={`/${p.s.slug}/`}>{p.s.name}</a></h3><p style="color:var(--muted)">{p.why}</p><div class="price">{p.s.priceFrom.toLocaleString('tr-TR')} TL'den</div></div>)}
+            {popular.map((p) => <div class="card"><h3><a href={`/${p.s.slug}/`}>{p.s.name}</a></h3><p style="color:var(--muted)">{p.why}</p><div class="price">{p.s.priceFrom > 0 ? p.s.priceFrom.toLocaleString('tr-TR') + " TL'den" : 'Mesafeye göre teklif'}</div></div>)}
           </div>
           <div class="card" style="margin-top:1.5rem"><strong>İpucu:</strong> {dd.tip}</div>
           <p style="margin-top:1rem;color:var(--muted)">{dd.neighborhoods.join(', ')} ve çevresinden gelen araç sahiplerine hizmet veriyoruz.</p>

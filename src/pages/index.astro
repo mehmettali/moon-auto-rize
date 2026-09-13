@@ -8,6 +8,7 @@ import Faq from '../components/Faq.astro';
 import { SITE } from '../config/site';
 import { SERVICES } from '../data/services';
 import { DISTRICTS } from '../data/districts';
+import TowingCard from '../components/TowingCard.astro';
 
 const title = 'Moon Auto Rize | Oto Kuaför, Seramik Kaplama, PPF';
 const description = SITE.description;
@@ -39,7 +40,8 @@ const faqs = [
     </div>
   </section>
 
-  <section class="section">
+  <div class="container"><TowingCard place="Rize" /></div>
+  <section class="section" style="padding-top:1rem">
     <div class="container">
       <p class="eyebrow">Hizmetlerimiz</p>
       <h2>Rize'de tek çatı altında oto kuaför ve boya koruma</h2>

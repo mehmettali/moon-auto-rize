@@ -5,7 +5,8 @@ import Faq from '../components/Faq.astro';
 import Cta from '../components/Cta.astro';
 import ServiceCard from '../components/ServiceCard.astro';
 import { SITE } from '../config/site';
-import { SERVICES, getService, formatTL } from '../data/services';
+import { SERVICES, getService, priceLabel } from '../data/services';
+import TowingCard from '../components/TowingCard.astro';
 import { SERVICE_DETAILS } from '../data/serviceDetails';
 import { DISTRICTS } from '../data/districts';
 import { getCollection } from 'astro:content';
@@ -21,7 +22,7 @@ const ld = {
   name: s.h1, serviceType: s.name, description: s.description,
   provider: { '@id': SITE.url + '/#business' },
   areaServed: { '@type': 'City', name: 'Rize' },
-  offers: { '@type': 'Offer', priceCurrency: 'TRY', price: s.priceFrom, priceSpecification: { '@type': 'PriceSpecification', price: s.priceFrom, priceCurrency: 'TRY', minPrice: s.priceFrom }, availability: 'https://schema.org/InStock', url: `${SITE.url}/${s.slug}/` },
+  ...(s.priceFrom > 0 ? { offers: { '@type': 'Offer', priceCurrency: 'TRY', price: s.priceFrom, priceSpecification: { '@type': 'PriceSpecification', price: s.priceFrom, priceCurrency: 'TRY', minPrice: s.priceFrom }, availability: 'https://schema.org/InStock', url: `${SITE.url}/${s.slug}/` } } : {}),
 };
 const wa = `Merhaba Moon Auto, ${s.name} için fiyat ve randevu bilgisi almak istiyorum.`;
 const imgs = import.meta.glob('/public/images/services/*.webp', { eager: true, query: '?url', import: 'default' }) as Record<string, string>;
@@ -50,7 +51,7 @@ const img = Object.keys(imgs).includes(`/public/images/services/${s.key}.webp`) 
                 <div class={`pkg${p.best ? ' pkg--best' : ''}`}>
                   {p.best && <span class="pkg-badge">En çok tercih edilen</span>}
                   <h3>{p.name}</h3>
-                  <div class="price">{formatTL(p.from)}'den</div>
+                  <div class="price">{p.from > 0 ? priceLabel(p.from) : 'Telefonda teklif'}</div>
                   <ul>{p.includes.map((i) => <li>{i}</li>)}</ul>
                   <a class="btn btn-outline" href={`/randevu/?hizmet=${s.slug}`}>Bu paketi seç</a>
                 </div>
@@ -72,16 +73,17 @@ const img = Object.keys(imgs).includes(`/public/images/services/${s.key}.webp`) 
             <ul>{posts.map((p) => <li><a href={`/blog/${p.id}/`}>{p.data.title}</a></li>)}</ul>
           </>
         )}
+        {s.slug !== 'rize-oto-cekici' && <TowingCard place="Rize" />}
         <h2>Hizmet verdiğimiz bölgeler</h2>
         <p>{s.name} için Rize Merkez'in yanı sıra {DISTRICTS.map((x, i) => <span><a href={`/hizmet-bolgeleri/${x.slug}/`}>{x.name}</a>{i < DISTRICTS.length - 1 ? ', ' : ''}</span>)} ilçelerinden müşterilerimizi ağırlıyoruz.</p>
       </article>
       <aside class="aside">
         <div class="card">
           <p class="eyebrow">Başlangıç fiyatı</p>
-          <div class="price" style="font-size:1.8rem">{formatTL(s.priceFrom)}'den</div>
+          <div class="price" style="font-size:1.8rem">{priceLabel(s.priceFrom)}</div>
           <p style="color:var(--muted);margin:.3rem 0 0">{s.priceNote}. Süre: {s.duration}.</p>
           <div class="btn-row" style="flex-direction:column">
-            <a class="btn btn-primary" href={`/randevu/?hizmet=${s.slug}`}>📅 Randevu Al</a>
+            {s.slug === 'rize-oto-cekici' ? <a class="btn btn-primary" href={`tel:${SITE.phoneE164}`}>☎ Hemen Ara</a> : <a class="btn btn-primary" href={`/randevu/?hizmet=${s.slug}`}>📅 Randevu Al</a>}
             <a class="btn btn-wa" href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(wa)}`} target="_blank" rel="noopener">WhatsApp'tan Teklif Al</a>
             <a class="btn btn-outline" href={`tel:${SITE.phoneE164}`}>☎ {SITE.phoneDisplay}</a>
           </div>

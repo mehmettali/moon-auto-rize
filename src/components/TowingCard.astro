@@ -1,0 +1,17 @@
+---
+import { SITE } from '../config/site';
+const { place = 'Rize' } = Astro.props as { place?: string };
+const wa = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(`Merhaba Moon Auto, ${place}'de aracım yolda kaldı, çekici gerekiyor. Konumumu gönderiyorum.`)}`;
+---
+<aside class="towing">
+  <div>
+    <p class="eyebrow">🚚 Oto çekici &amp; yol yardım</p>
+    <h3>{place}'de aracınız yolda mı kaldı?</h3>
+    <p>Rize genelindeki çekici çözüm ortaklarımızı tek telefonla devreye alıyoruz. Düz platformla hasarsız taşıma, stüdyomuza veya istediğiniz servise teslim.</p>
+  </div>
+  <div class="btn-row" style="margin:0;flex-direction:column;min-width:220px">
+    <a class="btn btn-primary" href={`tel:${SITE.phoneE164}`}>☎ Hemen Ara</a>
+    <a class="btn btn-wa" href={wa} target="_blank" rel="noopener">Konum Gönder</a>
+    <a href="/rize-oto-cekici/" style="text-align:center;font-weight:700">Çekici hizmeti detayları →</a>
+  </div>
+</aside>

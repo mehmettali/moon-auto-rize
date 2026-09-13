@@ -4,6 +4,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Cta from '../../components/Cta.astro';
 import { DISTRICTS } from '../../data/districts';
 import { SITE } from '../../config/site';
+import TowingCard from '../../components/TowingCard.astro';
 ---
 <Base title="Hizmet Bölgeleri | Rize İlçeleri Oto Kuaför – Moon Auto" description="Moon Auto, Rize Merkez İslampaşa'dan tüm Rize'ye hizmet verir: Çayeli, Ardeşen, Pazar, Güneysu, Derepazarı, İyidere. İlçenizden mesafe ve süre bilgisi." canonical="/hizmet-bolgeleri/">
   <Breadcrumbs items={[{ name: 'Hizmet Bölgeleri' }]} />
@@ -15,6 +16,7 @@ import { SITE } from '../../config/site';
       <p style="color:var(--muted)">{SITE.address.full}. Merkezdeki müşterilerimiz için aynı gün yıkama, pasta cila ve far parlatma randevusu genellikle mümkündür. Nüfus: 153.597 (2025).</p>
       <a class="btn btn-primary" href="/randevu/">Randevu Al</a>
     </div>
+    <TowingCard place="Rize" />
     <div class="grid grid-3">
       {DISTRICTS.map((d) => <article class="card"><h3><a href={`/hizmet-bolgeleri/${d.slug}/`}>{d.name} Oto Kuaför</a></h3><p style="color:var(--muted)">{d.distanceKm} km · yaklaşık {d.driveMin} dk · nüfus {d.population.toLocaleString('tr-TR')}</p><a href={`/hizmet-bolgeleri/${d.slug}/`} style="font-weight:700">Detay →</a></article>)}
     </div>

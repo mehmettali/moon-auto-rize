@@ -16,6 +16,26 @@ export interface ServiceDetail {
  * fiyatı mantığıyla yazıldı; gerçek tarife gelince buradan güncellenir.
  */
 export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
+  'rize-oto-cekici': {
+    forWhom: [
+      'Yolda kalan, çalışmayan veya kaza geçiren araç sahipleri',
+      'Kaplamalı, alçak veya klasik araçlar: düz platformla hasarsız taşıma isteyenler',
+      'Aracını servise veya stüdyomuza taşıtıp aynı anda bakım yaptırmak isteyenler',
+      'İlçelerden Rize Merkez\'e araç taşıması gerekenler',
+    ],
+    rizeNote: "Rize'de yol yardım ihtiyacı en çok yayla dönüşlerinde (Ovit, Ayder, İkizdere), sahil yolundaki zincirleme yavaşlamalarda ve kış aylarında Hemşin, Çamlıhemşin geçişlerinde ortaya çıkıyor. Dar vadi yollarında her çekici manevra yapamaz; çözüm ortaklarımızı aracın bulunduğu yola ve araç tipine göre seçiyoruz. Merkez ve yakın ilçelerde varış süresi kısadır; Ardeşen, Fındıklı gibi uzak noktalarda süreyi telefonda net söyleriz.",
+    packages: [
+      { name: 'Şehir İçi', from: 0, includes: ['Rize Merkez sınırları içi', 'Stüdyoya veya servise teslim', 'Telefonda sabit fiyat'] },
+      { name: 'İlçeler Arası', from: 0, best: true, includes: ['Çayeli, Ardeşen, Pazar, Güneysu, Derepazarı, İyidere ve diğerleri', 'Düz platform seçeneği', 'Fotoğraflı teslim tutanağı'] },
+      { name: 'Çekici + Bakım', from: 0, includes: ['Taşıma + istenen detailing paketi', 'Onarım dönüşü iç-dış temizlik', 'Paket fiyatında indirim'] },
+    ],
+    care: ['Konumunuzu WhatsApp\'tan paylaşın; en yakın çözüm ortağını hızlı yönlendirelim', 'Aracın ruhsatı ve anahtarı yanınızda olsun', 'Kaza durumunda önce güvenlik: reflektör ve güvenli bölge'],
+    mistakes: ['Kaplamalı aracı halatla çektirmek: tampon ve boya hasarı', 'Fiyatı yolda öğrenmek: biz telefonda netleştiriyoruz'],
+    extraFaqs: [
+      { q: 'Gece veya hafta sonu ulaşabilir miyim?', a: 'Çekici çözüm ortaklarımızın çalışma saatleri stüdyomuzdan farklı olabilir; arayın, uygun ortağı yönlendirelim.' },
+    ],
+    blog: ['rize-yagmurlu-iklimde-arac-bakimi'],
+  },
   'rize-seramik-kaplama': {
     forWhom: [
       'Sıfır veya 1–3 yaş araç sahipleri: boya henüz bozulmadan koruma altına alınır',

@@ -1,5 +1,5 @@
 ---
-import { formatTL, type Service } from '../data/services';
+import { priceLabel, type Service } from '../data/services';
 const { s } = Astro.props as { s: Service };
 const imgs = import.meta.glob('/public/images/services/*.webp', { eager: true, query: '?url', import: 'default' }) as Record<string, string>;
 const img = Object.keys(imgs).includes(`/public/images/services/${s.key}.webp`) ? `/images/services/${s.key}.webp` : null;
@@ -9,6 +9,6 @@ const img = Object.keys(imgs).includes(`/public/images/services/${s.key}.webp`) 
   <div class="icon" aria-hidden="true">{s.icon}</div>
   <h3><a href={`/${s.slug}/`}>{s.h1}</a></h3>
   <p style="color:var(--muted)">{s.short}</p>
-  <div class="price">{formatTL(s.priceFrom)}'den başlayan · {s.duration}</div>
+  <div class="price">{priceLabel(s.priceFrom)} · {s.duration}</div>
   <a href={`/${s.slug}/`} style="font-weight:700">Detaylar →</a>
 </article>
