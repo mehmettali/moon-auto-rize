@@ -1,0 +1,17 @@
+{
+  "name": "moon-auto-rize",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "build:pages": "astro build && python3 scripts/prefix-base.py /moon-auto-rize"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.4.1",
+    "astro": "^5.13.0"
+  }
+}

@@ -1,0 +1,26 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Faq from '../components/Faq.astro';
+import Cta from '../components/Cta.astro';
+import { SERVICES } from '../data/services';
+import { SITE } from '../config/site';
+const general = [
+  { q: 'Moon Auto nerede, nasıl gelirim?', a: `${SITE.address.full}. Rize Merkez İslampaşa'da, sahil yoluna birkaç dakika. Google Haritalar'da "Moon Auto Rize" yazmanız yeterli.` },
+  { q: 'Çalışma saatleriniz?', a: SITE.hours.text + '.' },
+  { q: 'Randevu nasıl alırım?', a: 'Sitedeki randevu formundan, WhatsApp\'tan veya telefonla. Form talepleri e-postamıza düşer, sizi arayıp onaylarız.' },
+  { q: 'Aynı anda kaç araç alıyorsunuz?', a: `${SITE.capacity} araç. Bu sayede randevu saatlerine sadık kalabiliyoruz.` },
+  { q: 'Hangi ürünleri kullanıyorsunuz?', a: 'Gyeon, Koch Chemie, Menzerna, 3M, 3D, Soft99, Angelwax, IGL Coatings, Polytop, Slopes ve Moben.' },
+  { q: 'Fiyatlarınız neye göre değişir?', a: 'Araç boyutu, boya/kirlilik durumu ve seçilen ürün serisi. Başlangıç fiyatları fiyat listesinde.' },
+];
+const all = [...general, ...SERVICES.flatMap((s) => s.faqs.map((f) => ({ q: `${s.name}: ${f.q}`, a: f.a })))];
+---
+<Base title="Sık Sorulan Sorular | Moon Auto Rize Oto Kuaför" description="Moon Auto Rize hakkında sık sorulan sorular: randevu, çalışma saatleri, seramik kaplama, PPF, pasta cila, detaylı iç temizlik süreleri ve fiyatları." canonical="/sss/">
+  <Breadcrumbs items={[{ name: 'SSS' }]} />
+  <section class="section" style="padding-top:1.5rem"><div class="container" style="max-width:860px">
+    <h1>Sık Sorulan Sorular</h1>
+    <p class="lead">Cevabını bulamadığınız soru için WhatsApp'tan yazın.</p>
+    <div style="margin-top:1.5rem"><Faq faqs={all} title="" /></div>
+  </div></section>
+  <section class="section"><div class="container"><Cta /></div></section>
+</Base>

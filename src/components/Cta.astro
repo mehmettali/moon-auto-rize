@@ -1,0 +1,13 @@
+---
+import { SITE } from '../config/site';
+const { title = 'Aracınız için randevu alın', text = 'Online randevu 1 dakika sürer. Onay bilgisi telefonunuza WhatsApp ile gelir.', wa = 'Merhaba Moon Auto, randevu almak istiyorum.' } = Astro.props;
+---
+<div class="cta">
+  <h2>{title}</h2>
+  <p style="color:var(--muted)">{text}</p>
+  <div class="btn-row" style="justify-content:center">
+    <a class="btn btn-primary" href="/randevu/">📅 Online Randevu</a>
+    <a class="btn btn-wa" href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(wa)}`} target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn btn-outline" href={`tel:${SITE.phoneE164}`}>☎ {SITE.phoneDisplay}</a>
+  </div>
+</div>

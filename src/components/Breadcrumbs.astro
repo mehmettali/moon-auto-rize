@@ -1,0 +1,14 @@
+---
+import { SITE } from '../config/site';
+interface Crumb { name: string; href?: string }
+const { items } = Astro.props as { items: Crumb[] };
+const all: Crumb[] = [{ name: 'Ana Sayfa', href: '/' }, ...items];
+const ld = {
+  '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+  itemListElement: all.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, ...(c.href ? { item: SITE.url + c.href } : {}) })),
+};
+---
+<nav class="breadcrumbs container" aria-label="Sayfa yolu">
+  <ol>{all.map((c) => <li>{c.href ? <a href={c.href}>{c.name}</a> : <span aria-current="page">{c.name}</span>}</li>)}</ol>
+</nav>
+<script type="application/ld+json" set:html={JSON.stringify(ld)} />

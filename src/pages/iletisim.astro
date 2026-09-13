@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import BookingForm from '../components/BookingForm.astro';
+import { SITE } from '../config/site';
+---
+<Base title="İletişim | Moon Auto Rize – Adres, Telefon, Yol Tarifi" description={`Moon Auto Rize iletişim: ${SITE.address.full}. Tel ${SITE.phoneDisplay}. Pazartesi–Cumartesi açık.`} canonical="/iletisim/">
+  <Breadcrumbs items={[{ name: 'İletişim' }]} />
+  <section class="section" style="padding-top:1.5rem"><div class="container two-col">
+    <div>
+      <h1>İletişim</h1>
+      <div class="grid grid-2" style="margin-top:1rem">
+        <div class="card"><h3>Adres</h3><p style="color:var(--muted)">{SITE.address.full}<br />Plus code: {SITE.plusCode}</p><a class="btn btn-outline" href={SITE.mapsShare} target="_blank" rel="noopener">Yol tarifi al</a></div>
+        <div class="card"><h3>Telefon &amp; WhatsApp</h3><p style="color:var(--muted)"><a href={`tel:${SITE.phoneE164}`}>{SITE.phoneDisplay}</a></p><a class="btn btn-wa" href={`https://wa.me/${SITE.whatsapp}`} target="_blank" rel="noopener">WhatsApp</a></div>
+        <div class="card"><h3>Çalışma saatleri</h3><p style="color:var(--muted)">{SITE.hours.text}</p></div>
+        <div class="card"><h3>Sosyal medya</h3><p><a href={SITE.social.instagram} target="_blank" rel="noopener">Instagram @moonautodetailingrize</a><br /><a href={SITE.social.facebook} target="_blank" rel="noopener">Facebook</a></p></div>
+      </div>
+      <img src="/images/vitrin-gece.webp" alt="Moon Auto Rize gece vitrin – Barbaros Sokak İslampaşa" width="1600" height="739" loading="lazy" style="border-radius:14px;margin-top:1.5rem" />
+      <div style="margin-top:1.5rem;border-radius:14px;overflow:hidden;border:1px solid var(--line)">
+        <iframe src={SITE.mapsEmbed} width="100%" height="360" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Moon Auto Rize harita"></iframe>
+      </div>
+    </div>
+    <aside>
+      <div class="card"><h3>Randevu / Teklif Formu</h3><BookingForm /></div>
+    </aside>
+  </div></section>
+</Base>

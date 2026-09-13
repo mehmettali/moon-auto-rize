@@ -1,0 +1,103 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Faq from '../components/Faq.astro';
+import Cta from '../components/Cta.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import { SITE } from '../config/site';
+import { SERVICES, getService, formatTL } from '../data/services';
+import { SERVICE_DETAILS } from '../data/serviceDetails';
+import { DISTRICTS } from '../data/districts';
+import { getCollection } from 'astro:content';
+
+export function getStaticPaths() { return SERVICES.map((s) => ({ params: { service: s.slug } })); }
+const s = getService(Astro.params.service!)!;
+const related = s.related.map(getService).filter(Boolean);
+const d = SERVICE_DETAILS[s.slug];
+const allFaqs = [...s.faqs, ...(d?.extraFaqs ?? [])];
+const posts = (await getCollection('blog')).filter((p) => d?.blog.includes(p.id));
+const ld = {
+  '@context': 'https://schema.org', '@type': 'Service',
+  name: s.h1, serviceType: s.name, description: s.description,
+  provider: { '@id': SITE.url + '/#business' },
+  areaServed: { '@type': 'City', name: 'Rize' },
+  offers: { '@type': 'Offer', priceCurrency: 'TRY', price: s.priceFrom, priceSpecification: { '@type': 'PriceSpecification', price: s.priceFrom, priceCurrency: 'TRY', minPrice: s.priceFrom }, availability: 'https://schema.org/InStock', url: `${SITE.url}/${s.slug}/` },
+};
+const wa = `Merhaba Moon Auto, ${s.name} için fiyat ve randevu bilgisi almak istiyorum.`;
+const imgs = import.meta.glob('/public/images/services/*.webp', { eager: true, query: '?url', import: 'default' }) as Record<string, string>;
+const img = Object.keys(imgs).includes(`/public/images/services/${s.key}.webp`) ? `/images/services/${s.key}.webp` : null;
+---
+<Base title={s.title} description={s.description} canonical={`/${s.slug}/`} jsonLd={ld} waText={wa}>
+  <Breadcrumbs items={[{ name: 'Hizmetler', href: '/hizmetler/' }, { name: s.name }]} />
+  <section class="section" style="padding-top:1.5rem">
+    <div class="container two-col">
+      <article class="prose">
+        <p class="eyebrow">{s.icon} Rize · {s.name}</p>
+        <h1>{s.h1}</h1>
+        {s.intro.map((p) => <p>{p}</p>)}
+        {img ? <img src={img} alt={`${s.h1} – Moon Auto Rize İslampaşa stüdyo`} width="1400" height="875" loading="eager" style="border-radius:14px;margin:1.5rem 0;width:100%;height:auto" /> : <div class="placeholder" style="margin:1.5rem 0">{s.name} görseli<br /><small>public/images/services/{s.key}.webp</small></div>}
+        <h2>Faydaları</h2>
+        <ul class="checks">{s.benefits.map((b) => <li>{b}</li>)}</ul>
+        <h2>Nasıl uyguluyoruz?</h2>
+        <ol class="steps">{s.steps.map((st) => <li><span>{st}</span></li>)}</ol>
+        {d && (
+          <>
+            <h2>Kimler için uygun?</h2>
+            <ul class="checks">{d.forWhom.map((x) => <li>{x}</li>)}</ul>
+            <h2>Paketler ve başlangıç fiyatları</h2>
+            <div class="packages">
+              {d.packages.map((p) => (
+                <div class={`pkg${p.best ? ' pkg--best' : ''}`}>
+                  {p.best && <span class="pkg-badge">En çok tercih edilen</span>}
+                  <h3>{p.name}</h3>
+                  <div class="price">{formatTL(p.from)}'den</div>
+                  <ul>{p.includes.map((i) => <li>{i}</li>)}</ul>
+                  <a class="btn btn-outline" href={`/randevu/?hizmet=${s.slug}`}>Bu paketi seç</a>
+                </div>
+              ))}
+            </div>
+            <p class="hint" style="color:var(--muted);font-size:.9rem">Fiyatlar küçük/orta boy araç içindir; SUV, ticari ve boya durumu ağır araçlarda fark uygulanır. Net fiyat için WhatsApp'tan fotoğraf gönderin.</p>
+            <h2>Rize'de {s.name.toLowerCase()} neden farklı?</h2>
+            <p>{d.rizeNote}</p>
+            <div class="grid grid-2" style="margin-top:1rem">
+              <div class="card"><h3>Uygulama sonrası bakım</h3><ul class="checks">{d.care.map((x) => <li>{x}</li>)}</ul></div>
+              <div class="card"><h3>Sık yapılan hatalar (biz yapmıyoruz)</h3><ul class="checks checks--x">{d.mistakes.map((x) => <li>{x}</li>)}</ul></div>
+            </div>
+          </>
+        )}
+        <div style="margin-top:2.5rem"><Faq faqs={allFaqs} title={`${s.name} hakkında sık sorulanlar`} /></div>
+        {posts.length > 0 && (
+          <>
+            <h2>İlgili rehberler</h2>
+            <ul>{posts.map((p) => <li><a href={`/blog/${p.id}/`}>{p.data.title}</a></li>)}</ul>
+          </>
+        )}
+        <h2>Hizmet verdiğimiz bölgeler</h2>
+        <p>{s.name} için Rize Merkez'in yanı sıra {DISTRICTS.map((x, i) => <span><a href={`/hizmet-bolgeleri/${x.slug}/`}>{x.name}</a>{i < DISTRICTS.length - 1 ? ', ' : ''}</span>)} ilçelerinden müşterilerimizi ağırlıyoruz.</p>
+      </article>
+      <aside class="aside">
+        <div class="card">
+          <p class="eyebrow">Başlangıç fiyatı</p>
+          <div class="price" style="font-size:1.8rem">{formatTL(s.priceFrom)}'den</div>
+          <p style="color:var(--muted);margin:.3rem 0 0">{s.priceNote}. Süre: {s.duration}.</p>
+          <div class="btn-row" style="flex-direction:column">
+            <a class="btn btn-primary" href={`/randevu/?hizmet=${s.slug}`}>📅 Randevu Al</a>
+            <a class="btn btn-wa" href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(wa)}`} target="_blank" rel="noopener">WhatsApp'tan Teklif Al</a>
+            <a class="btn btn-outline" href={`tel:${SITE.phoneE164}`}>☎ {SITE.phoneDisplay}</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Moon Auto Rize</h3>
+          <p style="color:var(--muted);margin:0">{SITE.address.full}<br />{SITE.hours.text}<br />Google: {SITE.rating.value} ★ ({SITE.rating.count})</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+  {related.length > 0 && (
+    <section class="section section--alt"><div class="container">
+      <h2>İlgili hizmetler</h2>
+      <div class="grid grid-3">{related.map((r) => <ServiceCard s={r!} />)}</div>
+    </div></section>
+  )}
+  <section class="section"><div class="container"><Cta title={`${s.name} için randevu alın`} wa={wa} /></div></section>
+</Base>

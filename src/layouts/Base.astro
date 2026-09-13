@@ -1,0 +1,78 @@
+---
+import '../styles/global.css';
+import { SITE, OG_IMAGE } from '../config/site';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsApp from '../components/WhatsApp.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;      // path, örn: /rize-seramik-kaplama/
+  ogImage?: string;
+  noindex?: boolean;
+  type?: 'website' | 'article';
+  jsonLd?: object | object[];
+  waText?: string;
+}
+const { title, description, canonical = Astro.url.pathname, ogImage = OG_IMAGE, noindex = false, type = 'website', jsonLd, waText } = Astro.props;
+const canonicalUrl = new URL(canonical, SITE.url).toString();
+
+const business = {
+  '@context': 'https://schema.org',
+  '@type': 'AutoWash',
+  '@id': SITE.url + '/#business',
+  name: SITE.brand + ' Rize',
+  alternateName: [SITE.legalName, 'Moon Auto Detailing Rize', 'Moon Auto Car Studio'],
+  description: SITE.description,
+  url: SITE.url,
+  telephone: SITE.phoneE164,
+  email: SITE.email,
+  image: SITE.url + ogImage,
+  priceRange: '₺₺',
+  currenciesAccepted: 'TRY',
+  paymentAccepted: 'Nakit, Kredi Kartı',
+  address: { '@type': 'PostalAddress', streetAddress: SITE.address.street, addressLocality: SITE.address.district, addressRegion: SITE.address.city, postalCode: SITE.address.postalCode, addressCountry: SITE.address.country },
+  geo: { '@type': 'GeoCoordinates', latitude: SITE.geo.lat, longitude: SITE.geo.lng },
+  hasMap: SITE.mapsShare,
+  openingHoursSpecification: [{ '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'], opens: SITE.hours.open, closes: SITE.hours.close }],
+  areaServed: ['Rize', 'Rize Merkez', 'Çayeli', 'Ardeşen', 'Pazar', 'Güneysu', 'Derepazarı', 'İyidere', 'Kalkandere', 'Fındıklı'].map((n) => ({ '@type': 'City', name: n })),
+  aggregateRating: { '@type': 'AggregateRating', ratingValue: SITE.rating.value, reviewCount: SITE.rating.count, bestRating: 5 },
+  sameAs: [SITE.social.instagram, SITE.social.facebook],
+  potentialAction: { '@type': 'ReserveAction', target: SITE.url + '/randevu/' },
+};
+const ldBlocks = [business, ...(jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [])];
+---
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalUrl} />
+  {noindex && <meta name="robots" content="noindex,nofollow" />}
+  <meta name="theme-color" content="#0b0f14" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="sitemap" href="/sitemap-index.xml" />
+  <meta property="og:type" content={type} />
+  <meta property="og:site_name" content="Moon Auto Rize" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:image" content={new URL(ogImage, SITE.url).toString()} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="geo.region" content="TR-53" />
+  <meta name="geo.placename" content="Rize" />
+  <meta name="geo.position" content={`${SITE.geo.lat};${SITE.geo.lng}`} />
+  <meta name="ICBM" content={`${SITE.geo.lat}, ${SITE.geo.lng}`} />
+  {ldBlocks.map((b) => <script type="application/ld+json" set:html={JSON.stringify(b)} />)}
+</head>
+<body>
+  <Header />
+  <main><slot /></main>
+  <Footer />
+  <WhatsApp text={waText} />
+</body>
+</html>

@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Cta from '../components/Cta.astro';
+import { SITE } from '../config/site';
+import { SERVICES } from '../data/services';
+// public/images/galeri/ klasörüne eklenen jpg/webp dosyaları otomatik listelenir.
+const files = import.meta.glob('/public/images/galeri/*.{jpg,jpeg,png,webp}', { eager: true, query: '?url', import: 'default' }) as Record<string, string>;
+const toAlt = (p: string) => 'Moon Auto Rize – ' + (p.split('/').pop() || '').replace(/\.(jpg|jpeg|png|webp)$/i, '').replace(/^\d+-/, '').replace(/^ig-/, '').replace(/-/g, ' ');
+const images = Object.keys(files).sort().map((p) => ({ src: p.replace('/public', ''), alt: toAlt(p) }));
+---
+<Base title="Galeri | Öncesi-Sonrası Çalışmalarımız – Moon Auto Rize" description="Moon Auto Rize seramik kaplama, PPF, pasta cila ve detaylı iç temizlik öncesi-sonrası fotoğrafları. Instagram'da 4.000+ takipçiyle güncel çalışmalar." canonical="/galeri/">
+  <Breadcrumbs items={[{ name: 'Galeri' }]} />
+  <section class="section" style="padding-top:1.5rem"><div class="container">
+    <h1>Çalışmalarımızdan Kareler</h1>
+    <p class="lead">Güncel öncesi-sonrası videolar için <a href={SITE.social.instagram} target="_blank" rel="noopener">Instagram hesabımızı</a> takip edin. Google profilimizde 139'dan fazla fotoğraf bulabilirsiniz.</p>
+    <div class="gallery" style="margin-top:1.5rem">
+      {images.length > 0
+        ? images.map((im) => <figure><img src={im.src} alt={im.alt} loading="lazy" decoding="async" style="border-radius:12px;aspect-ratio:4/3;object-fit:cover;width:100%" /><figcaption>{im.alt.replace('Moon Auto Rize – ', '')}</figcaption></figure>)
+        : SERVICES.map((s) => <figure><div class="placeholder">{s.icon} {s.name}<br /><small>public/images/galeri/</small></div><figcaption>{s.h1}</figcaption></figure>)}
+    </div>
+  </div></section>
+  <section class="section"><div class="container"><Cta /></div></section>
+</Base>

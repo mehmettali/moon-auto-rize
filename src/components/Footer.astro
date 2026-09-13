@@ -1,0 +1,44 @@
+---
+import { SITE } from '../config/site';
+import { SERVICES } from '../data/services';
+import { DISTRICTS } from '../data/districts';
+const year = new Date().getFullYear();
+---
+<footer class="footer">
+  <div class="container grid grid-4">
+    <div>
+      <h4>Moon Auto Rize</h4>
+      <p>{SITE.tagline}. Seramik kaplama, PPF, pasta cila, detaylı iç temizlik ve premium oto yıkama.</p>
+      <p><a href={SITE.mapsShare} target="_blank" rel="noopener">{SITE.address.full}</a></p>
+      <p><a href={`tel:${SITE.phoneE164}`}>{SITE.phoneDisplay}</a><br />{SITE.hours.text}</p>
+      <p><a href={SITE.social.instagram} target="_blank" rel="noopener">Instagram</a> · <a href={SITE.social.facebook} target="_blank" rel="noopener">Facebook</a></p>
+    </div>
+    <div>
+      <h4>Hizmetler</h4>
+      <ul>{SERVICES.map((s) => <li><a href={`/${s.slug}/`}>{s.h1}</a></li>)}</ul>
+    </div>
+    <div>
+      <h4>Hizmet Bölgeleri</h4>
+      <ul>
+        <li><a href="/hizmet-bolgeleri/">Rize Merkez</a></li>
+        {DISTRICTS.map((d) => <li><a href={`/hizmet-bolgeleri/${d.slug}/`}>{d.name} Oto Kuaför</a></li>)}
+      </ul>
+    </div>
+    <div>
+      <h4>Kurumsal</h4>
+      <ul>
+        <li><a href="/hakkimizda/">Hakkımızda</a></li>
+        <li><a href="/fiyatlar/">Fiyat Listesi</a></li>
+        <li><a href="/randevu/">Online Randevu</a></li>
+        <li><a href="/galeri/">Galeri</a></li>
+        <li><a href="/sss/">Sık Sorulan Sorular</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/iletisim/">İletişim</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container bottom">
+    <span>© {year} {SITE.legalName}. Tüm hakları saklıdır.</span>
+    <span>Rize Merkez · İslampaşa · Google'da {SITE.rating.value} ★ ({SITE.rating.count} yorum)</span>
+  </div>
+</footer>

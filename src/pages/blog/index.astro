@@ -1,0 +1,18 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Cta from '../../components/Cta.astro';
+import { getCollection } from 'astro:content';
+const posts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+<Base title="Blog | Araç Bakımı, Seramik, PPF Rehberleri – Moon Auto Rize" description="Rize'de araç bakımı rehberleri: seramik mi PPF mi, seramik kaplama fiyatları, detaylı iç temizlik, yağmurlu iklimde araç koruma." canonical="/blog/">
+  <Breadcrumbs items={[{ name: 'Blog' }]} />
+  <section class="section" style="padding-top:1.5rem"><div class="container">
+    <h1>Araç Bakım Rehberi</h1>
+    <p class="lead">Rize koşullarına göre yazılmış, satış kaygısı olmayan rehberler.</p>
+    <div class="grid grid-2" style="margin-top:1.5rem">
+      {posts.map((p) => <article class="card"><h3><a href={`/blog/${p.id}/`}>{p.data.title}</a></h3><p style="color:var(--muted)">{p.data.description}</p><time datetime={p.data.date.toISOString()} style="color:var(--muted);font-size:.85rem">{p.data.date.toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric' })}</time></article>)}
+    </div>
+  </div></section>
+  <section class="section"><div class="container"><Cta /></div></section>
+</Base>

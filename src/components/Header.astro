@@ -1,0 +1,30 @@
+---
+import { SITE } from '../config/site';
+---
+<header class="header">
+  <div class="container">
+    <a href="/" class="logo" aria-label="Moon Auto Rize ana sayfa">
+      <span class="moon" aria-hidden="true"></span>
+      <span>Moon Auto<small>Detailing &amp; Car Studio · Rize</small></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menü">☰</button>
+    <nav class="nav" id="nav" aria-label="Ana menü">
+      <a href="/hizmetler/">Hizmetler</a>
+      <a href="/fiyatlar/">Fiyatlar</a>
+      <a href="/galeri/">Galeri</a>
+      <a href="/blog/">Blog</a>
+      <a href="/hakkimizda/">Hakkımızda</a>
+      <a href="/iletisim/">İletişim</a>
+      <a href={`tel:${SITE.phoneE164}`} class="btn btn-outline">☎ {SITE.phoneDisplay}</a>
+      <a href="/randevu/" class="btn btn-primary">Randevu Al</a>
+    </nav>
+  </div>
+</header>
+<script>
+  const t = document.querySelector('.nav-toggle');
+  const n = document.getElementById('nav');
+  t?.addEventListener('click', () => {
+    const open = n!.classList.toggle('open');
+    t.setAttribute('aria-expanded', String(open));
+  });
+</script>

@@ -1,0 +1,14 @@
+---
+import { REVIEWS } from '../data/reviews';
+import { SITE } from '../config/site';
+---
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">Google Yorumları</p>
+    <h2>Rize'de {SITE.rating.value} ★ · {SITE.rating.count} müşteri yorumu</h2>
+    <div class="grid grid-3" style="margin-top:1.5rem">
+      {REVIEWS.map((r) => <blockquote class="review"><div class="stars" aria-label={`${r.stars} yıldız`}>{'★'.repeat(r.stars)}</div><p>"{r.text}"</p><footer>— {r.name}, Google</footer></blockquote>)}
+    </div>
+    <p style="margin-top:1rem"><a href={SITE.mapsShare} target="_blank" rel="noopener">Tüm yorumları Google Haritalar'da görün →</a></p>
+  </div>
+</section>

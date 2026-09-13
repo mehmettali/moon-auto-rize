@@ -1,0 +1,16 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ServiceCard from '../../components/ServiceCard.astro';
+import Cta from '../../components/Cta.astro';
+import { SERVICES } from '../../data/services';
+---
+<Base title="Hizmetler | Rize Oto Kuaför ve Detailing – Moon Auto" description="Moon Auto Rize hizmetleri: seramik kaplama, PPF, pasta cila, detaylı iç temizlik, antibakteriyel temizlik, cam filmi, far parlatma, motor temizliği ve yıkama." canonical="/hizmetler/">
+  <Breadcrumbs items={[{ name: 'Hizmetler' }]} />
+  <section class="section" style="padding-top:1.5rem"><div class="container">
+    <h1>Rize Oto Kuaför ve Detailing Hizmetlerimiz</h1>
+    <p class="lead">Her hizmet için süreç, süre, sık sorulan sorular ve başlangıç fiyatı kendi sayfasında.</p>
+    <div class="grid grid-3" style="margin-top:1.5rem">{SERVICES.map((s) => <ServiceCard s={s} />)}</div>
+  </div></section>
+  <section class="section"><div class="container"><Cta /></div></section>
+</Base>

@@ -1,0 +1,46 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import BookingForm from '../components/BookingForm.astro';
+import { SITE } from '../config/site';
+---
+<Base title="Online Randevu | Rize Oto Kuaför Randevu – Moon Auto" description="Moon Auto Rize online randevu: hizmet, tarih ve saat seçin, talebiniz anında bize ulaşsın. Pazartesi–Cumartesi 08:30–18:30, aynı anda 5 araç kapasitesi." canonical="/randevu/">
+  <Breadcrumbs items={[{ name: 'Randevu' }]} />
+  <section class="section" style="padding-top:1.5rem"><div class="container two-col">
+    <div>
+      <h1>Online Randevu</h1>
+      <p class="lead">Formu doldurun; talebiniz anında e-postamıza düşer, sizi arayıp saati onaylarız. Acil durumda WhatsApp veya telefon daha hızlıdır.</p>
+      <div class="card" style="margin-top:1.5rem"><BookingForm /></div>
+    </div>
+    <aside class="aside">
+      <div class="card">
+        <h3>Çalışma saatleri</h3>
+        <p style="color:var(--muted)">{SITE.hours.text}</p>
+        <h3>Adres</h3>
+        <p style="color:var(--muted)">{SITE.address.full}</p>
+        <a class="btn btn-outline" href={SITE.mapsShare} target="_blank" rel="noopener">Yol tarifi</a>
+      </div>
+      <div class="card">
+        <h3>Süre rehberi</h3>
+        <ul class="checks" style="color:var(--muted)">
+          <li>Premium yıkama: 1–2 saat</li>
+          <li>Pasta cila: yarım / tam gün</li>
+          <li>Detaylı iç temizlik: tam gün</li>
+          <li>Seramik: 1–2 gün</li>
+          <li>PPF: 1–4 gün</li>
+        </ul>
+      </div>
+    </aside>
+  </div></section>
+  <script>
+    // URL'den gelen ?hizmet=slug ile hizmeti önceden seç
+    const p = new URLSearchParams(location.search).get('hizmet');
+    if (p) {
+      const map: Record<string,string> = {};
+      document.querySelectorAll<HTMLOptionElement>('select[name=hizmet] option').forEach((o) => { map[o.value] = o.value; });
+      const sel = document.querySelector<HTMLSelectElement>('select[name=hizmet]');
+      const names: Record<string,string> = { 'rize-seramik-kaplama':'Seramik Kaplama','rize-ppf-kaplama':'PPF Boya Koruma Filmi','rize-pasta-cila':'Pasta Cila','rize-detayli-ic-temizlik':'Detaylı İç Temizlik','rize-oto-yikama':'Premium Oto Yıkama','rize-cam-filmi':'Cam Filmi','rize-antibakteriyel-arac-temizligi':'Antibakteriyel Temizlik','rize-far-parlatma':'Far Parlatma','rize-motor-temizligi':'Motor Temizliği','rize-car-studio':'Car Studio' };
+      if (sel && names[p]) sel.value = names[p];
+    }
+  </script>
+</Base>

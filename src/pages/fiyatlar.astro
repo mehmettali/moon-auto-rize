@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import PriceTable from '../components/PriceTable.astro';
+import Faq from '../components/Faq.astro';
+import Cta from '../components/Cta.astro';
+const faqs = [
+  { q: 'Fiyatlar neden "başlangıç" olarak veriliyor?', a: 'Araç boyutu, boya durumu ve seçilen ürün serisi fiyatı belirler. Başlangıç fiyatı küçük/orta araç ve standart paket içindir.' },
+  { q: 'Net fiyatı nasıl öğrenirim?', a: 'WhatsApp\'tan aracınızın 3-4 fotoğrafını ve istediğiniz hizmeti gönderin; dakikalar içinde net teklif veririz.' },
+  { q: 'Ödeme seçenekleri nelerdir?', a: 'Nakit ve kredi kartı kabul ediyoruz.' },
+  { q: 'Paket indirimi var mı?', a: 'Evet. Seramik + PPF, pasta cila + seramik ve detaylı iç temizlik + antibakteriyel gibi kombinasyonlarda indirim uygulanır.' },
+];
+---
+<Base title="Fiyat Listesi 2026 | Rize Oto Kuaför Fiyatları – Moon Auto" description="Moon Auto Rize güncel fiyat listesi: seramik kaplama, PPF, pasta cila, detaylı iç temizlik, cam filmi, far parlatma ve yıkama başlangıç fiyatları." canonical="/fiyatlar/">
+  <Breadcrumbs items={[{ name: 'Fiyatlar' }]} />
+  <section class="section" style="padding-top:1.5rem"><div class="container">
+    <h1>Rize Oto Kuaför Fiyat Listesi</h1>
+    <p class="lead">Şeffaflık bizim için önemli: tüm hizmetlerin başlangıç fiyatları aşağıda. Fiyatlar KDV dahildir ve küçük/orta boy araç içindir.</p>
+    <div style="margin-top:1.5rem"><PriceTable /></div>
+    <p style="color:var(--muted);margin-top:1rem;font-size:.9rem">Güncelleme: Eylül 2026. SUV ve ticari araçlarda fark uygulanır. Kesin fiyat aracın görülmesiyle verilir.</p>
+    <div style="margin-top:2.5rem"><Faq faqs={faqs} /></div>
+  </div></section>
+  <section class="section"><div class="container"><Cta title="Net fiyat için aracınızın fotoğrafını gönderin" wa="Merhaba Moon Auto, aracım için net fiyat almak istiyorum. Fotoğrafları gönderiyorum." /></div></section>
+</Base>

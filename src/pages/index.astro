@@ -1,0 +1,88 @@
+---
+import Base from '../layouts/Base.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import Reviews from '../components/Reviews.astro';
+import Brands from '../components/Brands.astro';
+import Cta from '../components/Cta.astro';
+import Faq from '../components/Faq.astro';
+import { SITE } from '../config/site';
+import { SERVICES } from '../data/services';
+import { DISTRICTS } from '../data/districts';
+
+const title = 'Moon Auto Rize | Oto Kuaför, Seramik Kaplama, PPF';
+const description = SITE.description;
+const faqs = [
+  { q: 'Moon Auto Rize nerede?', a: `${SITE.address.full}. Rize Merkez İslampaşa'da, sahil yoluna 3 dakika.` },
+  { q: 'Çalışma saatleriniz nedir?', a: SITE.hours.text + '.' },
+  { q: 'Randevu şart mı?', a: 'Seramik, PPF ve detaylı iç temizlik için randevu gerekir; yıkama için randevusuz gelebilirsiniz ama randevulu müşteriye öncelik verilir.' },
+  { q: 'Hangi ilçelere hizmet veriyorsunuz?', a: 'Rize genelinden müşteri kabul ediyoruz: Merkez, Çayeli, Ardeşen, Pazar, Güneysu, Derepazarı, İyidere, Kalkandere ve diğer ilçeler.' },
+  { q: 'Fiyatlar sitede var mı?', a: 'Evet, fiyat listesi sayfasında tüm hizmetlerin başlangıç fiyatları var. Net teklif için aracın fotoğrafını WhatsApp\'tan gönderebilirsiniz.' },
+];
+---
+<Base {title} {description} canonical="/">
+  <section class="hero hero--img">
+    <div class="container">
+      <p class="eyebrow">Rize Merkez · İslampaşa · {SITE.rating.value} ★ Google</p>
+      <h1>Rize'nin Profesyonel Oto Bakım ve Detailing Merkezi</h1>
+      <p class="lead">Seramik kaplama, PPF boya koruma, pasta cila, koltuk sökülerek detaylı iç temizlik, cam filmi ve premium elde yıkama. Rize'nin yağmuruna karşı aracınızı koruyoruz.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="/randevu/">📅 Online Randevu Al</a>
+        <a class="btn btn-wa" href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent('Merhaba Moon Auto, fiyat bilgisi almak istiyorum.')}`} target="_blank" rel="noopener">WhatsApp'tan Fiyat Al</a>
+        <a class="btn btn-outline" href="/fiyatlar/">Fiyat Listesi</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>{SITE.rating.value} <span class="stars">★</span></strong><span>{SITE.rating.count} Google yorumu</span></div>
+        <div><strong>{SITE.capacity} araç</strong><span>aynı anda kapasite</span></div>
+        <div><strong>Pzt–Cmt</strong><span>{SITE.hours.open}–{SITE.hours.close}</span></div>
+        <div><strong>Kapalı alan</strong><span>tozsuz uygulama stüdyosu</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Hizmetlerimiz</p>
+      <h2>Rize'de tek çatı altında oto kuaför ve boya koruma</h2>
+      <p class="lead">Her hizmetin ayrıntısını, sürecini ve başlangıç fiyatını kendi sayfasında bulabilirsiniz.</p>
+      <div class="grid grid-3" style="margin-top:1.5rem">{SERVICES.map((s) => <ServiceCard s={s} />)}</div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container two-col">
+      <div>
+        <p class="eyebrow">Neden Moon Auto?</p>
+        <h2>Rize'nin iklimini bilen detailing</h2>
+        <ul class="checks">
+          <li><strong>Yağmura göre çözüm:</strong> Yılda 184 yağışlı günü olan Rize'de seramik ve PPF, lüks değil koruyucu bakımdır.</li>
+          <li><strong>Boya kalınlığı ölçümü:</strong> Pasta cila ve kaplama öncesi her panel ölçülür; boyaya zarar verilmez.</li>
+          <li><strong>Profesyonel ürünler:</strong> Gyeon, Koch Chemie, Menzerna, 3M, Soft99, Angelwax, IGL.</li>
+          <li><strong>Kapalı ve tozsuz alan:</strong> Seramik ve PPF, açık havada değil kontrollü stüdyoda uygulanır.</li>
+          <li><strong>Car Studio:</strong> İşlem sonrası aracınızın stüdyo ışığında fotoğrafını çekiyoruz.</li>
+          <li><strong>Şeffaf fiyat:</strong> Başlangıç fiyatları sitede; sürpriz yok.</li>
+        </ul>
+      </div>
+      <div>
+        <img src="/images/vitrin.webp" alt="Moon Auto Detailing & Car Studio Rize İslampaşa vitrin" width="1600" height="739" loading="lazy" style="border-radius:14px;width:100%;height:auto" />
+      </div>
+    </div>
+  </section>
+
+  <Reviews />
+  <Brands />
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Hizmet Bölgeleri</p>
+      <h2>Rize genelinden müşterilerimizi ağırlıyoruz</h2>
+      <p class="lead">Merkez İslampaşa'daki stüdyomuz sahil yolundan tüm ilçelere yakın. İlçenize özel bilgi için tıklayın.</p>
+      <div class="brands" style="margin-top:1rem">
+        <span><a href="/hizmet-bolgeleri/">Rize Merkez</a></span>
+        {DISTRICTS.map((d) => <span><a href={`/hizmet-bolgeleri/${d.slug}/`}>{d.name}</a></span>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt"><div class="container"><Faq faqs={faqs} /></div></section>
+  <section class="section"><div class="container"><Cta /></div></section>
+</Base>

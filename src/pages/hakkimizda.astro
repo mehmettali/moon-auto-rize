@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Brands from '../components/Brands.astro';
+import Reviews from '../components/Reviews.astro';
+import Cta from '../components/Cta.astro';
+import { SITE } from '../config/site';
+---
+<Base title="Hakkımızda | Moon Auto Detailing & Car Studio Rize" description="Moon Auto, Rize Merkez İslampaşa'da profesyonel oto bakım merkezi. Seramik, PPF, pasta cila ve detaylı temizlikte 4,9 puan, 69 Google yorumu." canonical="/hakkimizda/">
+  <Breadcrumbs items={[{ name: 'Hakkımızda' }]} />
+  <section class="section" style="padding-top:1.5rem"><div class="container two-col">
+    <article class="prose">
+      <p class="eyebrow">Moon Auto Detailing &amp; Car Studio</p>
+      <h1>Rize'de profesyonel oto bakımın adresi</h1>
+      <p>Moon Auto, Rize Merkez İslampaşa Mahallesi'nde, aracınızı yıkamanın ötesine geçmek için kuruldu. Amacımız basit: Rize'nin yağmuruna, nemine ve tuzuna rağmen aracınızın boyasını, iç mekânını ve değerini korumak.</p>
+      <p>Seramik kaplama, PPF boya koruma filmi, pasta cila, koltuk sökülerek yapılan detaylı iç temizlik, antibakteriyel dezenfeksiyon, cam filmi, far parlatma, motor temizliği ve premium elde yıkama hizmetlerini tek çatı altında, kapalı ve tozsuz bir stüdyoda sunuyoruz. Aynı anda {SITE.capacity} araç kapasitemiz sayesinde randevu saatlerine sadık kalıyoruz.</p>
+      <img src="/images/vitrin.webp" alt="Moon Auto Rize İslampaşa stüdyo binası" width="1600" height="739" loading="lazy" style="border-radius:14px;margin:1rem 0 1.5rem" />
+      <h2>Neden bize güveniyorlar?</h2>
+      <ul class="checks">
+        <li>Google'da {SITE.rating.value} puan, {SITE.rating.count} yorum</li>
+        <li>Instagram'da 4.000'den fazla takipçi, her hafta yeni öncesi-sonrası videolar</li>
+        <li>Boya kalınlığı ölçümü ve ürün seçiminde şeffaflık</li>
+        <li>Gyeon, Koch Chemie, Menzerna, 3M gibi profesyonel markalar</li>
+        <li>Car Studio: işlem sonrası stüdyo ışığında araç çekimi</li>
+      </ul>
+      <h2>Car Studio nedir?</h2>
+      <p>Detailing sonrası aracınızı stüdyo ışığında fotoğraflıyor ve videosunu çekiyoruz. Satış ilanınız için stüdyo kalitesinde görsel, sosyal medya için içerik hazır teslim ediliyor.</p>
+    </article>
+    <aside class="aside"><div class="card">
+      <h3>İletişim</h3>
+      <p style="color:var(--muted)">{SITE.address.full}<br /><a href={`tel:${SITE.phoneE164}`}>{SITE.phoneDisplay}</a><br />{SITE.hours.text}</p>
+      <p><a href={SITE.social.instagram} target="_blank" rel="noopener">Instagram</a> · <a href={SITE.social.facebook} target="_blank" rel="noopener">Facebook</a></p>
+      <a class="btn btn-primary" href="/randevu/">Randevu Al</a>
+    </div></aside>
+  </div></section>
+  <Brands />
+  <Reviews />
+  <section class="section"><div class="container"><Cta /></div></section>
+</Base>

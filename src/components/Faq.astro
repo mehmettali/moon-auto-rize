@@ -1,0 +1,10 @@
+---
+import type { Faq } from '../data/services';
+const { faqs, title = 'Sık Sorulan Sorular', schema = true } = Astro.props as { faqs: Faq[]; title?: string; schema?: boolean };
+const ld = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
+---
+<section class="faq">
+  <h2>{title}</h2>
+  {faqs.map((f) => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}
+</section>
+{schema && <script type="application/ld+json" set:html={JSON.stringify(ld)} />}

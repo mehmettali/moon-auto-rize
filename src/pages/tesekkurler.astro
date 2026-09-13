@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../config/site';
+---
+<Base title="Teşekkürler – Randevu Talebiniz Alındı | Moon Auto Rize" description="Randevu talebiniz bize ulaştı." canonical="/tesekkurler/" noindex>
+  <section class="section"><div class="container" style="text-align:center;max-width:640px">
+    <h1>Talebiniz alındı ✅</h1>
+    <p class="lead" style="margin-inline:auto">En kısa sürede sizi arayıp randevu saatini onaylayacağız. Acele ediyorsanız WhatsApp'tan yazabilir veya arayabilirsiniz.</p>
+    <div class="btn-row" style="justify-content:center">
+      <a class="btn btn-wa" href={`https://wa.me/${SITE.whatsapp}`} target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn-outline" href={`tel:${SITE.phoneE164}`}>☎ {SITE.phoneDisplay}</a>
+      <a class="btn btn-primary" href="/">Ana sayfa</a>
+    </div>
+  </div></section>
+</Base>

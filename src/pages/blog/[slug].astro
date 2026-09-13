@@ -1,0 +1,32 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Cta from '../../components/Cta.astro';
+import ServiceCard from '../../components/ServiceCard.astro';
+import { getCollection, render } from 'astro:content';
+import { getService } from '../../data/services';
+import { SITE } from '../../config/site';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((p) => ({ params: { slug: p.id }, props: { p } }));
+}
+const { p } = Astro.props;
+const { Content } = await render(p);
+const related = p.data.related.map(getService).filter(Boolean);
+const ld = { '@context': 'https://schema.org', '@type': 'Article', headline: p.data.title, description: p.data.description, datePublished: p.data.date.toISOString(), dateModified: p.data.date.toISOString(), author: { '@type': 'Organization', name: 'Moon Auto Rize', url: SITE.url }, publisher: { '@id': SITE.url + '/#business' }, mainEntityOfPage: `${SITE.url}/blog/${p.id}/`, keywords: p.data.keywords.join(', ') };
+---
+<Base title={`${p.data.title} | Moon Auto`} description={p.data.description} canonical={`/blog/${p.id}/`} type="article" jsonLd={ld}>
+  <Breadcrumbs items={[{ name: 'Blog', href: '/blog/' }, { name: p.data.title }]} />
+  <section class="section" style="padding-top:1.5rem"><div class="container two-col">
+    <article class="prose">
+      <h1>{p.data.title}</h1>
+      <p style="color:var(--muted);font-size:.9rem">{p.data.date.toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric' })} · Moon Auto Rize</p>
+      <div class="table-wrap"><Content /></div>
+    </article>
+    <aside class="aside">
+      {related.map((s) => <ServiceCard s={s!} />)}
+    </aside>
+  </div></section>
+  <section class="section"><div class="container"><Cta /></div></section>
+</Base>
