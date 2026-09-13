@@ -13,11 +13,8 @@ export const SITE = {
   phoneDisplay: '0542 553 78 53',
   phoneE164: '+905425537853',
   whatsapp: '905425537853',
-  // Randevu bildirimlerinin düşeceği e-posta (Web3Forms'a kayıtlı adres).
+  // Firma e-postası (şema ve iletişim bilgisi için).
   email: 'info@moonauto.com.tr',
-  // https://web3forms.com adresinden e-posta ile alınan ücretsiz erişim anahtarı.
-  // Boş bırakılırsa randevu formu WhatsApp mesajı olarak gönderilir.
-  web3formsKey: '',
   address: {
     street: 'İslampaşa Mah. 2 Nolu, Barbaros Sk. No:33/A',
     district: 'Merkez',

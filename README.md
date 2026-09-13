@@ -26,10 +26,8 @@ npm run build:pages && cd dist && git init -q && git checkout -q -b gh-pages && 
 4. Google Search Console + Yandex Webmaster'a `sitemap-index.xml` gönderin.
 5. Google İşletme Profili'ne web sitesi adresini ekleyin.
 
-## Randevu formunun e-postaya düşmesi
-1. https://web3forms.com adresine gidin, Mustafa Bey'in e-postasını girin, gelen **Access Key**'i kopyalayın.
-2. `src/config/site.ts` → `web3formsKey: '...'` alanına yapıştırın, `email` alanını güncelleyin.
-3. Yeniden build alın. Anahtar boşken form otomatik olarak WhatsApp'a ön-doldurulmuş mesaj olarak düşer; site bu haliyle de çalışır.
+## Randevu formu
+Form, girilen bilgileri hazır bir WhatsApp mesajına çevirip `site.ts` içindeki `whatsapp` numarasına gönderir. Sunucu veya e-posta servisi gerekmez. İleride e-posta bildirimi istenirse Web3Forms benzeri bir form servisi `BookingForm.astro` içine eklenebilir.
 
 ## İçerik güncelleme
 | Ne | Nerede |

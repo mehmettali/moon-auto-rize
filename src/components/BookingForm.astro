@@ -5,12 +5,7 @@ const { preset = '' } = Astro.props as { preset?: string };
 const slots: string[] = [];
 for (let h = 8, m = 30; h < 18; ) { slots.push(`${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}`); m += 30; if (m === 60) { m = 0; h++; } }
 ---
-<form class="form" id="booking" method="POST" action="https://api.web3forms.com/submit" data-key={SITE.web3formsKey} data-wa={SITE.whatsapp} novalidate>
-  <input type="hidden" name="access_key" value={SITE.web3formsKey} />
-  <input type="hidden" name="subject" value="Yeni Randevu Talebi – Moon Auto Rize" />
-  <input type="hidden" name="from_name" value="Moon Auto Web Sitesi" />
-  <input type="hidden" name="redirect" value={`${SITE.url}/tesekkurler/`} />
-  <input type="checkbox" name="botcheck" class="sr-only" tabindex="-1" autocomplete="off" />
+<form class="form" id="booking" data-wa={SITE.whatsapp} novalidate>
   <div class="row">
     <label>Hizmet
       <select name="hizmet" required>
@@ -33,62 +28,50 @@ for (let h = 8, m = 30; h < 18; ) { slots.push(`${String(h).padStart(2,'0')}:${S
   </div>
   <div class="row">
     <label>Adınız Soyadınız<input name="ad" autocomplete="name" required /></label>
-    <label>Telefon (WhatsApp)<input name="telefon" type="tel" inputmode="tel" autocomplete="tel" placeholder="05xx xxx xx xx" required /></label>
+    <label>Telefon<input name="telefon" type="tel" inputmode="tel" autocomplete="tel" placeholder="05xx xxx xx xx" required /></label>
   </div>
   <label>Not <span class="hint">Aracın durumu, istediğiniz paket, ek talepler</span>
     <textarea name="not" rows="3"></textarea>
   </label>
   <div class="form-status" id="status" role="status"></div>
   <div class="btn-row" style="margin-top:.2rem">
-    <button class="btn btn-primary" type="submit">Randevu Talebi Gönder</button>
-    <a class="btn btn-wa" id="wa-alt" href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent('Merhaba Moon Auto, randevu almak istiyorum.')}`} target="_blank" rel="noopener">WhatsApp ile gönder</a>
+    <button class="btn btn-wa" type="submit" style="font-size:1.05rem">WhatsApp ile Randevu Talebi Gönder</button>
   </div>
-  <p class="hint">Talebiniz e-postamıza düşer; en kısa sürede telefon veya WhatsApp ile onaylarız. Kesin fiyat aracı gördükten sonra verilir.</p>
+  <p class="hint">Bilgileriniz hazır bir WhatsApp mesajına dönüşür; "Gönder"e bastığınızda bize ulaşır ve saati onaylayarak dönüş yaparız.</p>
 </form>
 <script>
   const form = document.getElementById('booking') as HTMLFormElement;
   const status = document.getElementById('status')!;
   const dateEl = document.getElementById('tarih') as HTMLInputElement;
-  const waAlt = document.getElementById('wa-alt') as HTMLAnchorElement;
 
-  // Bugünden öncesi seçilemez
-  const today = new Date(); today.setMinutes(today.getMinutes() - today.getTimezoneOffset());
-  dateEl.min = today.toISOString().slice(0, 10);
+  // Bugünden öncesi seçilemez; 60 gün ileriye kadar
+  const fmt = (d: Date) => { const x = new Date(d); x.setMinutes(x.getMinutes() - x.getTimezoneOffset()); return x.toISOString().slice(0, 10); };
+  const today = new Date(); dateEl.min = fmt(today);
+  const max = new Date(); max.setDate(max.getDate() + 60); dateEl.max = fmt(max);
+
+  // Alana tıklanınca tarayıcının takvimini aç (Chrome/Edge/Android); desteklenmiyorsa klavye ile girilir
+  const openPicker = () => { try { (dateEl as any).showPicker?.(); } catch {} };
+  dateEl.addEventListener('click', openPicker);
+  dateEl.addEventListener('focus', openPicker);
+
+  const show = (cls: 'ok' | 'err', msg: string) => { status.className = `form-status ${cls}`; status.textContent = msg; };
 
   const compose = () => {
     const d = new FormData(form);
     const g = (k: string) => String(d.get(k) ?? '').trim();
-    return `Merhaba Moon Auto, randevu talebim:\n• Hizmet: ${g('hizmet')}\n• Araç: ${g('arac')}\n• Tarih/Saat: ${g('tarih')} ${g('saat')}\n• Ad: ${g('ad')}\n• Tel: ${g('telefon')}\n• Not: ${g('not') || '-'}`;
+    const [y, m, day] = g('tarih').split('-');
+    const tarih = y ? `${day}.${m}.${y}` : '-';
+    return `Merhaba Moon Auto, randevu talebim:\n• Hizmet: ${g('hizmet')}\n• Araç: ${g('arac')}\n• Tarih: ${tarih}\n• Saat: ${g('saat')}\n• Ad Soyad: ${g('ad')}\n• Telefon: ${g('telefon')}\n• Not: ${g('not') || '-'}`;
   };
-  const updateWa = () => { waAlt.href = `https://wa.me/${form.dataset.wa}?text=${encodeURIComponent(compose())}`; };
-  form.addEventListener('input', updateWa);
 
-  const show = (cls: 'ok' | 'err', msg: string) => { status.className = `form-status ${cls}`; status.textContent = msg; };
-
-  form.addEventListener('submit', async (e) => {
+  form.addEventListener('submit', (e) => {
     e.preventDefault();
     if (!form.reportValidity()) return;
     const d = new Date(dateEl.value + 'T12:00:00');
     if (d.getDay() === 0) { show('err', 'Pazar günleri kapalıyız. Lütfen başka bir gün seçin.'); dateEl.focus(); return; }
-    const key = form.dataset.key;
-    if (!key) {
-      // Web3Forms anahtarı tanımlı değil: WhatsApp ile gönder
-      updateWa(); window.open(waAlt.href, '_blank');
-      show('ok', 'Randevu talebiniz WhatsApp üzerinden gönderiliyor. Mesajı göndermeyi unutmayın.');
-      return;
-    }
-    const btn = form.querySelector('button[type=submit]') as HTMLButtonElement;
-    btn.disabled = true; btn.textContent = 'Gönderiliyor…';
-    try {
-      const fd = new FormData(form);
-      fd.set('message', compose());
-      const r = await fetch(form.action, { method: 'POST', body: fd, headers: { Accept: 'application/json' } });
-      const j = await r.json();
-      if (j.success) { window.location.href = '/tesekkurler/'; return; }
-      throw new Error(j.message || 'Gönderilemedi');
-    } catch (err) {
-      show('err', 'Form gönderilemedi. Lütfen WhatsApp ile gönderin veya bizi arayın.');
-      updateWa();
-    } finally { btn.disabled = false; btn.textContent = 'Randevu Talebi Gönder'; }
+    const url = `https://wa.me/${form.dataset.wa}?text=${encodeURIComponent(compose())}`;
+    show('ok', 'WhatsApp açılıyor… Mesajı göndermeyi unutmayın.');
+    const w = window.open(url, '_blank');
+    if (!w) window.location.href = url;
   });
 </script>

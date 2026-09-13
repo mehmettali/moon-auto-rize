@@ -133,7 +133,10 @@ p { margin: 0 0 1em; }
 /* form */
 .form { display: grid; gap: 1rem; }
 .form label { display: grid; gap: .35rem; font-weight: 600; font-size: .92rem; }
-.form input, .form select, .form textarea { width: 100%; padding: .8rem .9rem; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--text); font: inherit; }
+.form input, .form select, .form textarea { width: 100%; padding: .8rem .9rem; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--text); font: inherit; color-scheme: dark; }
+.form input[type=date] { min-height: 3rem; cursor: pointer; -webkit-appearance: none; appearance: none; }
+.form input[type=date]::-webkit-calendar-picker-indicator { filter: invert(1); opacity: .9; cursor: pointer; width: 1.3rem; height: 1.3rem; }
+.form input[type=date]::-webkit-date-and-time-value { text-align: left; }
 .form input:focus, .form select:focus, .form textarea:focus { outline: 2px solid var(--accent); border-color: transparent; }
 .form .row { display: grid; gap: 1rem; grid-template-columns: 1fr; }
 @media (min-width: 640px) { .form .row { grid-template-columns: 1fr 1fr; } }
