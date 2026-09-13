@@ -10,6 +10,15 @@ npm run build    # dist/ klasörüne statik çıktı
 npm run preview  # build çıktısını yerelde görüntüle
 ```
 
+## Önizleme adresi (GitHub Pages)
+https://mehmettali.github.io/moon-auto-rize/ — depo: https://github.com/mehmettali/moon-auto-rize
+
+Güncellemek için:
+```bash
+npm run build:pages && cd dist && git init -q && git checkout -q -b gh-pages && git add -A && git commit -qm deploy && git push -qf https://github.com/mehmettali/moon-auto-rize.git gh-pages && cd .. && rm -rf dist/.git
+```
+`build:pages` betiği linklere `/moon-auto-rize` ön ekini ekler; kendi alan adında yayınlarken normal `npm run build` kullanın.
+
 ## Yayına alma
 1. `src/config/site.ts` → `url` alanına alınan alan adını yazın (örn. `https://www.rizeotokuafor.com`).
 2. `public/robots.txt` içindeki Sitemap satırındaki alan adını güncelleyin.
