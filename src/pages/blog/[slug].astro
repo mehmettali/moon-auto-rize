@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Cta from '../../components/Cta.astro';
 import ServiceCard from '../../components/ServiceCard.astro';
+import Faq from '../../components/Faq.astro';
 import { getCollection, render } from 'astro:content';
 import { getService } from '../../data/services';
 import { SITE } from '../../config/site';
@@ -14,6 +15,8 @@ export async function getStaticPaths() {
 const { p } = Astro.props;
 const { Content } = await render(p);
 const related = p.data.related.map(getService).filter(Boolean);
+const words = (p.body ?? '').split(/\s+/).length;
+const minutes = Math.max(2, Math.round(words / 200));
 const ld = { '@context': 'https://schema.org', '@type': 'Article', headline: p.data.title, description: p.data.description, datePublished: p.data.date.toISOString(), dateModified: p.data.date.toISOString(), author: { '@type': 'Organization', name: 'Moon Auto Rize', url: SITE.url }, publisher: { '@id': SITE.url + '/#business' }, mainEntityOfPage: `${SITE.url}/blog/${p.id}/`, keywords: p.data.keywords.join(', ') };
 ---
 <Base title={`${p.data.title} | Moon Auto`} description={p.data.description} canonical={`/blog/${p.id}/`} type="article" jsonLd={ld}>
@@ -21,8 +24,9 @@ const ld = { '@context': 'https://schema.org', '@type': 'Article', headline: p.d
   <section class="section" style="padding-top:1.5rem"><div class="container two-col">
     <article class="prose">
       <h1>{p.data.title}</h1>
-      <p style="color:var(--muted);font-size:.9rem">{p.data.date.toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric' })} · Moon Auto Rize</p>
+      <p style="color:var(--muted);font-size:.9rem">{p.data.date.toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric' })} · Moon Auto Rize · {minutes} dk okuma</p>
       <div class="table-wrap"><Content /></div>
+      {p.data.faqs.length > 0 && <div style="margin-top:2rem"><Faq faqs={p.data.faqs} /></div>}
     </article>
     <aside class="aside">
       {related.map((s) => <ServiceCard s={s!} />)}
