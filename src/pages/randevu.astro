@@ -39,7 +39,7 @@ import { SITE } from '../config/site';
       const map: Record<string,string> = {};
       document.querySelectorAll<HTMLOptionElement>('select[name=hizmet] option').forEach((o) => { map[o.value] = o.value; });
       const sel = document.querySelector<HTMLSelectElement>('select[name=hizmet]');
-      const names: Record<string,string> = { 'rize-seramik-kaplama':'Seramik Kaplama','rize-ppf-kaplama':'PPF Boya Koruma Filmi','rize-pasta-cila':'Pasta Cila','rize-detayli-ic-temizlik':'Detaylı İç Temizlik','rize-oto-yikama':'İç-Dış Oto Yıkama','rize-cam-filmi':'Cam Filmi','rize-antibakteriyel-arac-temizligi':'Antibakteriyel Temizlik','rize-far-parlatma':'Far Parlatma','rize-motor-temizligi':'Motor Temizliği','rize-car-studio':'Car Studio','rize-oto-cekici':'Oto Çekici & Yol Yardım' };
+      const names: Record<string,string> = { 'rize-seramik-kaplama':'Seramik Kaplama','rize-ppf-kaplama':'PPF Boya Koruma Filmi','rize-pasta-cila':'Pasta Cila','rize-detayli-ic-temizlik':'Detaylı İç Temizlik','rize-oto-yikama':'İç-Dış Oto Yıkama','rize-cam-filmi':'Cam Filmi','rize-antibakteriyel-arac-temizligi':'Antibakteriyel Temizlik','rize-far-parlatma':'Far Parlatma','rize-motor-temizligi':'Motor Temizliği','rize-oto-cekici':'Oto Çekici & Yol Yardım' };
       if (sel && names[p]) sel.value = names[p];
     }
   </script>

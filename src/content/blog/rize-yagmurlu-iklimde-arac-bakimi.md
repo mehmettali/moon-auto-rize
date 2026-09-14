@@ -15,13 +15,12 @@ faqs:
 
 Rize, Türkiye'de yılda en çok yağış alan il: ortalama **2.300 mm** yağış, **184 yağışlı gün** ve **307 bulutlu gün**. Bu, bir araç için Ankara veya Konya'da yaşamaktan çok farklı bir yıpranma demek. Moon Auto'da her gün gördüğümüz sorunlardan yola çıkarak 7 kural, bir mevsim takvimi ve kontrol listesi derledik.
 
-## Rize'de bir aracı yıpratan 5 etken
+## Rize'de bir aracı yıpratan 4 etken
 
 | Etken | Nerede? | Sonucu |
 |---|---|---|
 | Sürekli yağmur ve nem | Tüm il | Kireç lekesi, matlaşma, iç mekânda küf |
 | Deniz tuzu | Sahil yolu, İyidere, Derepazarı, Pazar, Ardeşen | Korozyon, boya oksidasyonu |
-| Çay poleni ve organik kalıntı | Güneysu, Çayeli, Kalkandere bahçe yolları | Boyaya yapışan sarı-yeşil tabaka |
 | Mıcır ve çakıl | Ovit, Ayder, Fırtına Vadisi, yayla yolları | Taş çarpması, kaput kraterleri |
 | Kış tuzlaması | Hemşin, İkizdere, yayla geçişleri | Alt takım ve motor bölümünde tuz |
 
@@ -64,7 +63,7 @@ Sürekli bulutlu havada farlar daha çok yanar, UV ile de sararır. Sararan far 
 
 | Dönem | Yapılacak |
 |---|---|
-| **Mart–Nisan** | Kış tuzunu at: alt takım + motor yıkama. Polen sezonu öncesi seramik takviyesi. |
+| **Mart–Nisan** | Kış tuzunu at: alt takım + motor yıkama. Seramik takviyesi. |
 | **Mayıs–Haziran** | Çay hasadı: iç temizlik, paspas kontrolü. Yayla öncesi far ve cam kontrolü. |
 | **Temmuz–Ağustos** | Yayla dönüşü çamur temizliği. Cam filmi ile kabin ısısı kontrolü. Klima kanalı dezenfeksiyonu. |
 | **Eylül–Ekim** | Yaz reçinesi ve kuş pisliği temizliği, pasta cila ve koruma yenileme. |

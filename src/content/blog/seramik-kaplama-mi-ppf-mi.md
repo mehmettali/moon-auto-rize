@@ -17,11 +17,11 @@ Rize'de araç sahiplerinin bize en sık sorduğu soru bu: **"Seramik mi yaptıra
 
 ## Önce tehdidi tanıyalım: Rize'de boyayı ne yıpratır?
 
-Türkiye'nin en çok yağış alan ilindeyiz. Yılda **2.300 mm** yağış, **184 yağışlı gün** ve yılın büyük kısmında %75'in üzerinde nem. Buna sahil yolundaki deniz tuzu, çay bahçelerinden gelen polen ve yayla yollarındaki mıcır ekleniyor. Bu tehditleri iki gruba ayırabiliriz:
+Türkiye'nin en çok yağış alan ilindeyiz. Yılda **2.300 mm** yağış, **184 yağışlı gün** ve yılın büyük kısmında %75'in üzerinde nem. Buna sahil yolundaki deniz tuzu ve yayla yollarındaki mıcır ekleniyor. Bu tehditleri iki gruba ayırabiliriz:
 
 | Tehdit türü | Örnekler | Hangi koruma çözer? |
 |---|---|---|
-| **Kimyasal / çevresel** | Asit yağmuru, mineral lekesi, polen, kuş pisliği, reçine, UV, deniz tuzu | Seramik kaplama |
+| **Kimyasal / çevresel** | Asit yağmuru, mineral lekesi, kuş pisliği, reçine, UV, deniz tuzu | Seramik kaplama |
 | **Fiziksel / mekanik** | Taş çarpması, çakıl, dal sürtmesi, anahtar çiziği, otopark sürtmesi | PPF (boya koruma filmi) |
 
 Bu tablo aslında yazının özeti. Devamında neden böyle olduğunu anlatıyoruz.
@@ -34,7 +34,7 @@ Seramik kaplama, boyanın üzerine SiO₂ (silisyum dioksit) bazlı, cam benzeri
 
 - Suyu boncuklaştırır ve akıtır (hidrofobik etki). Yağmur suyu kuruduğunda kireç lekesi bırakmaz.
 - UV ışınlarını ve asidik kirleri boyaya ulaştırmaz; renk solması ve matlaşma yavaşlar.
-- Kir ve polen yüzeye tutunamaz; yıkama süresi ve sıklığı belirgin şekilde azalır.
+- Kir yüzeye tutunamaz; yıkama süresi ve sıklığı belirgin şekilde azalır.
 - Boyaya ayna parlaklığı ve derinlik verir; koyu renklerde fark çarpıcıdır.
 
 **Yapamadıkları:**
@@ -89,7 +89,7 @@ Aracın her paneli aynı riski taşımaz. Taş çarpmasının %80'i ön yüzeyle
 | Ön tampon | Taş, park sürtmesi | PPF |
 | Aynalar | Taş | PPF |
 | Kapılar | Otopark çiziği, yağmur lekesi | Seramik (eşik ve kol altına PPF) |
-| Tavan | UV, yağmur, polen | Seramik |
+| Tavan | UV, yağmur | Seramik |
 | Bagaj | Yük çiziği, yağmur | Seramik (eşik PPF) |
 | Farlar | Sararma, taş | Far PPF |
 

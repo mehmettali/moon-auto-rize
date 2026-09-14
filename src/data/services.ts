@@ -35,7 +35,7 @@ export const SERVICES: Service[] = [
     short: 'Boyaya cam gibi sert, hidrofobik ve UV dirençli koruma katmanı. Yağmurun bol olduğu Rize için en mantıklı yatırım.',
     icon: '💎', priceFrom: 15000, priceSuv: 20000, priceNote: 'Otomobil 15.000 · SUV / hafif ticari 20.000', duration: '1–2 gün', featured: true,
     intro: [
-      "Rize yılda 180'den fazla gün yağış alan, Türkiye'nin en nemli ilidir. Yağmur suyu, asit yağmuru, çay bahçelerinden gelen polen ve deniz tuzu boyanın üst katmanını her gün biraz daha matlaştırır. Seramik kaplama, boyanın üzerine 9H sertliğinde nano-seramik (SiO₂) bir katman oluşturarak bu etkileri yıllarca engeller.",
+      "Rize yılda 180'den fazla gün yağış alan, Türkiye'nin en nemli ilidir. Yağmur suyu, asit yağmuru ve deniz tuzu boyanın üst katmanını her gün biraz daha matlaştırır. Seramik kaplama, boyanın üzerine 9H sertliğinde nano-seramik (SiO₂) bir katman oluşturarak bu etkileri yıllarca engeller.",
       "Moon Auto'da seramik kaplama öncesi araç iki aşamalı yıkama, kil uygulaması ve ihtiyaca göre pasta-cila ile hazırlanır; kaplama tozsuz kapalı alanda uygulanır ve kürlenme süresi boyunca araç bizde kalır. Gyeon, IGL Coatings ve Koch Chemie serilerini kullanıyoruz.",
     ],
     benefits: [
@@ -102,7 +102,7 @@ export const SERVICES: Service[] = [
     icon: '✨', priceFrom: 9000, priceSuv: 14000, priceNote: 'Otomobil 9.000 · SUV / hafif ticari 14.000 · Wax 2.000 · Hare giderme 3.000', duration: '4–8 saat',
     intro: [
       "Otomatik yıkama fırçaları, yanlış bezle silme ve güneş/yağmur döngüsü boya üzerinde örümcek ağı çizikleri ve matlaşma bırakır. Pasta cila, boyanın en üst şeffaf katmanını mikron seviyesinde düzelterek çizikleri giderir ve fabrika parlaklığını geri getirir.",
-      "Moon Auto'da pasta cila makine ile, boya kalınlığı ölçülerek ve kalınlığa uygun aşındırıcı seçilerek yapılır. Menzerna, Koch Chemie ve 3D pastaları, Rupes/DA polisaj ile uygulanır. Sonrasında Soft99 veya Angelwax wax, ya da seramik ile koruma önerilir.",
+      "Moon Auto'da pasta cila makine ile, boya kalınlığı ölçülerek ve kalınlığa uygun aşındırıcı seçilerek yapılır. Menzerna, Koch Chemie ve 3D pastaları, profesyonel polisaj makineleri ile uygulanır. Sonrasında Soft99 veya Angelwax wax, ya da seramik ile koruma önerilir.",
     ],
     benefits: [
       'Mikro çizik, hologram ve oksidasyonun giderilmesi',
@@ -129,12 +129,12 @@ export const SERVICES: Service[] = [
     slug: 'rize-detayli-ic-temizlik', key: 'ic-temizlik', name: 'Detaylı İç Temizlik',
     h1: 'Rize Detaylı Oto İç Temizlik',
     title: 'Rize Detaylı İç Temizlik | Koltuk Sökülerek – Moon Auto',
-    description: "Rize'de koltuk ve halılar sökülerek yapılan detaylı iç temizlik. Buharlı ve vakumlu döşeme yıkama, deri bakımı, koku giderme. Rize Merkez oto kuaför.",
+    description: "Rize'de koltuk ve halılar sökülerek yapılan detaylı iç temizlik. Buharlı döşeme yıkama, deri bakımı, koku giderme. Rize Merkez oto kuaför.",
     short: 'Koltuklar ve halılar sökülür; taban, tavan, döşeme ve havalandırma kanalları buhar ve ekstraktörle temizlenir.',
     icon: '🧼', priceFrom: 9000, priceSuv: 10000, priceNote: 'Otomobil 9.000 · SUV / hafif ticari 10.000', duration: '6–10 saat', featured: true,
     intro: [
       "Standart iç yıkama koltuğun üstünü siler; detaylı iç temizlikte ise koltuklar, konsol kapakları ve halılar sökülür. Yıllardır biriken kum, çay yaprağı, evcil hayvan tüyü, dökülmüş içecek ve nemden kaynaklanan küf kaynağından temizlenir.",
-      "Moon Auto'da iç temizlik ekstraktör (vakumlu yıkama), kuru buhar, Koch Chemie iç temizlik kimyasalları ve deri koltuklar için özel bakım ürünleriyle yapılır. İşlem sonunda araç ozonlanarak koku giderilir.",
+      "Moon Auto'da iç temizlik ekstraktör, kuru buhar, Koch Chemie iç temizlik kimyasalları ve deri koltuklar için özel bakım ürünleriyle yapılır. İşlem sonunda araç ozonlanarak koku giderilir.",
     ],
     benefits: [
       'Koltuk altı, ray ve taban dahil eksiksiz temizlik',
@@ -145,7 +145,7 @@ export const SERVICES: Service[] = [
     ],
     steps: [
       'Koltuk, halı ve kapak sökümü',
-      'Kuru vakum, fırça ile gevşetme',
+      'Kuru temizlik, fırça ile gevşetme',
       'Ekstraktör ile döşeme ve halı yıkama',
       'Buhar ile plastik, havalandırma ve dikiş temizliği',
       'Kurutma, montaj, ozon ve teslim',
@@ -162,20 +162,20 @@ export const SERVICES: Service[] = [
     h1: 'Rize İç Dış Oto Yıkama (Standart ve Premium)',
     title: 'Rize Oto Yıkama | Premium İç Dış Elde Yıkama – Moon Auto',
     description: "Rize'de fırçasız, iki kovalı elde oto yıkama. Premium iç dış yıkama, jant ve lastik bakımı, cam parlatma, wax. Rize Merkez İslampaşa, aynı anda 5 araç.",
-    short: 'Fırçasız iki kovalı elde yıkama, jant-lastik bakımı, iç vakum ve plastik bakımı. Boyayı çizmeyen, seramik dostu yıkama.',
+    short: 'Fırçasız iki kovalı elde yıkama, jant-lastik bakımı, iç temizlik ve plastik bakımı. Boyayı çizmeyen, seramik dostu yıkama.',
     icon: '🚿', priceFrom: 800, priceSuv: 900, priceMinibus: 1000, priceNote: 'İç-dış otomobil 800 · SUV / hafif ticari 900 · minibüs 1.000 · Premium 20.000', duration: '1–2 saat',
     intro: [
       "Fırçalı otomatik yıkamalar boyada örümcek ağı çiziklerinin bir numaralı sebebidir. Moon Auto'da her araç iki kovalı yöntemle, pH nötr şampuan ve mikrofiber eldivenle elle yıkanır; jantlar demir tozu sökücüyle, lastikler besleyiciyle işlenir.",
-      "Premium iç-dış pakette iç vakum, torpido ve kapı içi temizliği, cam temizliği, plastik bakımı ve dış yüzeye spray wax dahildir. Seramik kaplamalı araçlar için özel bakım yıkaması yapılır.",
+      "Premium iç-dış pakette torpido ve kapı içi temizliği, cam temizliği, plastik bakımı ve dış yüzeye spray wax dahildir. Seramik kaplamalı araçlar için özel bakım yıkaması yapılır.",
     ],
     benefits: [
       'Fırçasız, çizik yapmayan yöntem',
       'Jant, lastik ve davlumbaz temizliği',
-      'İç vakum, plastik ve cam bakımı',
+      'İç temizlik, plastik ve cam bakımı',
       'Seramik/PPF uyumlu pH nötr ürünler',
       'Aynı anda 5 araç kapasitesi, kısa bekleme',
     ],
-    steps: ['Ön yıkama köpüğü', 'İki kovalı elde yıkama', 'Jant ve lastik bakımı', 'Kurutma ve spray wax', 'İç vakum, cam ve plastik bakımı'],
+    steps: ['Ön yıkama köpüğü', 'İki kovalı elde yıkama', 'Jant ve lastik bakımı', 'Kurutma ve spray wax', 'İç temizlik, cam ve plastik bakımı'],
     faqs: [
       { q: 'Randevu gerekli mi?', a: 'Standart yıkamada gerekmez ama randevulu müşteriye öncelik veriyoruz. Randevu sayfasından 1 dakikada alabilirsiniz.' },
       { q: 'Yıkama ne kadar sürer?', a: 'Standart iç-dış 1 saat, premium paket 2 saat.' },
@@ -214,7 +214,7 @@ export const SERVICES: Service[] = [
       "Çocuklu aileler, taksi-servis-kiralık araçlar ve satış öncesi araçlar için ideal paket.",
     ],
     benefits: ['Kuru buhar ile %99 bakteri ve virüs azaltımı', 'Klima kanalı ve polen filtresi dezenfeksiyonu', 'Ozon ile kalıcı koku giderme', 'Kimyasal kalıntı bırakmaz', 'Alerjen azaltımı'],
-    steps: ['Vakum', 'Kuru buhar uygulaması', 'Klima kanalı dezenfeksiyonu', 'Ozon uygulaması', 'Havalandırma ve teslim'],
+    steps: ['Ön temizlik', 'Kuru buhar uygulaması', 'Klima kanalı dezenfeksiyonu', 'Ozon uygulaması', 'Havalandırma ve teslim'],
     faqs: [
       { q: 'Ozon zararlı mı?', a: 'Uygulama boşken yapılır, ardından araç havalandırılır. Teslimde kalıntı kalmaz.' },
       { q: 'Ne sıklıkla yapılmalı?', a: 'Kişisel araçlarda yılda 1–2, ticari araçlarda 3 ayda bir öneriyoruz.' },
@@ -256,24 +256,6 @@ export const SERVICES: Service[] = [
       { q: 'Motor yıkama araca zarar verir mi?', a: 'Basınçlı su ile yapılırsa verebilir. Biz buhar ve düşük basınçla, aksamı kapatarak çalışırız.' },
     ],
     related: ['rize-detayli-ic-temizlik', 'rize-oto-yikama'],
-  },
-  {
-    slug: 'rize-car-studio', key: 'car-studio', name: 'Car Studio',
-    h1: 'Rize Car Studio – Araç Fotoğraf Çekimi',
-    title: 'Rize Car Studio | Araç Fotoğraf Stüdyosu – Moon Auto',
-    description: "Rize'de araç fotoğraf stüdyosu. Detailing sonrası profesyonel ışıkta satış ve sosyal medya çekimi. İlanınız için stüdyo kalitesinde fotoğraf.",
-    short: 'Detailing sonrası stüdyo ışığında profesyonel araç çekimi. Sahibinden ilanı ve sosyal medya için.',
-    icon: '📸', priceFrom: 0, priceNote: 'Detailing paketleriyle birlikte indirimli', duration: '1 saat',
-    intro: [
-      "Temiz ve parlatılmış bir araç, doğru ışıkta çekildiğinde ilanda 2–3 kat fazla ilgi görür. Moon Auto Car Studio, Rize'de araç çekimi için tasarlanmış ışıklı kapalı alandır.",
-      "Seramik, pasta cila veya detaylı temizlik sonrası aracınızın fotoğraf ve videosunu çekiyor, ilan ve sosyal medyaya hazır teslim ediyoruz.",
-    ],
-    benefits: ['Stüdyo ışığında yansımasız çekim', 'Satış ilanı için düzenlenmiş fotoğraflar', 'Reels / kısa video seçeneği', 'Detailing paketleriyle birlikte avantajlı fiyat'],
-    steps: ['Detailing / yıkama', 'Stüdyo kurulumu', 'Fotoğraf ve video çekimi', 'Düzenleme ve teslim'],
-    faqs: [
-      { q: 'Sadece çekim yaptırabilir miyim?', a: 'Evet, ancak en iyi sonuç için en az premium yıkama öneririz.' },
-    ],
-    related: ['rize-pasta-cila', 'rize-seramik-kaplama', 'rize-oto-yikama'],
   },
   {
     slug: 'rize-oto-cekici', key: 'oto-cekici', name: 'Oto Çekici & Yol Yardım',

@@ -39,12 +39,12 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
   'rize-seramik-kaplama': {
     forWhom: [
       'Sıfır veya 1–3 yaş araç sahipleri: boya henüz bozulmadan koruma altına alınır',
-      'Aracını açıkta park edenler: yağmur, polen, kuş pisliği ve deniz tuzuna karşı',
+      'Aracını açıkta park edenler: yağmur, kuş pisliği ve deniz tuzuna karşı',
       'Yıkamaya az vakit ayıranlar: kir tutmayan yüzey, yıkama süresini yarıya indirir',
       'Koyu renk araç sahipleri: siyah ve lacivertte çizik ve hologram en çok görünür, seramik derinliği geri getirir',
       'Aracını 2–3 yıl sonra satmayı planlayanlar: korunmuş boya ikinci el fiyatını yükseltir',
     ],
-    rizeNote: "Rize'de bir araç yılda ortalama 184 gün yağmur görür; İslampaşa, Fener ve sahil yolu hattında buna deniz tuzu da eklenir. Yağmur suyu kuruduğunda bıraktığı mineral lekeleri ve çay bahçelerinden gelen polen, korumasız boyada aylar içinde matlaşma yapar. Seramik kaplamalı yüzeyde su boncuklanıp akar, mineral ve polen boyaya değil kaplamaya yapışır ve basit bir durulamayla gider. Bu yüzden Rize'de seramik kaplamayı estetik değil, koruyucu bakım olarak öneriyoruz.",
+    rizeNote: "Rize'de bir araç yılda ortalama 184 gün yağmur görür; İslampaşa, Fener ve sahil yolu hattında buna deniz tuzu da eklenir. Yağmur suyu kuruduğunda bıraktığı mineral lekeleri korumasız boyada aylar içinde matlaşma yapar. Seramik kaplamalı yüzeyde su boncuklanıp akar, mineraller boyaya değil kaplamaya yapışır ve basit bir durulamayla gider. Bu yüzden Rize'de seramik kaplamayı estetik değil, koruyucu bakım olarak öneriyoruz.",
     packages: [
       { name: 'Otomobil', from: 15000, best: true, includes: ['Kil ve demir tozu arındırma', 'Boya düzeltme (pasta cila)', 'Seramik kaplama ve kürlenme', 'Bakım talimatı'] },
       { name: 'SUV / Hafif Ticari', from: 20000, includes: ['Kil ve demir tozu arındırma', 'Boya düzeltme (pasta cila)', 'Seramik kaplama ve kürlenme', 'Bakım talimatı'] },
@@ -171,7 +171,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     ],
     rizeNote: "Rize'de yıkama sıklığı Türkiye ortalamasının iki katı; bu yüzden yıkamanın kendisi boyaya zarar vermemeli. Fırçalı yıkamalar Rize'de en yaygın boya çizik nedenidir. Moon Auto'da her yıkama iki kovalı, mikrofiber eldivenli ve ön köpüklü yapılır; jantlar demir tozu sökücüyle, lastikler besleyiciyle işlenir. Aynı anda 5 araç kapasitemiz sayesinde randevulu müşteri bekletilmez.",
     packages: [
-      { name: 'İç-Dış Yıkama – Otomobil', from: 800, best: true, includes: ['Ön köpük + iki kovalı elde yıkama', 'Jant ve lastik', 'İç vakum, torpido ve cam', 'Kurutma'] },
+      { name: 'İç-Dış Yıkama – Otomobil', from: 800, best: true, includes: ['Ön köpük + iki kovalı elde yıkama', 'Jant ve lastik', 'Torpido ve cam', 'Kurutma'] },
       { name: 'İç-Dış Yıkama – SUV / Hafif Ticari', from: 900, includes: ['Aynı içerik, büyük araç'] },
       { name: 'İç-Dış Yıkama – Minibüs', from: 1000, includes: ['Aynı içerik, minibüs'] },
       { name: 'Premium Oto Yıkama', from: 20000, includes: ['Kapsamlı iç-dış bakım paketi', 'Demir tozu sökücü + kil', 'Plastik, deri ve lastik bakımı', 'Wax koruma'] },
@@ -254,16 +254,5 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     mistakes: ['Basınçlı su ile motor yıkama: sensör ve soket arızası', 'Sıcak motora soğuk su: çatlak riski'],
     extraFaqs: [{ q: 'Elektrikli ve hibrit araçlarda motor temizliği yapılır mı?', a: 'Hibritte yüksek voltaj bölgeleri korunarak yapılır; tam elektrikli araçlarda sadece ön bölme kuru temizlik uygulanır.' }],
     blog: ['rize-yagmurlu-iklimde-arac-bakimi'],
-  },
-  'rize-car-studio': {
-    forWhom: ['Aracını Sahibinden / Arabam.com\'da satacaklar', 'Galeri ve oto kiralama firmaları', 'Sosyal medya için içerik isteyen araç tutkunları', 'Detailing sonrası profesyonel kayıt isteyenler'],
-    rizeNote: "Rize'de ilan fotoğrafı çoğunlukla yağmurlu sokakta çekiliyor; ıslak zemin ve gri gökyüzü aracı olduğundan kötü gösterir. Car Studio'muzda ışık tüneli ve beyaz fon altında yansımasız çekim yapıyoruz. Detailing paketleriyle birlikte alındığında araç hem temiz hem doğru ışıkta görüntülenir.",
-    packages: [
-      { name: 'Fotoğraf Paketi', from: 0, best: true, includes: ['Düzenlenmiş fotoğraflar', 'Dış + iç + detay kareler', 'Detailing paketiyle birlikte indirimli', 'Telefonda teklif'] },
-    ],
-    care: ['Çekim öncesi en az premium yıkama önerilir', 'Kişisel eşyaları araçtan çıkarın'],
-    mistakes: ['Islak zeminde çekim: yansımalar aracı bozuk gösterir', 'Telefonla geniş açı: araç orantısız görünür'],
-    extraFaqs: [{ q: 'Fotoğraflar ne zaman teslim edilir?', a: 'Aynı gün WhatsApp veya link ile.' }],
-    blog: ['detayli-ic-temizlik-ne-kadar-surer'],
   },
 };
