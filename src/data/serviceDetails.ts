@@ -46,9 +46,8 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     ],
     rizeNote: "Rize'de bir araç yılda ortalama 184 gün yağmur görür; İslampaşa, Fener ve sahil yolu hattında buna deniz tuzu da eklenir. Yağmur suyu kuruduğunda bıraktığı mineral lekeleri ve çay bahçelerinden gelen polen, korumasız boyada aylar içinde matlaşma yapar. Seramik kaplamalı yüzeyde su boncuklanıp akar, mineral ve polen boyaya değil kaplamaya yapışır ve basit bir durulamayla gider. Bu yüzden Rize'de seramik kaplamayı estetik değil, koruyucu bakım olarak öneriyoruz.",
     packages: [
-      { name: 'Lite', from: 7500, includes: ['Kil ve demir tozu arındırma', 'Tek aşama boya düzeltme', '1 kat seramik (2 yıl)', 'Cam ve jant seramik hariç'] },
-      { name: 'Pro', from: 12000, best: true, includes: ['Kil ve demir tozu arındırma', 'İki aşama boya düzeltme', '2 kat seramik (3–4 yıl)', 'Jant ve ön cam seramik', '6. ay ücretsiz bakım yıkaması'] },
-      { name: 'Ultimate', from: 18000, includes: ['Çok aşamalı boya düzeltme', '3 kat seramik + üst katman (5 yıl)', 'Jant, cam, plastik ve deri koruma', 'Ön set PPF ile kombinasyonda indirim', 'Yıllık kontrol ve takviye'] },
+      { name: 'Otomobil', from: 15000, best: true, includes: ['Kil ve demir tozu arındırma', 'Boya düzeltme (pasta cila)', 'Seramik kaplama ve kürlenme', 'Bakım talimatı'] },
+      { name: 'SUV / Hafif Ticari', from: 20000, includes: ['Kil ve demir tozu arındırma', 'Boya düzeltme (pasta cila)', 'Seramik kaplama ve kürlenme', 'Bakım talimatı'] },
     ],
     care: [
       'İlk 7 gün aracı yıkamayın; kaplama tam sertleşmeden suya maruz kalmasın',
@@ -80,9 +79,8 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     ],
     rizeNote: "Rize–Trabzon sahil yolu ve Ovit, Ayder, İkizdere yayla yolları çakıl ve mıcır bakımından Türkiye'nin en yıpratıcı güzergâhları arasında. Kaput ve ön çamurluklarda taş izleri bir yaz sezonunda birikir. PPF bu darbeleri boya yerine filmin üzerine alır; küçük izler ise filmin kendini onaran üst katmanı sayesinde güneşte kaybolur. Rize'de PPF için Trabzon'a gitmenize gerek yok; kapalı ve tozsuz stüdyomuzda plotter kesim veya el kesimi ile uyguluyoruz.",
     packages: [
-      { name: 'Kaput', from: 20000, includes: ['Tam kaput', 'Kenar sarma', 'TPU film, 5+ yıl garanti'] },
-      { name: 'Ön Set', from: 32000, best: true, includes: ['Kaput + 2 ön çamurluk', 'Ön tampon', 'Aynalar ve far', 'Kenar sarma, plotter kesim'] },
-      { name: 'Full Araç', from: 95000, includes: ['Tüm dış yüzeyler', 'Kapı eşikleri ve kolu altı', 'Seramik üst katman', '10 yıla kadar garanti'] },
+      { name: 'PPF Boya Koruma Kaplama', from: 70000, best: true, includes: ['TPU boya koruma filmi', 'Kenar sarma, plotter kesim', 'Kürlenme ve teslim', 'Panel sayısına göre fiyat 70.000 TL\'den başlar'] },
+      { name: 'Panel Bazlı (kaput, ön set)', from: 0, includes: ['Sadece istenen paneller', 'Araç modeline göre kesim', 'Telefonda net teklif'] },
     ],
     care: [
       'İlk 48 saat aracı yıkamayın; film kenarları oturmadan su girmesin',
@@ -112,9 +110,10 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     ],
     rizeNote: "Rize'de sürekli nemli hava, boya üzerinde kuruyan yağmur damlalarını mineral lekesine çevirir; güneşli birkaç gün bu lekeleri boyaya iyice işler. Buna otomatik yıkama fırçaları eklendiğinde, 3–4 yaşındaki bir aracın boyası bile ışık altında mat ve çizgili görünür. Pasta cila ile bu katmanı mikron seviyesinde düzeltiyor, ardından koruma öneriyoruz; koruma yapılmazsa aynı iklim 1 yıl içinde aynı sonucu doğurur.",
     packages: [
-      { name: 'Tek Aşama', from: 2500, includes: ['Yıkama + kil', 'Finish pasta ile hafif çizik ve matlık giderme', 'Spray wax koruma'] },
-      { name: 'İki Aşama', from: 4500, best: true, includes: ['Boya kalınlığı ölçümü', 'Kesme + finish pasta', 'Hologram giderme', 'Katı wax koruma (3 ay)'] },
-      { name: 'Çok Aşamalı Düzeltme', from: 7500, includes: ['Panel panel ölçüm ve maskeleme', '3+ aşama ıslak zımpara / pasta', 'Seramik ile kombinasyonda indirim'] },
+      { name: 'Pasta Cila – Otomobil', from: 9000, best: true, includes: ['Boya kalınlığı ölçümü', 'Yıkama + kil', 'Çok aşamalı pasta ve finish', 'Koruma'] },
+      { name: 'Pasta Cila – SUV / Hafif Ticari', from: 14000, includes: ['Boya kalınlığı ölçümü', 'Yıkama + kil', 'Çok aşamalı pasta ve finish', 'Koruma'] },
+      { name: 'Wax Cila', from: 2000, includes: ['Yıkama sonrası koruyucu wax', 'Parlaklık ve su itme', 'Seramik öncesi geçici koruma'] },
+      { name: 'Hare (Hologram) Giderme', from: 3000, includes: ['Polisaj izlerinin finish pasta ile giderilmesi', 'Koyu renk araçlarda belirgin fark'] },
     ],
     care: [
       'İlk hafta yıkamayın; wax ve pastanın oturması için',
@@ -143,9 +142,8 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     ],
     rizeNote: "Rize'nin %75'in üzerindeki ortalama nemi, araç halısının altında biriken nemi kurutmaz; sonuç küf kokusu ve tavan döşemesinde lekelenmedir. Islak şemsiye, çamurlu bot ve çay bahçesinden gelen toprak koltuk altlarında birikir. Standart iç yıkama bu tabakaya ulaşmaz. Koltukları ve halıyı sökerek yaptığımız detaylı temizlikte taban sacı kurutulur, halı ekstraktörle yıkanır ve araç ozonlanır.",
     packages: [
-      { name: 'Standart Detaylı', from: 3500, includes: ['Koltuk ve halı sökümü', 'Ekstraktör ile döşeme yıkama', 'Plastik ve cam temizliği', 'Kurutma ve montaj'] },
-      { name: 'Premium Detaylı', from: 5000, best: true, includes: ['Standart paket', 'Tavan döşemesi temizliği', 'Deri koltuk temizlik + besleme', 'Kuru buhar dezenfeksiyon', 'Ozon ile koku giderme'] },
-      { name: 'Satış Öncesi Full', from: 7500, includes: ['Premium paket', 'Bagaj ve stepne bölümü', 'Motor temizliği', 'Dış premium yıkama + car studio çekimi'] },
+      { name: 'Otomobil', from: 9000, best: true, includes: ['Koltuk ve halı sökümü', 'Ekstraktör ile döşeme yıkama', 'Kuru buhar, plastik ve cam', 'Kurutma, montaj ve koku giderme'] },
+      { name: 'SUV / Hafif Ticari', from: 10000, includes: ['Koltuk ve halı sökümü', 'Ekstraktör ile döşeme yıkama', 'Kuru buhar, plastik ve cam', 'Kurutma, montaj ve koku giderme'] },
     ],
     care: [
       'Lastik paspas kullanın; nemli mevsimde kumaş paspas küf kaynağıdır',
@@ -173,9 +171,10 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     ],
     rizeNote: "Rize'de yıkama sıklığı Türkiye ortalamasının iki katı; bu yüzden yıkamanın kendisi boyaya zarar vermemeli. Fırçalı yıkamalar Rize'de en yaygın boya çizik nedenidir. Moon Auto'da her yıkama iki kovalı, mikrofiber eldivenli ve ön köpüklü yapılır; jantlar demir tozu sökücüyle, lastikler besleyiciyle işlenir. Aynı anda 5 araç kapasitemiz sayesinde randevulu müşteri bekletilmez.",
     packages: [
-      { name: 'Standart İç-Dış', from: 500, includes: ['Ön köpük + iki kovalı elde yıkama', 'Jant ve lastik temizliği', 'İç vakum, torpido ve cam silme', 'Kurutma'] },
-      { name: 'Premium İç-Dış', from: 900, best: true, includes: ['Standart paket', 'Demir tozu sökücü + kil', 'Spray wax / seramik takviye', 'Plastik ve deri bakımı', 'Kapı içi, eşik ve bagaj temizliği', 'Lastik parlatma'] },
-      { name: 'Seramik Bakım Yıkaması', from: 700, includes: ['pH nötr şampuan', 'Seramik takviye spreyi', 'Hidrofobik etki kontrolü', 'Kaplamalı araçlara özel'] },
+      { name: 'İç-Dış Yıkama – Otomobil', from: 800, best: true, includes: ['Ön köpük + iki kovalı elde yıkama', 'Jant ve lastik', 'İç vakum, torpido ve cam', 'Kurutma'] },
+      { name: 'İç-Dış Yıkama – SUV / Hafif Ticari', from: 900, includes: ['Aynı içerik, büyük araç'] },
+      { name: 'İç-Dış Yıkama – Minibüs', from: 1000, includes: ['Aynı içerik, minibüs'] },
+      { name: 'Premium Oto Yıkama', from: 20000, includes: ['Kapsamlı iç-dış bakım paketi', 'Demir tozu sökücü + kil', 'Plastik, deri ve lastik bakımı', 'Wax koruma'] },
     ],
     care: [
       'Yağmur sonrası aracı 1–2 gün içinde en azından durulatın',
@@ -202,8 +201,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     ],
     rizeNote: "Rize'de bulutlu gün sayısı fazla olsa da yaz aylarında nem ile birleşen sıcaklık kabini bunaltıcı hale getirir. Isı kesen nano-seramik film, kabin sıcaklığını belirgin düşürür ve klimanın yakıt tüketimini azaltır. Muayeneye uygun ışık geçirgenliği konusunda bilgilendirir, yasal sınırların dışına çıkmayız.",
     packages: [
-      { name: 'Standart Film', from: 4000, includes: ['Arka cam grubu', 'Kabarmaz, renk atmaz', '5 yıl garanti'] },
-      { name: 'Nano-Seramik Isı Kesen', from: 7000, best: true, includes: ['Tüm camlar (yasal tonda)', '%60+ ısı kesme', '%99 UV', 'Ömür boyu garanti seçeneği'] },
+      { name: 'Cam Filmi', from: 6000, best: true, includes: ['Tüm camlar, yasal tonda', 'Plotter kesim', 'Kabarmaz, renk atmaz', 'Garantili'] },
     ],
     care: [
       'İlk 3 gün camları açmayın',
@@ -225,8 +223,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     ],
     rizeNote: "Yüksek nem, kapalı araçta 24 saat içinde bakteri ve küf sporlarının çoğalması için yeterli. Rize'de klima kanalı kokusu en sık aldığımız şikâyetlerden. Kuru buhar 150°C'de yüzeyleri kimyasalsız dezenfekte eder, ozon ise kanallara ve kumaş içine kadar ulaşarak kokuyu kaynağında yok eder.",
     packages: [
-      { name: 'Hızlı Dezenfeksiyon', from: 1500, includes: ['Kuru buhar tüm yüzeyler', 'Ozon 30 dk', 'Klima kanalı spreyi'] },
-      { name: 'Tam Hijyen', from: 2500, best: true, includes: ['Hızlı paket', 'Polen filtresi değişimi', 'Koltuk ve halı buhar ekstraksiyon', 'Direksiyon, vites, kolçak detay'] },
+      { name: 'Antibakteriyel Temizlik + Ozonlama', from: 2000, best: true, includes: ['Kuru buhar tüm yüzeyler', 'Ozon ile koku ve bakteri giderme', 'Klima kanalı spreyi'] },
     ],
     care: ['Klimayı kapatmadan 2–3 dk önce soğutmayı kapatıp fanı açık bırakın; kanal kurur', 'Haftada bir kabini havalandırın', 'Yılda bir polen filtresi'],
     mistakes: ['Sadece koku giderici sprey: kokuyu maskeler, kaynağı kalır', 'Islak ortamda ozon: etkisi azalır'],
@@ -239,8 +236,8 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     forWhom: ['Farları sararmış, matlaşmış araçlar', 'Muayeneye girecek araçlar', 'Gece görüşü azalanlar', 'Far değişimi yerine ekonomik çözüm arayanlar'],
     rizeNote: "Rize'de sık bulut gece sürüşünde farın verimini daha da önemli kılar. Sararmış polikarbonat far ışığın yarısını emer. Far parlatma 1 saatte çözer; UV kaplama veya far PPF'i ile sararmanın tekrar etmesini engelleriz.",
     packages: [
-      { name: 'Parlatma + UV Kaplama', from: 1000, includes: ['Kademeli zımpara', 'Pasta', 'UV koruyucu kaplama (1–2 yıl)'] },
-      { name: 'Parlatma + Far PPF', from: 2000, best: true, includes: ['Kademeli zımpara', 'Pasta', 'Şeffaf far koruma filmi (5 yıl)'] },
+      { name: 'Far Parlatma – Çift', from: 3000, best: true, includes: ['Kademeli zımpara', 'Pasta', 'UV koruyucu kaplama'] },
+      { name: 'Far Parlatma + Far PPF', from: 0, includes: ['Parlatma', 'Şeffaf far koruma filmi', 'Telefonda teklif'] },
     ],
     care: ['UV kaplamalı farı 1 hafta yıkamayın', 'Far PPF varsa basınçlı suyu kenarlara yaklaştırmayın'],
     mistakes: ['Sadece pasta: 3 ayda tekrar sararır', 'Diş macunu ve ev yöntemleri: yüzeyi çizer'],
@@ -251,8 +248,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     forWhom: ['Aracını satışa hazırlayanlar', 'Yağ kaçağı kontrolü isteyenler', 'Çamur ve tuzlu yol sonrası bakım', 'Periyodik bakım öncesi temiz motor isteyen servisler'],
     rizeNote: "Çay bahçesi yolları ve sahil tuzu motor bölümünde çamur ve korozyon bırakır. Temiz motor bölümü kaçakları görünür kılar ve alıcıya güven verir. Yüksek basınçlı su ile değil, elektronik aksam kapatılarak buhar ve düşük basınçla çalışıyoruz.",
     packages: [
-      { name: 'Motor Temizliği', from: 1200, includes: ['Elektronik koruma', 'Yağ sökücü + buhar', 'Kurutma', 'Plastik koruyucu'] },
-      { name: 'Motor + Alt Takım', from: 2000, best: true, includes: ['Motor paketi', 'Alt takım ve davlumbaz yıkama', 'Tuz ve çamur arındırma'] },
+      { name: 'Motor Temizliği', from: 0, best: true, includes: ['Elektronik koruma', 'Yağ sökücü + buhar', 'Kurutma ve plastik koruyucu', 'Araç tipine göre telefonda fiyat'] },
     ],
     care: ['Yıkama sonrası 30 dk motoru çalıştırıp kurutma yaparız; siz de 1–2 gün kısa mesafede su birikimine dikkat edin'],
     mistakes: ['Basınçlı su ile motor yıkama: sensör ve soket arızası', 'Sıcak motora soğuk su: çatlak riski'],
@@ -263,8 +259,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     forWhom: ['Aracını Sahibinden / Arabam.com\'da satacaklar', 'Galeri ve oto kiralama firmaları', 'Sosyal medya için içerik isteyen araç tutkunları', 'Detailing sonrası profesyonel kayıt isteyenler'],
     rizeNote: "Rize'de ilan fotoğrafı çoğunlukla yağmurlu sokakta çekiliyor; ıslak zemin ve gri gökyüzü aracı olduğundan kötü gösterir. Car Studio'muzda ışık tüneli ve beyaz fon altında yansımasız çekim yapıyoruz. Detailing paketleriyle birlikte alındığında araç hem temiz hem doğru ışıkta görüntülenir.",
     packages: [
-      { name: 'Fotoğraf Paketi', from: 1500, includes: ['10–15 düzenlenmiş fotoğraf', 'Dış + iç + detay kareler', 'İlan boyutunda teslim'] },
-      { name: 'Foto + Reels', from: 2500, best: true, includes: ['Fotoğraf paketi', '30–45 sn dikey video', 'Müzik ve kesim', 'Sosyal medyaya hazır'] },
+      { name: 'Fotoğraf Paketi', from: 0, best: true, includes: ['Düzenlenmiş fotoğraflar', 'Dış + iç + detay kareler', 'Detailing paketiyle birlikte indirimli', 'Telefonda teklif'] },
     ],
     care: ['Çekim öncesi en az premium yıkama önerilir', 'Kişisel eşyaları araçtan çıkarın'],
     mistakes: ['Islak zeminde çekim: yansımalar aracı bozuk gösterir', 'Telefonla geniş açı: araç orantısız görünür'],

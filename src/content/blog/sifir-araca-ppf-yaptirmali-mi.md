@@ -31,7 +31,7 @@ Hayır. Bayilerin sattığı boya koruma genellikle sprey veya polimer bazlı, 6
 | Dayanım | 6–12 ay | 2–5 yıl | 5–10 yıl |
 | Taş çarpması | Korumaz | Korumaz | Korur |
 | UV / kir | Sınırlı | Korur | Korur (seramik ile) |
-| Fiyat | Bayiye göre | 7.500 TL'den | Kaput 20.000 TL'den |
+| Fiyat | Bayiye göre | 15.000 TL (otomobil) | 70.000 TL'den başlayan |
 
 Bayi paketini reddedip aynı bütçeyi seramiğe ayırmak çoğu zaman daha mantıklıdır.
 
@@ -47,7 +47,7 @@ Kalan yüzeylere [seramik](/rize-seramik-kaplama/) uygulanarak tüm araç korunu
 
 ## Maliyet-fayda: basit bir hesap
 
-Ön set PPF (kaput + 2 çamurluk + tampon + aynalar) yaklaşık 32.000 TL'den başlar. Karşılaştırın:
+Moon Auto'da PPF boya koruma kaplama 70.000 TL'den başlar; panel sayısına göre kısmi uygulamalar için teklif verilir. Karşılaştırın:
 
 - Kaput boyası (taş kraterleri için lokal boya): 8.000–15.000 TL ve araç "boyalı" olur.
 - Boyalı kaput ile satışta değer kaybı: aracın sınıfına göre 30.000–100.000 TL.

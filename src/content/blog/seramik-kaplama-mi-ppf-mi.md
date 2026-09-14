@@ -73,7 +73,7 @@ Paketler için [Rize PPF kaplama](/rize-ppf-kaplama/) sayfasına göz atın.
 | Dayanım | 2–5 yıl | 5–10 yıl |
 | Görünüm | Ayna parlaklığı, derin renk | Görünmez; mat seçenek mevcut |
 | Kendini onarma | Yok | Var (üst katman) |
-| Fiyat aralığı | 7.500 TL'den | Kaput 20.000 TL'den, full 95.000+ TL |
+| Moon Auto fiyatı | Otomobil 15.000 TL, SUV 20.000 TL | 70.000 TL'den başlayan (panel sayısına göre) |
 | Uygulama süresi | 1–2 gün | 1–4 gün |
 | Yıkama kolaylığı | Çok yüksek | Orta (seramik ile yüksek) |
 | Sökülebilirlik | Aşındırılarak | İz bırakmadan sökülür |

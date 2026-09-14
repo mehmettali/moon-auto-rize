@@ -1,6 +1,6 @@
 ---
 title: "Seramik Kaplama Fiyatları 2026: Rize'de Ne Kadar?"
-description: "Seramik kaplama fiyatını belirleyen 5 faktör, araç sınıfına göre piyasa aralıkları, ucuz seramik tuzağı, seramik + PPF kombinasyon fiyatları ve Moon Auto başlangıç fiyatları."
+description: "Seramik kaplama fiyatını belirleyen 5 faktör, araç sınıfına göre piyasa aralıkları, ucuz seramik tuzağı ve Moon Auto Rize güncel fiyatları: otomobil 15.000 TL, SUV 20.000 TL."
 date: 2026-09-13
 keywords: ["seramik kaplama fiyatları", "rize seramik kaplama fiyat", "seramik kaplama ne kadar", "seramik kaplama 2026"]
 related: ["rize-seramik-kaplama", "rize-pasta-cila"]
@@ -11,6 +11,8 @@ faqs:
     a: "Hayır. WhatsApp'tan 3–4 fotoğraf (ön, yan, arka, boyaya yakın) gönderin; boya durumunu görüp dakikalar içinde net teklif veriyoruz."
   - q: "Seramik kaplama garantili mi?"
     a: "Kullandığımız serilere göre 2–5 yıl ürün garantisi var. Garanti, bakım kurallarına (fırçasız yıkama, pH nötr şampuan) uyulmasına bağlıdır."
+  - q: "Rize'de seramik kaplama kaç lira?"
+    a: "Moon Auto'da otomobil 15.000 TL, SUV ve hafif ticari 20.000 TL. Boya düzeltme fiyata dahildir."
 ---
 
 "Seramik kaplama ne kadar?" sorusunun tek bir cevabı yok, çünkü fiyatın büyük kısmı kaplamanın kendisi değil, **kaplama öncesi hazırlık**tır. Bu yazıda fiyatı neyin belirlediğini, 2026 piyasa aralıklarını ve nerede tasarruf edilip nerede edilmeyeceğini açıkça anlatıyoruz.
@@ -34,15 +36,14 @@ faqs:
 
 Rize'de fiyatlar büyük şehirlerle benzer; farkı yaratan ürün ve işçilik kalitesidir. Kaynak: Armut, Carshine ve PG Premium 2026 fiyat listeleri ile kendi tarifemiz.
 
-## Moon Auto seramik paketleri
+## Moon Auto Rize seramik kaplama fiyatları (Eylül 2026)
 
-| Paket | Başlangıç | İçerik |
+| Araç sınıfı | Fiyat | İçerik |
 |---|---|---|
-| Lite | 7.500 TL | Kil + demir tozu, tek aşama düzeltme, 1 kat (2 yıl) |
-| Pro | 12.000 TL | İki aşama düzeltme, 2 kat (3–4 yıl), jant ve ön cam seramik, 6. ay ücretsiz bakım yıkaması |
-| Ultimate | 18.000 TL | Çok aşamalı düzeltme, 3 kat + üst katman (5 yıl), jant, cam, plastik, deri koruma |
+| Otomobil | 15.000 TL | Kil ve demir tozu arındırma, boya düzeltme, seramik kaplama, kürlenme |
+| SUV / hafif ticari | 20.000 TL | Aynı içerik, büyük yüzey |
 
-Fiyatlar KDV dahil, küçük/orta araç içindir. Güncel tablo [fiyat listesi](/fiyatlar/) sayfasında.
+Fiyata boya düzeltme dahildir; ayrıca pasta cila ücreti ödemezsiniz. Boya durumu çok ağır araçlarda ek düzeltme gerekirse önceden bilgi verilir. Güncel tablo [fiyat listesi](/fiyatlar/) sayfasında.
 
 ## "Ucuz seramik" tuzağı: 2.000 TL'ye ne alırsınız?
 

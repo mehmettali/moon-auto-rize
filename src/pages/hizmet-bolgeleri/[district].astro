@@ -52,7 +52,7 @@ const ld = { '@context': 'https://schema.org', '@type': 'Service', name: `${d.na
           <TowingCard place={d.name} />
           <h2>{d.name}'den gelen müşterilerimizin en çok tercih ettiği hizmetler</h2>
           <div class="grid grid-3">
-            {popular.map((p) => <div class="card"><h3><a href={`/${p.s.slug}/`}>{p.s.name}</a></h3><p style="color:var(--muted)">{p.why}</p><div class="price">{p.s.priceFrom > 0 ? p.s.priceFrom.toLocaleString('tr-TR') + " TL'den" : 'Mesafeye göre teklif'}</div></div>)}
+            {popular.map((p) => <div class="card"><h3><a href={`/${p.s.slug}/`}>{p.s.name}</a></h3><p style="color:var(--muted)">{p.why}</p><div class="price">{p.s.priceFrom > 0 ? p.s.priceFrom.toLocaleString('tr-TR') + " TL'den" : 'Fiyat için arayın'}</div></div>)}
           </div>
           <div class="card" style="margin-top:1.5rem"><strong>İpucu:</strong> {dd.tip}</div>
           <p style="margin-top:1rem;color:var(--muted)">{dd.neighborhoods.join(', ')} ve çevresinden gelen araç sahiplerine hizmet veriyoruz.</p>

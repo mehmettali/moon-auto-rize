@@ -1,11 +1,21 @@
 ---
-import { SERVICES, priceLabel } from '../data/services';
+import { SERVICES, EXTRA_PRICES, priceLabel, formatTL } from '../data/services';
+const cell = (n?: number) => (n && n > 0 ? formatTL(n) : '—');
 ---
 <div class="table-wrap">
   <table class="table">
-    <thead><tr><th>Hizmet</th><th>Başlangıç Fiyatı</th><th>Süre</th><th>Not</th></tr></thead>
+    <thead><tr><th>Hizmet</th><th>Otomobil</th><th>SUV / Hafif Ticari</th><th>Süre</th><th>Not</th></tr></thead>
     <tbody>
-      {SERVICES.map((s) => <tr><td><a href={`/${s.slug}/`}>{s.name}</a></td><td class="price">{priceLabel(s.priceFrom)}</td><td>{s.duration}</td><td style="color:var(--muted)">{s.priceNote}</td></tr>)}
+      {SERVICES.map((s) => <tr><td><a href={`/${s.slug}/`}>{s.name}</a></td><td class="price">{s.priceFrom > 0 ? formatTL(s.priceFrom) : priceLabel(0)}</td><td class="price">{cell(s.priceSuv)}</td><td>{s.duration}</td><td style="color:var(--muted)">{s.priceNote}</td></tr>)}
+    </tbody>
+  </table>
+</div>
+<h2 style="margin-top:2rem">Ek hizmetler</h2>
+<div class="table-wrap">
+  <table class="table">
+    <thead><tr><th>Hizmet</th><th>Fiyat</th><th>Not</th></tr></thead>
+    <tbody>
+      {EXTRA_PRICES.map((e) => <tr><td><a href={`/${e.slug}/`}>{e.name}</a></td><td class="price">{formatTL(e.price)}</td><td style="color:var(--muted)">{e.note}</td></tr>)}
     </tbody>
   </table>
 </div>

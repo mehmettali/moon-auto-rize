@@ -5,8 +5,8 @@ import PriceTable from '../components/PriceTable.astro';
 import Faq from '../components/Faq.astro';
 import Cta from '../components/Cta.astro';
 const faqs = [
-  { q: 'Fiyatlar neden "başlangıç" olarak veriliyor?', a: 'Araç boyutu, boya durumu ve seçilen ürün serisi fiyatı belirler. Başlangıç fiyatı küçük/orta araç ve standart paket içindir.' },
-  { q: 'Net fiyatı nasıl öğrenirim?', a: 'WhatsApp\'tan aracınızın 3-4 fotoğrafını ve istediğiniz hizmeti gönderin; dakikalar içinde net teklif veririz.' },
+  { q: 'Otomobil ve SUV fiyatı neden farklı?', a: 'SUV ve hafif ticari araçlarda yüzey alanı ve iç hacim daha büyük; ürün ve işçilik süresi artar. Minibüs için yıkama fiyatı ayrıca belirtilmiştir.' },
+  { q: 'PPF fiyatı neden "70.000 TL\'den başlayan"?', a: 'PPF panel sayısına göre fiyatlanır; kaput ve ön set gibi kısmi uygulamalar için WhatsApp\'tan araç modelini gönderin, net teklif verelim.' },
   { q: 'Ödeme seçenekleri nelerdir?', a: 'Nakit ve kredi kartı kabul ediyoruz.' },
   { q: 'Paket indirimi var mı?', a: 'Evet. Seramik + PPF, pasta cila + seramik ve detaylı iç temizlik + antibakteriyel gibi kombinasyonlarda indirim uygulanır.' },
 ];
@@ -15,9 +15,9 @@ const faqs = [
   <Breadcrumbs items={[{ name: 'Fiyatlar' }]} />
   <section class="section" style="padding-top:1.5rem"><div class="container">
     <h1>Rize Oto Kuaför Fiyat Listesi</h1>
-    <p class="lead">Şeffaflık bizim için önemli: tüm hizmetlerin başlangıç fiyatları aşağıda. Fiyatlar KDV dahildir ve küçük/orta boy araç içindir.</p>
+    <p class="lead">Şeffaflık bizim için önemli: güncel fiyat listemiz aşağıda. Otomobil ve SUV / hafif ticari için ayrı fiyat uygulanır; PPF panel sayısına göre 70.000 TL'den başlar.</p>
     <div style="margin-top:1.5rem"><PriceTable /></div>
-    <p style="color:var(--muted);margin-top:1rem;font-size:.9rem">Güncelleme: Eylül 2026. SUV ve ticari araçlarda fark uygulanır. Kesin fiyat aracın görülmesiyle verilir.</p>
+    <p style="color:var(--muted);margin-top:1rem;font-size:.9rem">Güncelleme: 14 Eylül 2026. Boya durumu çok ağır araçlarda ek düzeltme gerekebilir; bu durumda önceden bilgi verilir.</p>
     <div style="margin-top:2.5rem"><Faq faqs={faqs} /></div>
   </div></section>
   <section class="section"><div class="container"><Cta title="Net fiyat için aracınızın fotoğrafını gönderin" wa="Merhaba Moon Auto, aracım için net fiyat almak istiyorum. Fotoğrafları gönderiyorum." /></div></section>

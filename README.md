@@ -43,8 +43,8 @@ Form, girilen bilgileri hazır bir WhatsApp mesajına çevirip `site.ts` içinde
 | Ana görsel / vitrin | `public/images/hero.webp`, `vitrin.webp`, `vitrin-gece.webp` |
 | OG paylaşım görseli | `public/images/og-moon-auto-rize.jpg` (1200×630) |
 
-## Fiyat uyarısı
-Gerçek tarife gelmediği için `priceFrom` değerleri (`src/data/services.ts`) ve paket fiyatları (`src/data/serviceDetails.ts` → `packages[].from`) Türkiye piyasa ortalamalarından "başlangıç fiyatı" olarak yazıldı. Yayından önce Mustafa Bey ile güncellenmeli.
+## Fiyatlar
+14 Eylül 2026'da Mustafa Karadağ'ın ilettiği tarife işlendi: `src/data/services.ts` (`priceFrom` otomobil, `priceSuv`, `priceMinibus`, `EXTRA_PRICES`) ve `src/data/serviceDetails.ts` (`packages[].from`). Motor temizliği ve car studio için fiyat verilmedi; `0` olarak duruyor ve sitede "Fiyat için arayın" görünüyor.
 
 ## İçerik katmanları
 | Dosya | İçerik |

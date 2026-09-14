@@ -10,7 +10,7 @@ faqs:
   - q: "Koltuklar sökülünce arıza lambası yanar mı?"
     a: "Akü bağlantısı kesilerek ve airbag prosedürüne uygun sökülürse yanmaz. Montaj sonrası kontrol yapıyoruz."
   - q: "Fiyat neye göre değişir?"
-    a: "Araç boyutu, kirlilik derecesi (evcil hayvan tüyü, sigara, küf) ve deri koltuk olup olmaması. Başlangıç fiyatı 3.500 TL, premium paket 5.000 TL."
+    a: "Araç sınıfına göre: otomobil 9.000 TL, SUV ve hafif ticari 10.000 TL. Ozonlama ile antibakteriyel temizlik 2.000 TL olarak ayrıca eklenebilir."
 ---
 
 Standart iç yıkama 30 dakikada biter ve koltuğun üstünü siler. Detaylı iç temizlikte ise aracın içi **sökülür**. Fark, kum tanesi ile çay yaprağının koltuk altında yıllarca durması ile ortadan kalkması arasındaki farktır. Bu yazıda işlemi adım adım, süreleriyle anlatıyoruz.
@@ -54,11 +54,11 @@ Rize'de araç halısının altı yılın büyük kısmında nemlidir. Islak şem
 
 ## Paketler
 
-| Paket | Başlangıç | Kapsam |
+| Araç sınıfı | Fiyat | Kapsam |
 |---|---|---|
-| Standart Detaylı | 3.500 TL | Söküm, ekstraktör, plastik ve cam, kurutma, montaj |
-| Premium Detaylı | 5.000 TL | Standart + tavan, deri bakımı, kuru buhar, ozon |
-| Satış Öncesi Full | 7.500 TL | Premium + bagaj, motor temizliği, dış premium yıkama, car studio çekimi |
+| Otomobil | 9.000 TL | Söküm, ekstraktör, kuru buhar, deri bakımı, kurutma, montaj, koku giderme |
+| SUV / hafif ticari | 10.000 TL | Aynı kapsam, büyük iç hacim |
+| + Antibakteriyel (ozonlama) | 2.000 TL | Kuru buhar dezenfeksiyon ve ozon, ayrıca eklenebilir |
 
 ## Sonrasında temiz kalması için
 
