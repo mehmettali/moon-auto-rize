@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /tesekkurler/
+
+Sitemap: https://www.moonauto.com.tr/sitemap-index.xml
