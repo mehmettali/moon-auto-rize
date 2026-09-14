@@ -158,8 +158,8 @@ export const SERVICES: Service[] = [
     related: ['rize-antibakteriyel-arac-temizligi', 'rize-oto-yikama', 'rize-motor-temizligi'],
   },
   {
-    slug: 'rize-oto-yikama', key: 'yikama', name: 'Premium Oto Yıkama',
-    h1: 'Rize Premium İç Dış Oto Yıkama',
+    slug: 'rize-oto-yikama', key: 'yikama', name: 'İç-Dış Oto Yıkama',
+    h1: 'Rize İç Dış Oto Yıkama (Standart ve Premium)',
     title: 'Rize Oto Yıkama | Premium İç Dış Elde Yıkama – Moon Auto',
     description: "Rize'de fırçasız, iki kovalı elde oto yıkama. Premium iç dış yıkama, jant ve lastik bakımı, cam parlatma, wax. Rize Merkez İslampaşa, aynı anda 5 araç.",
     short: 'Fırçasız iki kovalı elde yıkama, jant-lastik bakımı, iç vakum ve plastik bakımı. Boyayı çizmeyen, seramik dostu yıkama.',
