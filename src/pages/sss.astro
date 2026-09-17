@@ -10,7 +10,7 @@ const general = [
   { q: 'Çalışma saatleriniz?', a: SITE.hours.text + '.' },
   { q: 'Randevu nasıl alırım?', a: 'Sitedeki randevu formundan, WhatsApp\'tan veya telefonla. Form talepleri e-postamıza düşer, sizi arayıp onaylarız.' },
   { q: 'Aynı anda kaç araç alıyorsunuz?', a: `${SITE.capacity} araç. Bu sayede randevu saatlerine sadık kalabiliyoruz.` },
-  { q: 'Hangi ürünleri kullanıyorsunuz?', a: 'Gyeon, Koch Chemie, Menzerna, 3M, 3D, Soft99, Angelwax, IGL Coatings, Polytop, Slopes ve Moben.' },
+  { q: 'Hangi ürünleri kullanıyorsunuz?', a: 'Seramik, pasta cila ve iç temizlikte dünyaca ünlü profesyonel marka ürünler kullanıyoruz; uygulama sırasında ürünü görebilirsiniz.' },
   { q: 'Fiyatlarınız neye göre değişir?', a: 'Araç boyutu, boya/kirlilik durumu ve seçilen ürün serisi. Başlangıç fiyatları fiyat listesinde.' },
 ];
 const all = [...general, ...SERVICES.flatMap((s) => s.faqs.map((f) => ({ q: `${s.name}: ${f.q}`, a: f.a })))];

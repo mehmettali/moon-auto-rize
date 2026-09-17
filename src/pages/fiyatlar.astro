@@ -6,7 +6,8 @@ import Faq from '../components/Faq.astro';
 import Cta from '../components/Cta.astro';
 const faqs = [
   { q: 'Otomobil ve SUV fiyatı neden farklı?', a: 'SUV ve hafif ticari araçlarda yüzey alanı ve iç hacim daha büyük; ürün ve işçilik süresi artar. Minibüs için yıkama fiyatı ayrıca belirtilmiştir.' },
-  { q: 'PPF fiyatı neden "70.000 TL\'den başlayan"?', a: 'PPF panel sayısına göre fiyatlanır; kaput ve ön set gibi kısmi uygulamalar için WhatsApp\'tan araç modelini gönderin, net teklif verelim.' },
+  { q: 'PPF fiyatı neden "70.000 TL\'den başlayan"?', a: 'PPF fiyatı aracın modeline, panel sayısına ve işçiliğe göre değişir. WhatsApp\'tan araç modelini gönderin, net teklif verelim.' },
+  { q: 'İç-dış detailing paketi nedir?', a: 'Detaylı iç temizlik ile dış pasta cila ve korumanın birleştiği kapsamlı bakım paketi. Otomobil 20.000 TL, SUV ve hafif ticari 25.000 TL; aracın durumuna göre değişkenlik gösterebilir.' },
   { q: 'Ödeme seçenekleri nelerdir?', a: 'Nakit ve kredi kartı kabul ediyoruz.' },
   { q: 'Paket indirimi var mı?', a: 'Evet. Seramik + PPF, pasta cila + seramik ve detaylı iç temizlik + antibakteriyel gibi kombinasyonlarda indirim uygulanır.' },
 ];
@@ -15,7 +16,7 @@ const faqs = [
   <Breadcrumbs items={[{ name: 'Fiyatlar' }]} />
   <section class="section" style="padding-top:1.5rem"><div class="container">
     <h1>Rize Oto Kuaför Fiyat Listesi</h1>
-    <p class="lead">Şeffaflık bizim için önemli: güncel fiyat listemiz aşağıda. Otomobil ve SUV / hafif ticari için ayrı fiyat uygulanır; PPF panel sayısına göre 70.000 TL'den başlar.</p>
+    <p class="lead">Şeffaflık bizim için önemli: güncel fiyat listemiz aşağıda. Otomobil ve SUV / hafif ticari için ayrı fiyat uygulanır; PPF 70.000 TL'den başlar, aracın modeline ve işçiliğe göre değişir. İç-dış detailing paketi aracın durumuna göre değişkenlik gösterebilir.</p>
     <div style="margin-top:1.5rem"><PriceTable /></div>
     <p style="color:var(--muted);margin-top:1rem;font-size:.9rem">Güncelleme: 14 Eylül 2026. Boya durumu çok ağır araçlarda ek düzeltme gerekebilir; bu durumda önceden bilgi verilir.</p>
     <div style="margin-top:2.5rem"><Faq faqs={faqs} /></div>

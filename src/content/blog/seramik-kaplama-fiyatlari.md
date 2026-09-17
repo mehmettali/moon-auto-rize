@@ -21,7 +21,7 @@ faqs:
 
 1. **Araç boyutu.** Hatchback ile büyük SUV arasında yüzey alanı farkı %40'a varır; ürün ve işçilik buna göre artar.
 2. **Boya durumu.** Çizikli, matlaşmış boya kaplamadan önce [pasta cila](/rize-pasta-cila/) ile düzeltilmelidir. İşin en uzun ve en pahalı kısmı budur; sıfır araçta bu maliyet neredeyse yoktur.
-3. **Ürün serisi.** Gyeon, IGL, Koch Chemie gibi profesyonel seriler ile piyasadaki "sıvı cam" ürünleri arasında dayanım farkı 5 kata çıkar.
+3. **Ürün serisi.** Dünyaca ünlü profesyonel seriler ile piyasadaki "sıvı cam" ürünleri arasında dayanım farkı 5 kata çıkar.
 4. **Kat sayısı.** 1 kat yaklaşık 2 yıl, 2–3 kat 4–5 yıla kadar koruma. Her kat ayrı kürlenme süresi ister.
 5. **Uygulama ortamı.** Tozsuz kapalı alan, kontrollü sıcaklık ve 12–24 saat kürlenme olmadan seramik tutmaz. Bu altyapının maliyeti fiyata yansır.
 

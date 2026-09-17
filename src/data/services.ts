@@ -31,12 +31,12 @@ export const SERVICES: Service[] = [
     slug: 'rize-seramik-kaplama', key: 'seramik', name: 'Seramik Kaplama',
     h1: 'Rize Seramik Kaplama',
     title: 'Rize Seramik Kaplama | 9H Boya Koruma – Moon Auto',
-    description: "Rize'de profesyonel seramik kaplama. Gyeon, IGL ve Koch Chemie ile 9H sertlikte, 2-5 yıl garantili boya koruma. Rize Merkez İslampaşa. Online randevu.",
+    description: "Rize'de profesyonel seramik kaplama. Dünyaca ünlü marka ürünlerle 9H sertlikte, 2-5 yıl garantili boya koruma. Rize Merkez İslampaşa. Online randevu.",
     short: 'Boyaya cam gibi sert, hidrofobik ve UV dirençli koruma katmanı. Yağmurun bol olduğu Rize için en mantıklı yatırım.',
     icon: '💎', priceFrom: 15000, priceSuv: 20000, priceNote: 'Otomobil 15.000 · SUV / hafif ticari 20.000', duration: '1–2 gün', featured: true,
     intro: [
       "Rize yılda 180'den fazla gün yağış alan, Türkiye'nin en nemli ilidir. Yağmur suyu, asit yağmuru ve deniz tuzu boyanın üst katmanını her gün biraz daha matlaştırır. Seramik kaplama, boyanın üzerine 9H sertliğinde nano-seramik (SiO₂) bir katman oluşturarak bu etkileri yıllarca engeller.",
-      "Moon Auto'da seramik kaplama öncesi araç iki aşamalı yıkama, kil uygulaması ve ihtiyaca göre pasta-cila ile hazırlanır; kaplama tozsuz kapalı alanda uygulanır ve kürlenme süresi boyunca araç bizde kalır. Gyeon, IGL Coatings ve Koch Chemie serilerini kullanıyoruz.",
+      "Moon Auto'da seramik kaplama öncesi araç iki aşamalı yıkama, kil uygulaması ve ihtiyaca göre pasta-cila ile hazırlanır; kaplama tozsuz kapalı alanda uygulanır ve kürlenme süresi boyunca araç bizde kalır. Dünyaca ünlü marka seramik ürünleri kullanıyoruz.",
     ],
     benefits: [
       'Hidrofobik yüzey: su boncuklanıp akar, araç daha uzun süre temiz kalır',
@@ -66,7 +66,7 @@ export const SERVICES: Service[] = [
     title: 'Rize PPF Kaplama | Boya Koruma Filmi – Moon Auto',
     description: "Rize'de PPF boya koruma filmi. Kendini onaran TPU film ile taş çarpması ve çiziğe karşı 5-10 yıl garanti. Kaput, ön set veya full kaplama.",
     short: 'Kendini onaran şeffaf TPU film. Taş çarpması, çizik ve anahtar izine karşı fiziksel kalkan. Trabzon\'a gitmeden Rize\'de.',
-    icon: '🛡️', priceFrom: 70000, priceNote: 'Panel sayısına göre; 70.000 TL\'den başlar', duration: '1–4 gün', featured: true,
+    icon: '🛡️', priceFrom: 70000, priceNote: '70.000 TL\'den başlar; aracın modeline ve işçiliğe göre değişir', duration: '1–4 gün', featured: true,
     intro: [
       "PPF (Paint Protection Film), boyanın üzerine uygulanan 150–200 mikron kalınlığında, şeffaf ve kendini onarabilen bir poliüretan filmdir. Karadeniz sahil yolu ve yayla yollarındaki çakıl taşları, kamyon arkasından fırlayan taşlar ve Rize'nin yoğun yağmurunda oluşan kum çizikleri boyaya değil filme gelir.",
       "Moon Auto, Rize'de PPF uygulaması için plotter kesim ve el kesimi seçeneklerini sunar. 3M ve TPU tabanlı premium filmlerle çalışıyoruz; sararma yapmayan, 5–10 yıl garantili ürünler tercih ediyoruz. Kaput + çamurluk ön set, tampon, ayna veya full araç paketleri mevcuttur.",
@@ -97,12 +97,12 @@ export const SERVICES: Service[] = [
     slug: 'rize-pasta-cila', key: 'pasta', name: 'Pasta Cila',
     h1: 'Rize Pasta Cila ve Boya Düzeltme',
     title: 'Rize Pasta Cila | Çizik Giderme, Boya Düzeltme – Moon Auto',
-    description: "Rize'de profesyonel pasta cila: Menzerna ve Koch Chemie ile çok aşamalı boya düzeltme, hologram ve mikro çizik giderme. Rize Merkez oto kuaför.",
-    short: 'Menzerna ve Koch Chemie ile çok aşamalı boya düzeltme. Mikro çizikler, hologramlar ve matlaşma gider, derinlik geri gelir.',
+    description: "Rize'de profesyonel pasta cila: dünyaca ünlü marka ürünlerle çok aşamalı boya düzeltme, hologram ve mikro çizik giderme. Rize Merkez oto kuaför.",
+    short: 'Dünyaca ünlü marka ürünlerle çok aşamalı boya düzeltme. Mikro çizikler, hologramlar ve matlaşma gider, derinlik geri gelir.',
     icon: '✨', priceFrom: 9000, priceSuv: 14000, priceNote: 'Otomobil 9.000 · SUV / hafif ticari 14.000 · Wax 2.000 · Hare giderme 3.000', duration: '4–8 saat',
     intro: [
       "Otomatik yıkama fırçaları, yanlış bezle silme ve güneş/yağmur döngüsü boya üzerinde örümcek ağı çizikleri ve matlaşma bırakır. Pasta cila, boyanın en üst şeffaf katmanını mikron seviyesinde düzelterek çizikleri giderir ve fabrika parlaklığını geri getirir.",
-      "Moon Auto'da pasta cila makine ile, boya kalınlığı ölçülerek ve kalınlığa uygun aşındırıcı seçilerek yapılır. Menzerna, Koch Chemie ve 3D pastaları, profesyonel polisaj makineleri ile uygulanır. Sonrasında Soft99 veya Angelwax wax, ya da seramik ile koruma önerilir.",
+      "Moon Auto'da pasta cila makine ile, boya kalınlığı ölçülerek ve kalınlığa uygun aşındırıcı seçilerek yapılır. Dünyaca ünlü marka pastalar profesyonel polisaj makineleri ile uygulanır. Sonrasında wax ya da seramik ile koruma önerilir.",
     ],
     benefits: [
       'Mikro çizik, hologram ve oksidasyonun giderilmesi',
@@ -134,7 +134,7 @@ export const SERVICES: Service[] = [
     icon: '🧼', priceFrom: 9000, priceSuv: 10000, priceNote: 'Otomobil 9.000 · SUV / hafif ticari 10.000', duration: '6–10 saat', featured: true,
     intro: [
       "Standart iç yıkama koltuğun üstünü siler; detaylı iç temizlikte ise koltuklar, konsol kapakları ve halılar sökülür. Yıllardır biriken kum, çay yaprağı, evcil hayvan tüyü, dökülmüş içecek ve nemden kaynaklanan küf kaynağından temizlenir.",
-      "Moon Auto'da iç temizlik ekstraktör, kuru buhar, Koch Chemie iç temizlik kimyasalları ve deri koltuklar için özel bakım ürünleriyle yapılır. İşlem sonunda araç ozonlanarak koku giderilir.",
+      "Moon Auto'da iç temizlik ekstraktör, kuru buhar, profesyonel iç temizlik kimyasalları ve deri koltuklar için özel bakım ürünleriyle yapılır. İşlem sonunda araç ozonlanarak koku giderilir.",
     ],
     benefits: [
       'Koltuk altı, ray ve taban dahil eksiksiz temizlik',
@@ -163,7 +163,7 @@ export const SERVICES: Service[] = [
     title: 'Rize Oto Yıkama | Premium İç Dış Elde Yıkama – Moon Auto',
     description: "Rize'de fırçasız, iki kovalı elde oto yıkama. Premium iç dış yıkama, jant ve lastik bakımı, cam parlatma, wax. Rize Merkez İslampaşa, aynı anda 5 araç.",
     short: 'Fırçasız iki kovalı elde yıkama, jant-lastik bakımı, iç temizlik ve plastik bakımı. Boyayı çizmeyen, seramik dostu yıkama.',
-    icon: '🚿', priceFrom: 800, priceSuv: 900, priceMinibus: 1000, priceNote: 'İç-dış otomobil 800 · SUV / hafif ticari 900 · minibüs 1.000 · Premium 20.000', duration: '1–2 saat',
+    icon: '🚿', priceFrom: 800, priceSuv: 900, priceMinibus: 1000, priceNote: 'İç-dış otomobil 800 · SUV / hafif ticari 900 · minibüs 1.000 · Premium 2.000', duration: '1–2 saat',
     intro: [
       "Fırçalı otomatik yıkamalar boyada örümcek ağı çiziklerinin bir numaralı sebebidir. Moon Auto'da her araç iki kovalı yöntemle, pH nötr şampuan ve mikrofiber eldivenle elle yıkanır; jantlar demir tozu sökücüyle, lastikler besleyiciyle işlenir.",
       "Premium iç-dış pakette torpido ve kapı içi temizliği, cam temizliği, plastik bakımı ve dış yüzeye spray wax dahildir. Seramik kaplamalı araçlar için özel bakım yıkaması yapılır.",
@@ -297,7 +297,9 @@ export const getService = (slug: string) => SERVICES.find((s) => s.slug === slug
 export const priceLabel = (n: number) => (n > 0 ? formatTL(n) + "'den" : 'Fiyat için arayın');
 /** Fiyat listesinde ayrı satır olarak gösterilen ek hizmetler */
 export const EXTRA_PRICES = [
-  { name: 'Premium oto yıkama (kapsamlı paket)', price: 20000, slug: 'rize-oto-yikama', note: 'Detaylı iç-dış bakım paketi' },
+  { name: 'Premium oto yıkama', price: 2000, slug: 'rize-oto-yikama', note: 'Kil, wax ve plastik-deri bakımı dahil' },
+  { name: 'İç-Dış Detailing Paketi – otomobil', price: 20000, slug: 'rize-detayli-ic-temizlik', note: 'Detaylı iç temizlik + pasta cila + koruma; aracın durumuna göre değişebilir' },
+  { name: 'İç-Dış Detailing Paketi – SUV / hafif ticari', price: 25000, slug: 'rize-detayli-ic-temizlik', note: 'Aynı paket, büyük araç; aracın durumuna göre değişebilir' },
   { name: 'Wax cila', price: 2000, slug: 'rize-pasta-cila', note: 'Yıkama sonrası koruyucu wax' },
   { name: 'Hare (hologram) giderme', price: 3000, slug: 'rize-pasta-cila', note: 'Polisaj izlerinin giderilmesi' },
   { name: 'İç-dış yıkama – minibüs', price: 1000, slug: 'rize-oto-yikama', note: 'Standart paket' },

@@ -79,7 +79,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     ],
     rizeNote: "Rize–Trabzon sahil yolu ve Ovit, Ayder, İkizdere yayla yolları çakıl ve mıcır bakımından Türkiye'nin en yıpratıcı güzergâhları arasında. Kaput ve ön çamurluklarda taş izleri bir yaz sezonunda birikir. PPF bu darbeleri boya yerine filmin üzerine alır; küçük izler ise filmin kendini onaran üst katmanı sayesinde güneşte kaybolur. Rize'de PPF için Trabzon'a gitmenize gerek yok; kapalı ve tozsuz stüdyomuzda plotter kesim veya el kesimi ile uyguluyoruz.",
     packages: [
-      { name: 'PPF Boya Koruma Kaplama', from: 70000, best: true, includes: ['TPU boya koruma filmi', 'Kenar sarma, plotter kesim', 'Kürlenme ve teslim', 'Panel sayısına göre fiyat 70.000 TL\'den başlar'] },
+      { name: 'PPF Boya Koruma Kaplama', from: 70000, best: true, includes: ['TPU boya koruma filmi', 'Kenar sarma, plotter kesim', 'Kürlenme ve teslim', '70.000 TL\'den başlar; aracın modeline ve işçiliğe göre değişir'] },
       { name: 'Panel Bazlı (kaput, ön set)', from: 0, includes: ['Sadece istenen paneller', 'Araç modeline göre kesim', 'Telefonda net teklif'] },
     ],
     care: [
@@ -144,6 +144,8 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     packages: [
       { name: 'Otomobil', from: 9000, best: true, includes: ['Koltuk ve halı sökümü', 'Ekstraktör ile döşeme yıkama', 'Kuru buhar, plastik ve cam', 'Kurutma, montaj ve koku giderme'] },
       { name: 'SUV / Hafif Ticari', from: 10000, includes: ['Koltuk ve halı sökümü', 'Ekstraktör ile döşeme yıkama', 'Kuru buhar, plastik ve cam', 'Kurutma, montaj ve koku giderme'] },
+      { name: 'İç-Dış Detailing Paketi – Otomobil', from: 20000, includes: ['Detaylı iç temizlik', 'Dış pasta cila ve boya düzeltme', 'Wax koruma, jant ve plastik bakımı', 'Aracın durumuna göre fiyat değişebilir'] },
+      { name: 'İç-Dış Detailing Paketi – SUV / Hafif Ticari', from: 25000, includes: ['Detaylı iç temizlik', 'Dış pasta cila ve boya düzeltme', 'Wax koruma, jant ve plastik bakımı', 'Aracın durumuna göre fiyat değişebilir'] },
     ],
     care: [
       'Lastik paspas kullanın; nemli mevsimde kumaş paspas küf kaynağıdır',
@@ -174,7 +176,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       { name: 'İç-Dış Yıkama – Otomobil', from: 800, best: true, includes: ['Ön köpük + iki kovalı elde yıkama', 'Jant ve lastik', 'Torpido ve cam', 'Kurutma'] },
       { name: 'İç-Dış Yıkama – SUV / Hafif Ticari', from: 900, includes: ['Aynı içerik, büyük araç'] },
       { name: 'İç-Dış Yıkama – Minibüs', from: 1000, includes: ['Aynı içerik, minibüs'] },
-      { name: 'Premium Oto Yıkama', from: 20000, includes: ['Kapsamlı iç-dış bakım paketi', 'Demir tozu sökücü + kil', 'Plastik, deri ve lastik bakımı', 'Wax koruma'] },
+      { name: 'Premium Oto Yıkama', from: 2000, includes: ['İç-dış yıkama', 'Demir tozu sökücü + kil', 'Plastik, deri ve lastik bakımı', 'Wax koruma'] },
     ],
     care: [
       'Yağmur sonrası aracı 1–2 gün içinde en azından durulatın',

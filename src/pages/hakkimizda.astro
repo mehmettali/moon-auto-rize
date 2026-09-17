@@ -1,7 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
-import Brands from '../components/Brands.astro';
 import Reviews from '../components/Reviews.astro';
 import Cta from '../components/Cta.astro';
 import { SITE } from '../config/site';
@@ -20,7 +19,7 @@ import { SITE } from '../config/site';
         <li>Google'da {SITE.rating.value} puan, {SITE.rating.count} yorum</li>
         <li>Instagram'da 4.000'den fazla takipçi, her hafta yeni öncesi-sonrası videolar</li>
         <li>Boya kalınlığı ölçümü ve ürün seçiminde şeffaflık</li>
-        <li>Gyeon, Koch Chemie, Menzerna, 3M gibi profesyonel markalar</li>
+        <li>Dünyaca ünlü marka ürünlerle uygulama</li>
         <li>PPF ve cam filmi için ayrılmış kapalı uygulama alanı</li>
       </ul>
     </article>
@@ -31,7 +30,6 @@ import { SITE } from '../config/site';
       <a class="btn btn-primary" href="/randevu/">Randevu Al</a>
     </div></aside>
   </div></section>
-  <Brands />
   <Reviews />
   <section class="section"><div class="container"><Cta /></div></section>
 </Base>
