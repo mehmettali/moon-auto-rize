@@ -66,7 +66,7 @@ export const DISTRICT_DETAILS: Record<string, DistrictDetail> = {
     neighborhoods: ['Pazar merkez', 'Kızılay', 'Hamidiye', 'Yücehisar', 'Sivrikale', 'Akbucak', 'Hemşin yolu'],
     tip: "Pazar'dan gelen müşterilerimiz için Cumartesi sabah randevuları en yoğun; hafta içi öğleden sonra daha esnek saat bulabilirsiniz.",
     extraFaqs: [
-      { q: "Pazar'dan aynı gün gidiş-dönüş yapabilir miyim?", a: 'Evet. Yıkama, far parlatma ve tek aşamalı pasta cila 1–5 saat sürer; sabah gelip öğleden sonra dönebilirsiniz.' },
+      { q: "Pazar'dan aynı gün gidiş-dönüş yapabilir miyim?", a: 'Evet. Yıkama, far parlatma ve antibakteriyel temizlik 1–2 saat sürer; sabah gelip öğleden sonra dönebilirsiniz. Pasta cila, seramik ve detaylı iç temizlik 1–2 gün sürer.' },
     ],
   },
   guneysu: {

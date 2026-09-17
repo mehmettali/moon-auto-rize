@@ -1,6 +1,6 @@
 ---
 title: "Detaylı İç Temizlik Ne Kadar Sürer, Neler Yapılır?"
-description: "Koltuklar sökülerek yapılan detaylı iç temizliğin 7 adımı, süresi, fiyatı, standart iç yıkamadan farkı ve hangi araçlara gerektiği. Rize Moon Auto uzman rehberi."
+description: "Koltuklar sökülerek yapılan detaylı iç temizliğin 7 adımı, 1–2 günlük süreci, fiyatı, standart iç yıkamadan farkı ve hangi araçlara gerektiği. Rize Moon Auto uzman rehberi."
 date: 2026-09-13
 keywords: ["detaylı iç temizlik", "koltuk sökerek temizlik", "rize detaylı oto temizleme", "araç koku giderme", "araç halı yıkama"]
 related: ["rize-detayli-ic-temizlik", "rize-antibakteriyel-arac-temizligi"]
@@ -19,7 +19,7 @@ Standart iç yıkama 30 dakikada biter ve koltuğun üstünü siler. Detaylı i�
 
 | | Standart iç yıkama | Detaylı iç temizlik |
 |---|---|---|
-| Süre | 30–45 dk | 6–10 saat |
+| Süre | 30–45 dk | 1–2 gün |
 | Koltuk sökümü | Yok | Var |
 | Halı yıkama | Yüzey fırçalama | Ekstraktör ile derin yıkama |
 | Taban sacı | Ulaşılmaz | Temizlenir ve kurutulur |
@@ -38,7 +38,7 @@ Standart iç yıkama 30 dakikada biter ve koltuğun üstünü siler. Detaylı i�
 6. **Kurutma ve montaj (1–2 saat).** Islak halı ile montaj yapılmaz; endüstriyel kurutucu ile kurutulur. Koltuklar rayına takılır, akü bağlanır, uyarı lambaları kontrol edilir.
 7. **Ozon (30 dk).** Kabin ozonlanarak kalıcı koku (sigara, nem, evcil hayvan) giderilir; ardından 15–20 dk havalandırılır.
 
-**Toplam: 6–10 saat.** Sabah 08:30'da bırakıp akşam alıyorsunuz.
+**Toplam: 1–2 gün.** Halı ve döşemenin tam kuruması için aracı bir gece bizde bırakmanızı öneririz; teslim gününü randevuda netleştiriyoruz.
 
 ## Kimler yaptırmalı?
 

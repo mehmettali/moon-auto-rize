@@ -159,7 +159,7 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
       'Sert kimyasal ile deri temizliği: deri kurur ve çatlar',
     ],
     extraFaqs: [
-      { q: 'Aracımı sabah bırakıp akşam alabilir miyim?', a: 'Evet. Standart paket 6–8 saat, premium 8–10 saat sürer; sabah 08:30 teslimde akşam alırsınız.' },
+      { q: 'Aracımı ne zaman alabilirim?', a: 'İşlem 1–2 gün sürer; halı ve döşemenin tam kuruması için aracı bir gece bizde bırakmanızı öneririz. Teslim gününü randevuda birlikte belirleriz.' },
       { q: 'Alcantara ve kumaş tavan temizlenir mi?', a: 'Evet, tavan döşemesi düşük nemli özel yöntemle temizlenir; sarkma yapmaz.' },
     ],
     blog: ['detayli-ic-temizlik-ne-kadar-surer', 'rize-yagmurlu-iklimde-arac-bakimi'],

@@ -99,7 +99,7 @@ export const SERVICES: Service[] = [
     title: 'Rize Pasta Cila | Çizik Giderme, Boya Düzeltme – Moon Auto',
     description: "Rize'de profesyonel pasta cila: dünyaca ünlü marka ürünlerle çok aşamalı boya düzeltme, hologram ve mikro çizik giderme. Rize Merkez oto kuaför.",
     short: 'Dünyaca ünlü marka ürünlerle çok aşamalı boya düzeltme. Mikro çizikler, hologramlar ve matlaşma gider, derinlik geri gelir.',
-    icon: '✨', priceFrom: 9000, priceSuv: 14000, priceNote: 'Otomobil 9.000 · SUV / hafif ticari 14.000 · Wax 2.000 · Hare giderme 3.000', duration: '4–8 saat',
+    icon: '✨', priceFrom: 9000, priceSuv: 14000, priceNote: 'Otomobil 9.000 · SUV / hafif ticari 14.000 · Wax 2.000 · Hare giderme 3.000', duration: '1–2 gün',
     intro: [
       "Otomatik yıkama fırçaları, yanlış bezle silme ve güneş/yağmur döngüsü boya üzerinde örümcek ağı çizikleri ve matlaşma bırakır. Pasta cila, boyanın en üst şeffaf katmanını mikron seviyesinde düzelterek çizikleri giderir ve fabrika parlaklığını geri getirir.",
       "Moon Auto'da pasta cila makine ile, boya kalınlığı ölçülerek ve kalınlığa uygun aşındırıcı seçilerek yapılır. Dünyaca ünlü marka pastalar profesyonel polisaj makineleri ile uygulanır. Sonrasında wax ya da seramik ile koruma önerilir.",
@@ -120,7 +120,7 @@ export const SERVICES: Service[] = [
     ],
     faqs: [
       { q: 'Pasta cila boyaya zarar verir mi?', a: 'Ölçüm yapılmadan ve yanlış ürünle yapılırsa verir. Biz her panelde boya kalınlığı ölçerek çalışırız.' },
-      { q: 'Pasta cila ne kadar sürer?', a: 'Tek aşamalı işlem 4–5 saat, çok aşamalı düzeltme 1 tam gün sürebilir.' },
+      { q: 'Pasta cila ne kadar sürer?', a: 'Boya durumuna göre 1–2 gün. Aracı sabah teslim edip ertesi gün veya iki gün sonra alırsınız; teslim gününü randevuda netleştiriyoruz.' },
       { q: 'Derin çizikler pasta ile gider mi?', a: 'Tırnak takılan derin çizikler astara inmişse pasta ile gitmez; boyasız rötuş veya lokal boya gerekir. Ücretsiz inceleyip söyleriz.' },
     ],
     related: ['rize-seramik-kaplama', 'rize-far-parlatma', 'rize-oto-yikama'],
@@ -131,7 +131,7 @@ export const SERVICES: Service[] = [
     title: 'Rize Detaylı İç Temizlik | Koltuk Sökülerek – Moon Auto',
     description: "Rize'de koltuk ve halılar sökülerek yapılan detaylı iç temizlik. Buharlı döşeme yıkama, deri bakımı, koku giderme. Rize Merkez oto kuaför.",
     short: 'Koltuklar ve halılar sökülür; taban, tavan, döşeme ve havalandırma kanalları buhar ve ekstraktörle temizlenir.',
-    icon: '🧼', priceFrom: 9000, priceSuv: 10000, priceNote: 'Otomobil 9.000 · SUV / hafif ticari 10.000', duration: '6–10 saat', featured: true,
+    icon: '🧼', priceFrom: 9000, priceSuv: 10000, priceNote: 'Otomobil 9.000 · SUV / hafif ticari 10.000', duration: '1–2 gün', featured: true,
     intro: [
       "Standart iç yıkama koltuğun üstünü siler; detaylı iç temizlikte ise koltuklar, konsol kapakları ve halılar sökülür. Yıllardır biriken kum, çay yaprağı, evcil hayvan tüyü, dökülmüş içecek ve nemden kaynaklanan küf kaynağından temizlenir.",
       "Moon Auto'da iç temizlik ekstraktör, kuru buhar, profesyonel iç temizlik kimyasalları ve deri koltuklar için özel bakım ürünleriyle yapılır. İşlem sonunda araç ozonlanarak koku giderilir.",
@@ -151,7 +151,7 @@ export const SERVICES: Service[] = [
       'Kurutma, montaj, ozon ve teslim',
     ],
     faqs: [
-      { q: 'Detaylı iç temizlik kaç saat sürer?', a: 'Aracın boyutuna ve kirliliğine göre 6–10 saat. Genellikle sabah teslim, akşam alım.' },
+      { q: 'Detaylı iç temizlik ne kadar sürer?', a: 'Aracın boyutuna ve kirliliğine göre 1–2 gün. Söküm, yıkama ve tam kurutma için süreyi kısaltmıyoruz; teslim gününü randevuda netleştiriyoruz.' },
       { q: 'Koltuklar sökülünce airbag sorunu olur mu?', a: 'Hayır. Akü bağlantısı kesilerek ve prosedüre uygun sökülür; arıza lambası yanmaz.' },
       { q: 'Deri koltuk temizliği dahil mi?', a: 'Evet, deri koltuklar özel temizleyici ve besleyici ile bakımdan geçer.' },
     ],

@@ -20,7 +20,7 @@ const faqs = [
   { q: `${d.name}'de oto çekici hizmetiniz var mı?`, a: `Evet. ${d.name} dahil Rize genelinde çekici çözüm ortaklarımızla yol yardım sağlıyoruz; aracınız stüdyomuza veya istediğiniz servise düz platformla taşınır. Fiyat mesafeye göre telefonda netleşir.` },
   { q: `${d.name}'den Moon Auto'ya nasıl gelirim?`, a: `Sahil yolu üzerinden Rize Merkez İslampaşa'ya yaklaşık ${d.distanceKm} km, ${d.driveMin} dakika. Adres: ${SITE.address.full}.` },
   { q: `${d.name}'de yerinde hizmet veriyor musunuz?`, a: 'Seramik, PPF ve detaylı iç temizlik kapalı ve tozsuz alan gerektirdiği için stüdyomuzda yapılır. Uzun işlemlerde araç teslim ve alım saatini sizinle birlikte planlıyoruz.' },
-  { q: `${d.name}'den gelince aynı gün teslim olur mu?`, a: 'Yıkama, far parlatma ve tek aşamalı pasta cila aynı gün teslim edilir. Seramik ve PPF için 1–4 gün planlayın.' },
+  { q: `${d.name}'den gelince aynı gün teslim olur mu?`, a: 'Yıkama, far parlatma, cam filmi ve antibakteriyel temizlik aynı gün teslim edilir. Pasta cila, seramik ve detaylı iç temizlik 1–2 gün, PPF 1–4 gün sürer.' },
 ];
 const dd = DISTRICT_DETAILS[d.slug];
 const allFaqs = [...faqs, ...(dd?.extraFaqs ?? [])];

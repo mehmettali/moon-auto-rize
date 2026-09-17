@@ -19,10 +19,21 @@ npm run build:pages && cd dist && git init -q && git checkout -q -b gh-pages && 
 ```
 `build:pages` betiği linklere `/moon-auto-rize` ön ekini ekler; kendi alan adında yayınlarken normal `npm run build` kullanın.
 
-## Yayına alma
-1. `src/config/site.ts` → `url` alanına alınan alan adını yazın (örn. `https://www.rizeotokuafor.com`).
-2. `public/robots.txt` içindeki Sitemap satırındaki alan adını güncelleyin.
-3. `npm run build` → `dist/` klasörünü Netlify / Vercel / Cloudflare Pages'e sürükleyin **veya** cPanel'de `public_html` içine yükleyin.
+## Alan adı: moonauto.com.tr
+Canonical adres `https://www.moonauto.com.tr` (site.ts, robots.txt, sitemap, JSON-LD ve OG etiketleri buna göre). Alan adı GitHub Pages'e bağlanacaksa DNS'te şu kayıtlar girilir:
+
+| Tür | Ad | Değer |
+|---|---|---|
+| CNAME | www | mehmettali.github.io |
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+
+DNS yayıldıktan sonra: depo → Settings → Pages → Custom domain: `www.moonauto.com.tr`, "Enforce HTTPS" işaretlenir. Bu andan itibaren `npm run build` (ön eksiz) ile deploy edilir; `build:pages` yalnızca github.io alt dizini içindir.
+
+## Yayına alma (alternatif hosting)
+1. `npm run build` → `dist/` klasörünü Netlify / Vercel / Cloudflare Pages'e sürükleyin **veya** cPanel'de `public_html` içine yükleyin.
 4. Google Search Console + Yandex Webmaster'a `sitemap-index.xml` gönderin.
 5. Google İşletme Profili'ne web sitesi adresini ekleyin.
 
