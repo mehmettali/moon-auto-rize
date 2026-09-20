@@ -63,6 +63,9 @@ jobs:
 
       - name: Yayını doğrula
         run: |
-          code=$(curl -sS -o /dev/null -w '%{http_code}' --max-time 20 https://moonauto.com.tr/)
-          echo "https://moonauto.com.tr/ -> $code"
+          code=$(curl -sSL -o /dev/null -w '%{http_code}' --max-time 20 https://www.moonauto.com.tr/)
+          echo "https://www.moonauto.com.tr/ -> $code"
           test "$code" = "200"
+          # www'suz adres canonical'a 301 ile yönlenmeli
+          redir=$(curl -sS -o /dev/null -w '%{http_code} %{redirect_url}' --max-time 20 https://moonauto.com.tr/)
+          echo "https://moonauto.com.tr/ -> $redir"

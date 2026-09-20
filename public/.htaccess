@@ -1,2 +1,13 @@
 # Astro'nun ürettiği 404 sayfası sunulsun (yoksa cPanel'in varsayılanı çıkar).
 ErrorDocument 404 /404.html
+
+RewriteEngine On
+
+# Tek canonical adres: https://www.moonauto.com.tr
+# Cloudflare arkasında X-Forwarded-Proto kontrolü sayesinde yönlendirme döngüsü oluşmaz.
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://www.moonauto.com.tr%{REQUEST_URI} [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^moonauto\.com\.tr$ [NC]
+RewriteRule ^ https://www.moonauto.com.tr%{REQUEST_URI} [R=301,L]
