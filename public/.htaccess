@@ -1,0 +1,2 @@
+# Astro'nun ürettiği 404 sayfası sunulsun (yoksa cPanel'in varsayılanı çıkar).
+ErrorDocument 404 /404.html
