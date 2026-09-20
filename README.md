@@ -10,27 +10,11 @@ npm run build    # dist/ klasörüne statik çıktı
 npm run preview  # build çıktısını yerelde görüntüle
 ```
 
-## Önizleme adresi (GitHub Pages)
-https://mehmettali.github.io/moon-auto-rize/ — depo: https://github.com/mehmettali/moon-auto-rize
-
-Güncellemek için:
-```bash
-npm run build:pages && cd dist && git init -q && git checkout -q -b gh-pages && git add -A && git commit -qm deploy && git push -qf https://github.com/mehmettali/moon-auto-rize.git gh-pages && cd .. && rm -rf dist/.git
-```
-`build:pages` betiği linklere `/moon-auto-rize` ön ekini ekler; kendi alan adında yayınlarken normal `npm run build` kullanın.
+## Canlı site ve deploy
+Site **https://www.moonauto.com.tr** adresinde cPanel hostingde yayında. `main` dalına her push, GitHub Actions ile otomatik build + SFTP deploy tetikler. Ayrıntılar: [docs/DEPLOY.md](docs/DEPLOY.md). Eski github.io önizlemesi (`build:pages`, gh-pages dalı) artık kullanılmıyor.
 
 ## Alan adı: moonauto.com.tr
-Canonical adres `https://www.moonauto.com.tr` (site.ts, robots.txt, sitemap, JSON-LD ve OG etiketleri buna göre). Alan adı GitHub Pages'e bağlanacaksa DNS'te şu kayıtlar girilir:
-
-| Tür | Ad | Değer |
-|---|---|---|
-| CNAME | www | mehmettali.github.io |
-| A | @ | 185.199.108.153 |
-| A | @ | 185.199.109.153 |
-| A | @ | 185.199.110.153 |
-| A | @ | 185.199.111.153 |
-
-DNS yayıldıktan sonra: depo → Settings → Pages → Custom domain: `www.moonauto.com.tr`, "Enforce HTTPS" işaretlenir. Bu andan itibaren `npm run build` (ön eksiz) ile deploy edilir; `build:pages` yalnızca github.io alt dizini içindir.
+Canonical adres `https://www.moonauto.com.tr`; http ve www'suz varyantlar `.htaccess` ile 301 yönlenir. DNS Cloudflare üzerinden.
 
 ## Yayına alma (alternatif hosting)
 1. `npm run build` → `dist/` klasörünü Netlify / Vercel / Cloudflare Pages'e sürükleyin **veya** cPanel'de `public_html` içine yükleyin.
