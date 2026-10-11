@@ -6,9 +6,9 @@ Tarih: 11 Ekim 2026 · Hedef: Rize genelinde randevu/WhatsApp talebi
 
 | # | Gerek | Durum | Kim |
 |---|---|---|---|
-| 1 | Moon Auto Facebook sayfası + Instagram hesabına reklam yetkisi | **Yok** — mehmettalikose hesabında sadece Petzz, Onevet, Esteseven sayfaları var | Mustafa Bey, sayfa Ayarlar → Sayfa erişimi → kişi ekle (Reklam yetkisi) |
-| 2 | Reklam hesabı | Moon Auto'ya ait hesap yok | Ya Mustafa Bey'in Business Manager'ında açılır ve bize erişim verilir, ya da bizim BM'de açılıp ödeme yöntemi Mustafa Bey'in kartı olur |
-| 3 | Meta Pixel | Site hazır, ID bekliyor (`site.ts → metaPixelId`) | Events Manager → Veri kaynağı → Pixel oluştur → ID bize |
+| 1 | Reklam yetkisi | **Tamam** — Chrome'da Mustafa Bey'in hesabı açık; reklam hesabı 303426689, işletme portföyü "MooN auto Rize" (100301701397083) | — |
+| 2 | Reklam hesabı | **Tamam** — 303426689, Visa ····5696, borç yok, günlük tavan 2.894 TL | — |
+| 3 | Meta Pixel | **Tamam** — veri seti "Moon Auto Rize Web", ID 2072595640434391, sitede canlı (PageView, Lead, Contact, Schedule) | — |
 | 4 | Alan adı doğrulama | Yapılmadı | Business Manager → Marka güvenliği → Alan adları → moonauto.com.tr (meta etiket siteye eklenir) |
 | 5 | Kreatif görseller/videolar | Instagram reels mevcut; 1080×1350 ve 9:16 kesimler hazırlanacak | Biz |
 
