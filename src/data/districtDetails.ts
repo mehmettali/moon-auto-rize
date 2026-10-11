@@ -126,4 +126,65 @@ export const DISTRICT_DETAILS: Record<string, DistrictDetail> = {
       { q: 'İyidere\'de PPF kaplama yapan var mı?', a: 'İyidere\'de kapalı stüdyoda PPF uygulaması yapan bir merkez bulunmuyor; en yakın nokta 16 dakika uzaklıktaki Moon Auto Rize.' },
     ],
   },
+
+  of: {
+    route: "Of merkezden D-010 sahil yolu ile doğuya, İyidere ve Derepazarı'nı geçip Rize Merkez girişinde Recep Tayyip Erdoğan Bulvarı'ndan İslampaşa Mahallesi'ne dönün; Barbaros Sokak No:33/A. Yaklaşık 35 dakika.",
+    conditions: ['Sahil yolunda kamyon arkası taş ve mıcır: kaput ve ön tamponda taş izleri', 'Deniz tuzu ve nemle hızlanan boya oksidasyonu', 'Uzungöl ve Solaklı Vadisi yollarında çamur ve dal sürtmesi'],
+    popular: [
+      { slug: 'rize-ppf-kaplama', why: 'Sahil yolu taş çarpmasına karşı kaput ve ön set koruması; Trabzon\'a gitmeden' },
+      { slug: 'rize-seramik-kaplama', why: 'Tuz ve neme karşı kir tutmayan, kolay yıkanan yüzey' },
+      { slug: 'rize-detayli-ic-temizlik', why: 'Nemli iklimde halı altı küf ve koku' },
+    ],
+    neighborhoods: ['Of merkez', 'Eskipazar', 'Cumapazarı', 'Bölümlü', 'Kıyıcık', 'Uğurlu'],
+    tip: "Of'tan gelen müşterilerimiz için PPF ve seramikte aracı 2 gün bırakma seçeneği var; dönüşte aracınız kapalı stüdyoda bekler.",
+    extraFaqs: [{ q: "Of'tan PPF için Trabzon'a mı Rize'ye mi gitmeliyim?", a: "Of–Rize Merkez 35 dakika, Of–Trabzon Merkez 45 dakika. Moon Auto'da TPU film ile plotter kesim PPF, kapalı ve tozsuz stüdyoda uygulanır; fiyatı WhatsApp'tan araç modelinizi göndererek öğrenebilirsiniz." }],
+  },
+  surmene: {
+    route: "Sürmene'den D-010 sahil yolu ile doğuya, Of ve İyidere'yi geçip Rize Merkez'e yaklaşık 40 dakika. Şehir girişinde İslampaşa Mahallesi Barbaros Sokak'a dönün.",
+    conditions: ['Sahil yolunda ağır vasıta trafiği ve taş çarpması', 'Çamburnu ve sahil kesiminde deniz tuzu', 'Kış aylarında yol tuzlaması sonrası alt takım korozyonu'],
+    popular: [
+      { slug: 'rize-ppf-kaplama', why: 'Sahil yolunda ön set koruması' },
+      { slug: 'rize-seramik-kaplama', why: 'Tuzlu havada boya parlaklığını koruma' },
+      { slug: 'rize-pasta-cila', why: 'Taş izi ve yıkama çiziklerinin giderilmesi' },
+    ],
+    neighborhoods: ['Sürmene merkez', 'Çamburnu', 'Yeniay', 'Balıklı', 'Ormanseven'],
+    tip: 'Sürmene\'den sabah 08:30 teslimle seramik uygulaması ertesi gün alınabilir; iki gün bırakmak isteyenlere kapalı park alanı sağlıyoruz.',
+    extraFaqs: [{ q: "Sürmene'de seramik kaplama yapan var mı?", a: "Sürmene'de yıkama noktaları var; kapalı stüdyoda boya düzeltme + seramik için en yakın merkezler Rize Merkez (40 dk) ve Trabzon Merkez (50 dk). Moon Auto Rize'de otomobil 15.000 TL, SUV 20.000 TL." }],
+  },
+  arakli: {
+    route: "Araklı'dan sahil yolu ile doğuya; Sürmene, Of ve İyidere'yi geçip Rize Merkez'e 45 dakika. Recep Tayyip Erdoğan Bulvarı'ndan İslampaşa Mahallesi'ne dönün.",
+    conditions: ['Trabzon–Rize hattında yoğun kamyon trafiği: taş çarpması', 'Karadere Vadisi ve Bayburt yolu mıcırı', 'Sahil kesiminde deniz tuzu'],
+    popular: [
+      { slug: 'rize-ppf-kaplama', why: 'Kaput ve çamurluklarda taş izine karşı film' },
+      { slug: 'rize-seramik-kaplama', why: 'Uzun yol sürücüleri için kolay temizlenen yüzey' },
+      { slug: 'rize-cam-filmi', why: 'Sahil yolunda ısı ve UV kontrolü' },
+    ],
+    neighborhoods: ['Araklı merkez', 'Erenler', 'Yeşilyurt', 'Kalecik', 'Taşgeçit'],
+    tip: 'Araklı\'dan Rize ve Trabzon neredeyse eşit uzaklıkta; fiyat ve Google puanını karşılaştırıp karar verin, WhatsApp\'tan araç fotoğrafı gönderin.',
+    extraFaqs: [{ q: "Araklı'dan gelince aracımı aynı gün alabilir miyim?", a: 'Yıkama, far parlatma ve cam filmi aynı gün; seramik ve detaylı iç temizlik 1–2 gün, PPF 1–4 gün sürer. Teslim gününü randevuda netleştiriyoruz.' }],
+  },
+  arhavi: {
+    route: "Arhavi'den D-010 sahil yolu ile batıya; Fındıklı, Ardeşen, Pazar ve Çayeli'ni geçip Rize Merkez'e yaklaşık 1 saat. Şehir girişinde İslampaşa Mahallesi Barbaros Sokak No:33/A.",
+    conditions: ['Artvin sahilinde deniz tuzu ve yüksek nem', 'Kamilet Vadisi ve yayla yollarında çamur, mıcır', 'Kışın Hopa–Borçka geçişinde tuzlama'],
+    popular: [
+      { slug: 'rize-ppf-kaplama', why: 'Artvin sahilinde kapalı stüdyoda PPF yapan en yakın merkez' },
+      { slug: 'rize-seramik-kaplama', why: 'Tuz ve neme karşı 2–5 yıl koruma' },
+      { slug: 'rize-detayli-ic-temizlik', why: 'Nemli iklimde kabin küfü ve koku' },
+    ],
+    neighborhoods: ['Arhavi merkez', 'Musazade', 'Kemerköprü', 'Derecik', 'Ortacalar'],
+    tip: "Arhavi'den gelen müşterilerimize PPF ve seramikte 2 gün bırakma ve dönüş için toplu taşıma bilgisi veriyoruz; aracınız kapalı stüdyoda bekler.",
+    extraFaqs: [{ q: "Artvin'de PPF kaplama yapan yer var mı?", a: "Artvin ilinde kapalı stüdyoda PPF uygulayan bir merkez bilmiyoruz; en yakın seçenekler Rize Merkez (Arhavi'den 1 saat) ve Trabzon (2,5 saat). Moon Auto Rize'de TPU film ile 70.000 TL'den başlayan fiyatlarla uygulanır; panel bazlı teklif için WhatsApp'tan yazın." }],
+  },
+  hopa: {
+    route: "Hopa'dan D-010 sahil yolu ile batıya; Arhavi, Fındıklı, Ardeşen, Pazar ve Çayeli üzerinden Rize Merkez'e yaklaşık 1 saat 10 dakika. İslampaşa Mahallesi Barbaros Sokak No:33/A.",
+    conditions: ['Liman ve Sarp sınır kapısı trafiği: ağır vasıta, toz, tuz', 'Yüksek nem ve sürekli yağış', 'Cankurtaran geçişinde kış tuzlaması'],
+    popular: [
+      { slug: 'rize-ppf-kaplama', why: 'Üst segment ve ticari araçlar için boya koruma' },
+      { slug: 'rize-seramik-kaplama', why: 'Liman tozu ve tuza karşı kir tutmayan yüzey' },
+      { slug: 'rize-detayli-ic-temizlik', why: 'Ticari araç ve servislerde iç-dış detailing paketi' },
+    ],
+    neighborhoods: ['Hopa merkez', 'Kemalpaşa', 'Sundura', 'Çavuşlu', 'Sarp'],
+    tip: "Hopa'dan PPF için gelenlere aracı 2–3 gün bırakma seçeneği sunuyoruz; Trabzon'a gitmekten 1,5 saat daha kısa.",
+    extraFaqs: [{ q: "Hopa'dan seramik için Rize'ye gelmeye değer mi?", a: "Evet. Seramik 1–2 gün sürer; aracı bırakıp dönebilir veya Rize'de konaklayabilirsiniz. Otomobil 15.000 TL, SUV 20.000 TL; fiyata boya düzeltme dahildir." }],
+  },
 };

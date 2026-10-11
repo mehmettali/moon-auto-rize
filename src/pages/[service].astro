@@ -75,7 +75,7 @@ const img = Object.keys(imgs).includes(`/public/images/services/${s.key}.webp`) 
         )}
         {s.slug !== 'rize-oto-cekici' && <TowingCard place="Rize" />}
         <h2>Hizmet verdiğimiz bölgeler</h2>
-        <p>{s.name} için Rize Merkez'in yanı sıra {DISTRICTS.map((x, i) => <span><a href={`/hizmet-bolgeleri/${x.slug}/`}>{x.name}</a>{i < DISTRICTS.length - 1 ? ', ' : ''}</span>)} ilçelerinden müşterilerimizi ağırlıyoruz.</p>
+        <p>{s.name} için Rize Merkez'in yanı sıra {DISTRICTS.filter((x) => !x.province).map((x, i, arr) => <span><a href={`/hizmet-bolgeleri/${x.slug}/`}>{x.name}</a>{i < arr.length - 1 ? ', ' : ''}</span>)} ilçelerinden; PPF ve seramik için ayrıca {DISTRICTS.filter((x) => x.province).map((x, i, arr) => <span><a href={`/hizmet-bolgeleri/${x.slug}/`}>{x.name}</a>{i < arr.length - 1 ? ', ' : ''}</span>)} (Trabzon ve Artvin) bölgesinden müşterilerimizi ağırlıyoruz.</p>
       </article>
       <aside class="aside">
         <div class="card">

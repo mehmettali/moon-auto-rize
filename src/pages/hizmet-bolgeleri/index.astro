@@ -18,7 +18,12 @@ import TowingCard from '../../components/TowingCard.astro';
     </div>
     <TowingCard place="Rize" />
     <div class="grid grid-3">
-      {DISTRICTS.map((d) => <article class="card"><h3><a href={`/hizmet-bolgeleri/${d.slug}/`}>{d.name} Oto Kuaför</a></h3><p style="color:var(--muted)">{d.distanceKm} km · yaklaşık {d.driveMin} dk · nüfus {d.population.toLocaleString('tr-TR')}</p><a href={`/hizmet-bolgeleri/${d.slug}/`} style="font-weight:700">Detay →</a></article>)}
+      {DISTRICTS.filter((d) => !d.province).map((d) => <article class="card"><h3><a href={`/hizmet-bolgeleri/${d.slug}/`}>{d.name} Oto Kuaför</a></h3><p style="color:var(--muted)">{d.distanceKm} km · yaklaşık {d.driveMin} dk · nüfus {d.population.toLocaleString('tr-TR')}</p><a href={`/hizmet-bolgeleri/${d.slug}/`} style="font-weight:700">Detay →</a></article>)}
+    </div>
+    <h2 style="margin-top:2rem">Trabzon ve Artvin'den gelen müşterilerimiz</h2>
+    <p style="color:var(--muted)">PPF ve seramik kaplama için Of, Sürmene, Araklı, Arhavi ve Hopa'dan 35–70 dakikada ulaşılır; Trabzon'a gitmeden, kapalı stüdyoda.</p>
+    <div class="grid grid-3">
+      {DISTRICTS.filter((d) => d.province).map((d) => <div class="card"><h3><a href={`/hizmet-bolgeleri/${d.slug}/`}>{d.name} <small style="color:var(--muted)">({d.province})</small></a></h3><p style="color:var(--muted)">{d.driveMin} dk · {d.population.toLocaleString('tr-TR')} nüfus</p></div>)}
     </div>
   </div></section>
   <section class="section"><div class="container"><Cta /></div></section>
