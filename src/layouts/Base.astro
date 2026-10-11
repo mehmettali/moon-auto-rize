@@ -68,6 +68,23 @@ const ldBlocks = [business, ...(jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [json
   <meta name="geo.position" content={`${SITE.geo.lat};${SITE.geo.lng}`} />
   <meta name="ICBM" content={`${SITE.geo.lat}, ${SITE.geo.lng}`} />
   {ldBlocks.map((b) => <script type="application/ld+json" set:html={JSON.stringify(b)} />)}
+  {SITE.metaPixelId && (
+    <script is:inline define:vars={{ pid: SITE.metaPixelId }}>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', pid); fbq('track', 'PageView');
+      // Dönüşüm olayları: WhatsApp = Lead, telefon = Contact, randevu formu = Schedule
+      document.addEventListener('click', function (e) {
+        var a = e.target && e.target.closest && e.target.closest('a[href]'); if (!a) return;
+        var h = a.getAttribute('href') || '';
+        if (h.indexOf('wa.me') > -1 || h.indexOf('whatsapp') > -1) fbq('track', 'Lead', { content_name: document.title, source: 'whatsapp' });
+        else if (h.indexOf('tel:') === 0) fbq('track', 'Contact', { content_name: document.title, source: 'phone' });
+      }, true);
+      document.addEventListener('submit', function (e) {
+        if (e.target && e.target.id === 'booking') fbq('track', 'Schedule', { content_name: document.title });
+      }, true);
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src={`https://www.facebook.com/tr?id=${SITE.metaPixelId}&ev=PageView&noscript=1`} /></noscript>
+  )}
 </head>
 <body>
   <Header />
