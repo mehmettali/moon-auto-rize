@@ -12,6 +12,11 @@ Tarih: 11 Ekim 2026 · Hedef: Rize genelinde randevu/WhatsApp talebi
 | 4 | Alan adı doğrulama | Yapılmadı | Business Manager → Marka güvenliği → Alan adları → moonauto.com.tr (meta etiket siteye eklenir) |
 | 5 | Kreatif görseller/videolar | Instagram reels mevcut; 1080×1350 ve 9:16 kesimler hazırlanacak | Biz |
 
+### Kurulum durumu (11 Ekim 2026, akşam)
+- Yapıldı: kampanya bütçesi 400 TL/gün; Rize reklam seti konum Rize + 35 km, min. yaş 22; piksel ve alan adı doğrulandı.
+- Reklam kreatifi: ilk reklam kişisel hesap gönderisini seçtiği için "ortaklık reklamı" hatasına düştü; işletme hesabı @moonautodetailingrize için ikinci reklam açıldı, gönderi seçimi tamamlanmadı.
+- **Engel:** Meta güvenlik kontrolü (#3858385): "kimliğinizi doğrulayana kadar reklam oluşturamaz veya değiştiremezsiniz". Reklam Yöneticisi'nde "Kimlik doğrulamayı başlat" Mustafa Bey tarafından tamamlanmalı. Kalan adımlar: gönderi seçimi, koridor reklam setini çoğaltma, WhatsApp hedefi, yayın.
+
 ## 2. Hedef kitle
 
 - **Konum, reklam seti 1 (çekirdek):** Rize Merkez pin + 35 km. Tüm hizmetler.
