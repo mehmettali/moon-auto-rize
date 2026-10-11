@@ -12,17 +12,21 @@ Tarih: 11 Ekim 2026 · Hedef: Rize genelinde randevu/WhatsApp talebi
 | 4 | Alan adı doğrulama | Yapılmadı | Business Manager → Marka güvenliği → Alan adları → moonauto.com.tr (meta etiket siteye eklenir) |
 | 5 | Kreatif görseller/videolar | Instagram reels mevcut; 1080×1350 ve 9:16 kesimler hazırlanacak | Biz |
 
-### Kurulum durumu (12 Ekim 2026)
-Kampanya taslak, **yayında değil**. Tamamlananlar:
+### Kurulum durumu (12 Ekim 2026, gece)
+Kampanya taslak, **yayına hazır, henüz yayınlanmadı** (Yayınla düğmesine Mustafa Bey veya Uğur Bey basacak; Reklam Yöneticisi → kampanya → "Gözden Geçir ve Yayınla"). Tamamlananlar:
 - Kampanya bütçesi 400 TL/gün (Advantage+ kampanya bütçesi), amaç Etkileşim → mesajlaşma.
-- Reklam seti 1 "Rize 35km | 22-60 | Mesaj": Rize Merkez + 35 km, min. yaş 22, tahmini kitle 526–619 bin.
-- Reklam seti 2 "Koridor | Of Sürmene Arhavi Hopa | PPF Seramik": Of ilçesi + Sürmene, Arhavi, Hopa (yalnızca şehir), min. yaş 25, tahmini kitle 269–317 bin.
+- **WhatsApp bağlandı:** 0542 553 78 53 WhatsApp Business'a taşındı, Meta kodu doğrulandı, sayfa "Moon Auto & Detailing & Car Studio" numaraya bağlı. İki reklam setinde de hedef **yalnızca WhatsApp** (Messenger ve Instagram kapalı). Reklamlarda WhatsApp numarası otomatik seçildi.
+- Reklam seti 1 "Rize 35km | 22-60 | Mesaj": Rize + 35 km, min. yaş 22, tahmini kitle 525–618 bin.
+- Reklam seti 2 "Koridor | Of Sürmene Arhavi Hopa | PPF Seramik": Of ilçesi + Sürmene, Arhavi, Hopa (yalnızca şehir), min. yaş 25, tahmini kitle 244–287 bin. "Seçtiğiniz şehirlerle ilgilenen kişilere ülke genelinde eriş" seçeneği kapatıldı.
 - Her iki sette birer reklam: işletme hesabının 17 Eylül seramik reels'i, kimlik Moon Auto + @moonautodetailingrize, ortaklık reklamı kapalı.
 - Piksel ve alan adı doğrulandı; Meta kimlik doğrulaması tamamlandı.
 
-Engeller:
-1. **WhatsApp hedefi:** 0542 553 78 53 numarasında WhatsApp Business uygulaması yok; Meta "önce WhatsApp Business'ı yükle" diyor. Mustafa Bey telefonuna WhatsApp Business kurup (sohbetler otomatik taşınır) kodu girdikten sonra iki reklam setinde "Manuel yönlendirme hedefi → WhatsApp" işaretlenecek. Şu an hedef Messenger + Instagram.
-2. **Kreatif:** Instagram'daki PPF, Audi A7 ve temizlik reels'leri mustafa._karadag ile ortak (collab) gönderi; Meta bunları "ortaklık reklamı" sayıyor ve kişisel hesabın profesyonel olmasını istiyor. Çözüm: mustafa._karadag hesabını profesyonel hesaba çevirmek (Instagram → Ayarlar → Hesap türü) → sonra bu reels'ler de eklenir. Şimdilik yalnız 17 Eylül seramik reels'i kullanılıyor.
+Dikkat (öğrenilen): WhatsApp hedefi eklenince Meta her iki reklam setinde konumu sessizce **Türkiye geneline sıfırladı**; konumlar elle yeniden girildi. Yayından sonra konumlar tekrar kontrol edilmeli.
+
+Sonraki kreatif: HeyGen'de Mustafa Karadağ avatarıyla 34 sn'lik dikey reklam reel'i üretildi ("Moon Auto | PPF & Seramik Reklam Reel", proje "Corolla PPF & Cam Filmi"). İndirilip her iki sete üçüncü reklam olarak eklenecek (A/B: IG reels vs avatar video).
+
+Kalan engel:
+1. **Kreatif:** Instagram'daki PPF, Audi A7 ve temizlik reels'leri mustafa._karadag ile ortak (collab) gönderi; Meta bunları "ortaklık reklamı" sayıyor ve kişisel hesabın profesyonel olmasını istiyor. Çözüm: mustafa._karadag hesabını profesyonel hesaba çevirmek (Instagram → Ayarlar → Hesap türü) → sonra bu reels'ler de eklenir.
 
 ## 2. Hedef kitle
 
