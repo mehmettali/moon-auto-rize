@@ -161,7 +161,7 @@ export const DISTRICT_DETAILS: Record<string, DistrictDetail> = {
     ],
     neighborhoods: ['Arhavi merkez', 'Musazade', 'Kemerköprü', 'Derecik', 'Ortacalar'],
     tip: "Arhavi'den gelen müşterilerimize PPF ve seramikte 2 gün bırakma ve dönüş için toplu taşıma bilgisi veriyoruz; aracınız kapalı stüdyoda bekler.",
-    extraFaqs: [{ q: "Artvin'de PPF kaplama yapan yer var mı?", a: "Artvin ilinde kapalı stüdyoda PPF uygulayan bir merkez bilmiyoruz; en yakın seçenekler Rize Merkez (Arhavi'den 1 saat) ve Trabzon (2,5 saat). Moon Auto Rize'de TPU film ile 70.000 TL'den başlayan fiyatlarla uygulanır; panel bazlı teklif için WhatsApp'tan yazın." }],
+    extraFaqs: [{ q: "Artvin'de PPF kaplama yapan yer var mı?", a: "Artvin ilinde kapalı stüdyoda PPF uygulayan bir merkez bilmiyoruz; en yakın seçenekler Rize Merkez (Arhavi'den 1 saat) ve Trabzon (2,5 saat). Moon Auto Rize'de TPU film ile kaput 10.000 TL, kaput + çamurluk 20.000 TL, full araç 70.000 TL'den başlar; araç modelinizi WhatsApp'tan gönderin, net teklif verelim." }],
   },
   hopa: {
     route: "Hopa'dan D-010 sahil yolu ile batıya; Arhavi, Fındıklı, Ardeşen, Pazar ve Çayeli üzerinden Rize Merkez'e yaklaşık 1 saat 10 dakika. İslampaşa Mahallesi Barbaros Sokak No:33/A.",
