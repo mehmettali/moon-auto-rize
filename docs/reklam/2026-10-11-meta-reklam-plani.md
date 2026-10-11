@@ -12,10 +12,17 @@ Tarih: 11 Ekim 2026 · Hedef: Rize genelinde randevu/WhatsApp talebi
 | 4 | Alan adı doğrulama | Yapılmadı | Business Manager → Marka güvenliği → Alan adları → moonauto.com.tr (meta etiket siteye eklenir) |
 | 5 | Kreatif görseller/videolar | Instagram reels mevcut; 1080×1350 ve 9:16 kesimler hazırlanacak | Biz |
 
-### Kurulum durumu (11 Ekim 2026, akşam)
-- Yapıldı: kampanya bütçesi 400 TL/gün; Rize reklam seti konum Rize + 35 km, min. yaş 22; piksel ve alan adı doğrulandı.
-- Reklam kreatifi: ilk reklam kişisel hesap gönderisini seçtiği için "ortaklık reklamı" hatasına düştü; işletme hesabı @moonautodetailingrize için ikinci reklam açıldı, gönderi seçimi tamamlanmadı.
-- **Engel:** Meta güvenlik kontrolü (#3858385): "kimliğinizi doğrulayana kadar reklam oluşturamaz veya değiştiremezsiniz". Reklam Yöneticisi'nde "Kimlik doğrulamayı başlat" Mustafa Bey tarafından tamamlanmalı. Kalan adımlar: gönderi seçimi, koridor reklam setini çoğaltma, WhatsApp hedefi, yayın.
+### Kurulum durumu (12 Ekim 2026)
+Kampanya taslak, **yayında değil**. Tamamlananlar:
+- Kampanya bütçesi 400 TL/gün (Advantage+ kampanya bütçesi), amaç Etkileşim → mesajlaşma.
+- Reklam seti 1 "Rize 35km | 22-60 | Mesaj": Rize Merkez + 35 km, min. yaş 22, tahmini kitle 526–619 bin.
+- Reklam seti 2 "Koridor | Of Sürmene Arhavi Hopa | PPF Seramik": Of ilçesi + Sürmene, Arhavi, Hopa (yalnızca şehir), min. yaş 25, tahmini kitle 269–317 bin.
+- Her iki sette birer reklam: işletme hesabının 17 Eylül seramik reels'i, kimlik Moon Auto + @moonautodetailingrize, ortaklık reklamı kapalı.
+- Piksel ve alan adı doğrulandı; Meta kimlik doğrulaması tamamlandı.
+
+Engeller:
+1. **WhatsApp hedefi:** 0542 553 78 53 numarasında WhatsApp Business uygulaması yok; Meta "önce WhatsApp Business'ı yükle" diyor. Mustafa Bey telefonuna WhatsApp Business kurup (sohbetler otomatik taşınır) kodu girdikten sonra iki reklam setinde "Manuel yönlendirme hedefi → WhatsApp" işaretlenecek. Şu an hedef Messenger + Instagram.
+2. **Kreatif:** Instagram'daki PPF, Audi A7 ve temizlik reels'leri mustafa._karadag ile ortak (collab) gönderi; Meta bunları "ortaklık reklamı" sayıyor ve kişisel hesabın profesyonel olmasını istiyor. Çözüm: mustafa._karadag hesabını profesyonel hesaba çevirmek (Instagram → Ayarlar → Hesap türü) → sonra bu reels'ler de eklenir. Şimdilik yalnız 17 Eylül seramik reels'i kullanılıyor.
 
 ## 2. Hedef kitle
 
