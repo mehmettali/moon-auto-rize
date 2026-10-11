@@ -79,8 +79,9 @@ export const SERVICE_DETAILS: Record<string, ServiceDetail> = {
     ],
     rizeNote: "Rize–Trabzon sahil yolu ve Ovit, Ayder, İkizdere yayla yolları çakıl ve mıcır bakımından Türkiye'nin en yıpratıcı güzergâhları arasında. Kaput ve ön çamurluklarda taş izleri bir yaz sezonunda birikir. PPF bu darbeleri boya yerine filmin üzerine alır; küçük izler ise filmin kendini onaran üst katmanı sayesinde güneşte kaybolur. Rize'de PPF için Trabzon'a gitmenize gerek yok; kapalı ve tozsuz stüdyomuzda plotter kesim veya el kesimi ile uyguluyoruz.",
     packages: [
-      { name: 'PPF Boya Koruma Kaplama', from: 70000, best: true, includes: ['TPU boya koruma filmi', 'Kenar sarma, plotter kesim', 'Kürlenme ve teslim', '70.000 TL\'den başlar; aracın modeline ve işçiliğe göre değişir'] },
-      { name: 'Panel Bazlı (kaput, ön set)', from: 0, includes: ['Sadece istenen paneller', 'Araç modeline göre kesim', 'Telefonda net teklif'] },
+      { name: 'Kaput PPF', from: 10000, includes: ['Tam kaput, kenar sarma', 'TPU kendini onaran film', 'Taş çarpmasının en yoğun olduğu panel'] },
+      { name: 'Kaput + Çamurluk (Ön Set)', from: 20000, best: true, includes: ['Kaput + 2 ön çamurluk', 'Kenar sarma, plotter kesim', 'Sahil ve yayla yolu için en çok tercih edilen paket'] },
+      { name: 'Full Araç PPF', from: 70000, includes: ['Tüm dış yüzeyler', 'Kapı eşikleri ve kolu altı', 'Modele ve işçiliğe göre fiyat değişir'] },
     ],
     care: [
       'İlk 48 saat aracı yıkamayın; film kenarları oturmadan su girmesin',

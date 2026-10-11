@@ -66,7 +66,7 @@ export const SERVICES: Service[] = [
     title: 'Rize PPF Kaplama | Boya Koruma Filmi – Moon Auto',
     description: "Rize'de PPF boya koruma filmi. Kendini onaran TPU film ile taş çarpması ve çiziğe karşı 5-10 yıl garanti. Kaput, ön set veya full kaplama.",
     short: 'Kendini onaran şeffaf TPU film. Taş çarpması, çizik ve anahtar izine karşı fiziksel kalkan. Trabzon\'a gitmeden Rize\'de.',
-    icon: '🛡️', priceFrom: 70000, priceNote: '70.000 TL\'den başlar; aracın modeline ve işçiliğe göre değişir', duration: '1–4 gün', featured: true,
+    icon: '🛡️', priceFrom: 10000, priceNote: 'Kaput 10.000 · kaput + çamurluk 20.000 · full araç 70.000 TL\'den; modele ve işçiliğe göre değişir', duration: '1–4 gün', featured: true,
     intro: [
       "PPF (Paint Protection Film), boyanın üzerine uygulanan 150–200 mikron kalınlığında, şeffaf ve kendini onarabilen bir poliüretan filmdir. Karadeniz sahil yolu ve yayla yollarındaki çakıl taşları, kamyon arkasından fırlayan taşlar ve Rize'nin yoğun yağmurunda oluşan kum çizikleri boyaya değil filme gelir.",
       "Moon Auto, Rize'de PPF uygulaması için plotter kesim ve el kesimi seçeneklerini sunar. 3M ve TPU tabanlı premium filmlerle çalışıyoruz; sararma yapmayan, 5–10 yıl garantili ürünler tercih ediyoruz. Kaput + çamurluk ön set, tampon, ayna veya full araç paketleri mevcuttur.",

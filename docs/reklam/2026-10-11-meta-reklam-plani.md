@@ -41,7 +41,7 @@ Başlık: Rize Seramik Kaplama — Yağmura Karşı Kalıcı Koruma · CTA: What
 
 **A2 — PPF:**
 Sahil yolunda kamyon arkası bir yolculuk, kaputta onlarca taş izi. PPF boya koruma filmi darbeyi boya yerine kendi üstüne alır, küçük çizikler güneşte kendini onarır. Trabzon'a gitmeden Rize'de, kapalı tozsuz stüdyoda.
-Başlık: Rize'de PPF Kaplama — 70.000 TL'den · CTA: Teklif al
+Başlık: Rize'de PPF Kaplama — Kaput 10.000 TL'den, Ön Set 20.000 TL'den · CTA: Teklif al
 
 **B1 — Detaylı iç temizlik:**
 Koltukları sökmeden temizlik, temizlik değildir. Halının altındaki nem, kum ve çay yaprağı ancak sökülerek çıkar. Ekstraktör, kuru buhar, ozon. Otomobil 9.000 TL.

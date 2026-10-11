@@ -1,6 +1,6 @@
 # Moon Auto Rize — PPF ve Seramik Kaplama Hedef Kitle Araştırması (Rize + Trabzon + Artvin)
 
-Tarih: 11 Ekim 2026 · Amaç: yüksek bilet hizmetler (PPF 70.000 TL'den, seramik 15–20.000 TL) için reklam coğrafyasını ve kitleyi belirlemek.
+Tarih: 11 Ekim 2026 · Amaç: yüksek bilet hizmetler (PPF kaput 10.000 / ön set 20.000 / full 70.000 TL'den, seramik 15–20.000 TL) için reklam coğrafyasını ve kitleyi belirlemek.
 
 ## 1. Özet karar
 - **Çekirdek:** Rize Merkez + 35 km (Rize ilinin tamamına yakını).
@@ -43,7 +43,7 @@ Koridor toplamı ≈ 119 bin nüfus; Rize ile birlikte ≈ 466 bin kişi, tahmin
 | Of / Sürmene | Yerel oto yıkamalar; kapalı stüdyolu PPF yok | Düşük |
 | Arhavi / Hopa | Tespit edilemedi | **Çok düşük** |
 
-Trabzon Armut listelerinde PPF fiyat bandı 4.000–70.000 TL; kaput 5–20 bin, kaput+çamurluk 12–41 bin. Moon Auto'nun "70.000'den başlayan" fiyatı tam araç içindir; koridor reklamında **panel bazlı başlangıç fiyatı (kaput/ön set)** belirtilmezse Trabzon fiyatlarıyla karşılaştırmada pahalı algılanır. Mustafa Bey'den kaput ve ön set fiyatı alınmalı.
+Trabzon Armut listelerinde PPF fiyat bandı 4.000–70.000 TL; kaput 5–20 bin, kaput+çamurluk 12–41 bin. Moon Auto panel fiyatları: kaput 10.000 TL, kaput + çamurluk 20.000 TL, full araç 70.000 TL'den. Trabzon bandının (kaput 5–20 bin, kaput+çamurluk 12–41 bin) alt-orta kısmında; koridor reklamında bu iki fiyat açıkça yazılmalı.
 
 ## 5. Kitle tanımı (Meta)
 
@@ -64,7 +64,6 @@ Trabzon Armut listelerinde PPF fiyat bandı 4.000–70.000 TL; kaput 5–20 bin,
 - Hedef kelimeler: "of seramik kaplama", "sürmene ppf", "hopa seramik kaplama", "arhavi oto kuaför", "artvin ppf kaplama".
 
 ## 7. Açık noktalar
-- Kaput ve ön set PPF fiyatı (Mustafa Bey).
 - Koridor müşterisi için teslim modeli: aracı 2 gün bırakma, dönüş için ulaşım önerisi (sitede "2 gün bırakma" ifadesi var).
 - Reklam setinde WhatsApp hedefi için numara bağlantısı (SMS).
 
