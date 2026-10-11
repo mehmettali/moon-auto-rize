@@ -20,18 +20,20 @@ Tarih: 11 Ekim 2026 · Hedef: Rize genelinde randevu/WhatsApp talebi
 - **İlgi alanları (geniş kitle A/B için):** Otomobiller, Araç bakımı, BMW/Mercedes/Audi/VW, Car detailing. Advantage+ kitle ile karşılaştırılır.
 - **Yeniden pazarlama:** piksel ile site ziyaretçileri (30 gün), Instagram etkileşimi (90 gün), WhatsApp'a tıklayıp mesaj atmayanlar.
 
-## 3. Kampanya yapısı (ilk 30 gün)
+## 3. Kampanya yapısı — başlangıç: 400 TL/gün, hedef WhatsApp
 
-| Kampanya | Amaç | Hedef kitle | Günlük bütçe | Kreatif |
+Tek kampanya, kampanya bütçesi (Advantage+), iki reklam seti. Amaç: Etkileşim → mesajlaşma → **yalnızca WhatsApp**.
+
+| Reklam seti | Konum | Yaş | Kreatif | Bütçe payı |
 |---|---|---|---|---|
-| A. Seramik + PPF (ana) | Etkileşim → WhatsApp mesajı (Click-to-WhatsApp) | Rize 35 km, 25–55 | 250–300 TL | Işık tüneli reels, öncesi/sonrası, "Rize'nin yağmuruna karşı" |
-| B. Detaylı iç temizlik | Click-to-WhatsApp | Rize 35 km, 22–60 | 150 TL | Koltuk söküm videosu, çay sezonu, çocuklu aile |
-| C. Yeniden pazarlama | Trafik → /randevu/ | Site ziyaretçisi + IG etkileşim | 100 TL | Fiyat listesi, 4,9 ★ 69 yorum, "randevu al" |
-| D. Oto çekici (düşük bütçe, her zaman açık) | Arama (Click-to-Call) | Rize 35 km | 50 TL | "Yolda mı kaldın?" tek görsel |
+| 1 · Rize çekirdek | Rize Merkez pin + 35 km | 22–60 | Seramik (A1), PPF (A2), detaylı iç temizlik (B1) | ≈ 250 TL |
+| 2 · Doğu koridoru | Of, Sürmene, Arhavi, Hopa pinleri +10 km | 25–60 | PPF (A2-koridor), seramik (A1) | ≈ 150 TL |
 
-Toplam ≈ 550–600 TL/gün, aylık ≈ 17–18 bin TL. Başlangıç için A ve C ile 350 TL/gün de olur.
+Kampanya bütçesi 400 TL/gün olarak girilir; Meta iki set arasında dağıtır. 7. günde sohbet başına maliyet karşılaştırılır, pahalı set daraltılır.
 
-**Neden Click-to-WhatsApp?** Site randevu formu zaten WhatsApp'a düşüyor; Rize'de dönüşüm telefonda oluyor. Meta'nın mesaj kampanyası, WhatsApp Business numarası (0542 553 78 53) sayfaya bağlanınca doğrudan sohbet açar; piksel/sayfa geçişi gerekmez.
+**Zorunlu ön koşul — WhatsApp:** Mesaj hedefi "Manuel yönlendirme hedefi → WhatsApp" seçilebilmesi için 0542 553 78 53 numarasının Facebook sayfasına bağlanması gerekir (Sayfa → Ayarlar → WhatsApp → numara gir → telefona gelen SMS kodu). Bağlanmadan kampanya Messenger/Instagram'a düşer.
+
+**Ölçüm hedefi:** ilk ay ≤ 60 TL / başlatılan WhatsApp sohbeti; Rize setinde ≤ 50, koridorda ≤ 80 kabul edilebilir.
 
 ## 4. Reklam metinleri (ilk set)
 
@@ -39,8 +41,12 @@ Toplam ≈ 550–600 TL/gün, aylık ≈ 17–18 bin TL. Başlangıç için A ve
 Rize'de yılda 184 gün yağmur yağıyor. Boyanız her damlada biraz daha matlaşıyor. Moon Auto'da seramik kaplama ile su boncuklanıp akar, kir tutmaz, parlaklık yıllarca kalır. Otomobil 15.000 TL · 4,9 ★ 69 Google yorumu · İslampaşa, Rize Merkez.
 Başlık: Rize Seramik Kaplama — Yağmura Karşı Kalıcı Koruma · CTA: WhatsApp'tan yaz
 
-**A2 — PPF:**
-Sahil yolunda kamyon arkası bir yolculuk, kaputta onlarca taş izi. PPF boya koruma filmi darbeyi boya yerine kendi üstüne alır, küçük çizikler güneşte kendini onarır. Trabzon'a gitmeden Rize'de, kapalı tozsuz stüdyoda.
+**A2 — PPF (Rize):**
+Sahil yolunda kamyon arkası bir yolculuk, kaputta onlarca taş izi. PPF boya koruma filmi darbeyi boya yerine kendi üstüne alır, küçük çizikler güneşte kendini onarır. Kaput 10.000 TL'den, kaput + çamurluk 20.000 TL'den. Rize Merkez İslampaşa, kapalı tozsuz stüdyo.
+
+**A2-koridor — PPF (Of, Sürmene, Arhavi, Hopa):**
+Trabzon'a gitmeden PPF: Of ve Sürmene'den 40 dakika, Arhavi ve Hopa'dan 1 saat. Kaput 10.000 TL'den, kaput + çamurluk 20.000 TL'den. TPU film, kapalı stüdyo, 4,9 ★ 69 Google yorumu. Aracınızı 1–2 gün bırakın, biz ilgilenelim.
+Başlık: Artvin ve Trabzon Doğusuna En Yakın PPF Stüdyosu · CTA: WhatsApp'tan yaz
 Başlık: Rize'de PPF Kaplama — Kaput 10.000 TL'den, Ön Set 20.000 TL'den · CTA: Teklif al
 
 **B1 — Detaylı iç temizlik:**
