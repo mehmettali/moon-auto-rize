@@ -14,7 +14,7 @@ Tarih: 11 Ekim 2026 · Hedef: Rize genelinde randevu/WhatsApp talebi
 
 ### Kurulum durumu (12 Ekim 2026, 02:30)
 - **Kampanya A yayında ve onaylı** (12 Ekim 02:25 yayınlandı, 200 TL/gün; 03:00 itibarıyla iki reklam da "Aktif"). KDV numarası girilmedi (isteğe bağlı; girilmezse Meta KDV ekler — Mustafa Bey vergi no verirse Faturalandırma ayarlarından eklenecek).
-- **Kampanya B taslakta, yayınlanmadı.** Mustafa Bey'in geri bildirimi (WhatsApp, 01:38): videodan "Google'da 4.9 puan" ve "Arhavi'den, Of'tan da bize gelebilirsiniz" cümleleri çıkarılacak. HeyGen'de v2 üretiliyor: kanca ("Boyanız her gün zarar görüyor"), düşük sesli premium müzik, yumuşak geçişler, yalnız atölye B-roll'u, 4.9 ve ilçe isimleri yok, ekran metinlerinde "PPF". v2 onaylanınca B kampanyasındaki video değiştirilip yayına alınacak.
+- **Kampanya B taslakta, yayınlanmadı.** Mustafa Bey'in geri bildirimi (WhatsApp, 01:38): videodan "Google'da 4.9 puan" ve "Arhavi'den, Of'tan da bize gelebilirsiniz" cümleleri çıkarılacak. HeyGen'de v2 üretiliyor: kanca ("Boyanız her gün zarar görüyor"), düşük sesli premium müzik, yumuşak geçişler, yalnız atölye B-roll'u, 4.9 ve ilçe isimleri yok, ekran metinlerinde "PPF". v2 planı 03:40'ta onaylandı (31 sn, altyazı kapalı, 7 sahne: kanca → Mustafa → PPF → Seramik → Fiyat → Kalite → WhatsApp); render sürüyor. Bitince B kampanyasındaki video değiştirilip yayına alınacak.
 
 | Kampanya | Bütçe | Reklam setleri | Kreatif | Hedef |
 |---|---|---|---|---|
