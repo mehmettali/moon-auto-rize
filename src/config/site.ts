@@ -14,7 +14,7 @@ export const SITE = {
   phoneE164: '+905425537853',
   whatsapp: '905425537853',
   // Meta (Facebook) Pixel ID — Events Manager'dan alınır. Boşken piksel yüklenmez.
-  metaPixelId: '',
+  metaPixelId: '2072595640434391',
   // Firma e-postası (şema ve iletişim bilgisi için).
   email: 'info@moonauto.com.tr',
   address: {
