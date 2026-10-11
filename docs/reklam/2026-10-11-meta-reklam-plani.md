@@ -12,18 +12,26 @@ Tarih: 11 Ekim 2026 · Hedef: Rize genelinde randevu/WhatsApp talebi
 | 4 | Alan adı doğrulama | Yapılmadı | Business Manager → Marka güvenliği → Alan adları → moonauto.com.tr (meta etiket siteye eklenir) |
 | 5 | Kreatif görseller/videolar | Instagram reels mevcut; 1080×1350 ve 9:16 kesimler hazırlanacak | Biz |
 
-### Kurulum durumu (12 Ekim 2026, gece)
-Kampanya taslak, **yayına hazır, henüz yayınlanmadı** (Yayınla düğmesine Mustafa Bey veya Uğur Bey basacak; Reklam Yöneticisi → kampanya → "Gözden Geçir ve Yayınla"). Tamamlananlar:
-- Kampanya bütçesi 400 TL/gün (Advantage+ kampanya bütçesi), amaç Etkileşim → mesajlaşma.
-- **WhatsApp bağlandı:** 0542 553 78 53 WhatsApp Business'a taşındı, Meta kodu doğrulandı, sayfa "Moon Auto & Detailing & Car Studio" numaraya bağlı. İki reklam setinde de hedef **yalnızca WhatsApp** (Messenger ve Instagram kapalı). Reklamlarda WhatsApp numarası otomatik seçildi.
-- Reklam seti 1 "Rize 35km | 22-60 | Mesaj": Rize + 35 km, min. yaş 22, tahmini kitle 525–618 bin.
-- Reklam seti 2 "Koridor | Of Sürmene Arhavi Hopa | PPF Seramik": Of ilçesi + Sürmene, Arhavi, Hopa (yalnızca şehir), min. yaş 25, tahmini kitle 244–287 bin. "Seçtiğiniz şehirlerle ilgilenen kişilere ülke genelinde eriş" seçeneği kapatıldı.
-- Her iki sette birer reklam: işletme hesabının 17 Eylül seramik reels'i, kimlik Moon Auto + @moonautodetailingrize, ortaklık reklamı kapalı.
+### Kurulum durumu (12 Ekim 2026, gece 02:00)
+İki kampanya taslak, **yayına hazır, henüz yayınlanmadı**. Yayınla düğmesine Mustafa Bey veya Uğur Bey basacak: Reklam Yöneticisi → üstte "Gözden Geçir ve Yayınla" → iki kampanyayı seçip Yayınla. Toplam 400 TL/gün (200 + 200).
+
+| Kampanya | Bütçe | Reklam setleri | Kreatif | Hedef |
+|---|---|---|---|---|
+| A \| Seramik + PPF \| WhatsApp \| Rize 35km (6990804032662) | 200 TL/gün (CBO) | Rize +35 km (min. yaş 22, ≈525–618 bin) · Koridor Of/Sürmene/Arhavi/Hopa (min. yaş 25, ≈244–287 bin) | 17 Eylül seramik reel'i, "Reklam Oluştur" formatında video reklam (A1 ve A2-koridor metinleri) | Yalnızca WhatsApp, CTA "WhatsApp Mesajı Gönder" |
+| B \| Avatar video \| WhatsApp \| Rize + Koridor (6990811032462) | 200 TL/gün (CBO) | Aynı iki set (kopya) | HeyGen avatar reel'i (34 sn, 1080×1920), https://www.moonauto.com.tr/video/moonauto-ppf-seramik-reel.mp4 adresinden URL ile yüklendi | Yalnızca WhatsApp, CTA "WhatsApp Mesajı Gönder" |
+
+Tamamlananlar:
+- **WhatsApp bağlandı:** 0542 553 78 53 WhatsApp Business'a taşındı, Meta kodu doğrulandı; İşletme Ayarları → WhatsApp hesapları'nda "Moon Auto Detailing (WhatsApp Business Uygulaması)" hesabı, numara "Bağlandı". Dört reklam setinde de hedef yalnızca WhatsApp.
 - Piksel ve alan adı doğrulandı; Meta kimlik doğrulaması tamamlandı.
+- "Seçtiğiniz şehirlerle ilgilenen kişilere ülke genelinde eriş" seçeneği her sette kapalı.
 
-Dikkat (öğrenilen): WhatsApp hedefi eklenince Meta her iki reklam setinde konumu sessizce **Türkiye geneline sıfırladı**; konumlar elle yeniden girildi. Yayından sonra konumlar tekrar kontrol edilmeli.
+Öğrenilenler (tekrar etmemek için):
+- WhatsApp hedefi eklenince Meta reklam setindeki konumu sessizce **Türkiye geneline sıfırlıyor**; konumlar elle yeniden girildi. Yayından sonra konumlar tekrar kontrol edilmeli.
+- Instagram gönderisi reklamları ("Mevcut gönderiyi kullan") WhatsApp-only hedefle çalışmıyor (#2490118: CTA menüsünde WhatsApp yok). Çözüm: aynı videoyu Sayfa/Instagram medyasından seçip "Reklam Oluştur" ile video reklam yapmak.
+- Reklam seti düzeyindeki #2923012 "WhatsApp Business hesabı gereklidir" hatası, numara bağlandıktan sonra sayfa yenilenince kayboldu.
+- Konum arama açılır listesi Chrome'da kesiliyor; "Konumları Toplu Olarak Ekleyin" → Şehirler → "Sadece şehir" → "Hopa, Turkey" biçimi çalışıyor.
 
-Sonraki kreatif: HeyGen'de Mustafa Karadağ avatarıyla 34 sn'lik dikey reklam reel'i üretildi ("Moon Auto | PPF & Seramik Reklam Reel", proje "Corolla PPF & Cam Filmi"). İndirilip her iki sete üçüncü reklam olarak eklenecek (A/B: IG reels vs avatar video).
+Sonraki: yayından 24 saat sonra onay durumu ve ilk WhatsApp sohbetleri; 7. günde A/B (reel vs avatar) karşılaştırması, pahalı tarafı kıs.
 
 Kalan engel:
 1. **Kreatif:** Instagram'daki PPF, Audi A7 ve temizlik reels'leri mustafa._karadag ile ortak (collab) gönderi; Meta bunları "ortaklık reklamı" sayıyor ve kişisel hesabın profesyonel olmasını istiyor. Çözüm: mustafa._karadag hesabını profesyonel hesaba çevirmek (Instagram → Ayarlar → Hesap türü) → sonra bu reels'ler de eklenir.
