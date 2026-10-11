@@ -151,18 +151,6 @@ export const DISTRICT_DETAILS: Record<string, DistrictDetail> = {
     tip: 'Sürmene\'den sabah 08:30 teslimle seramik uygulaması ertesi gün alınabilir; iki gün bırakmak isteyenlere kapalı park alanı sağlıyoruz.',
     extraFaqs: [{ q: "Sürmene'de seramik kaplama yapan var mı?", a: "Sürmene'de yıkama noktaları var; kapalı stüdyoda boya düzeltme + seramik için en yakın merkezler Rize Merkez (40 dk) ve Trabzon Merkez (50 dk). Moon Auto Rize'de otomobil 15.000 TL, SUV 20.000 TL." }],
   },
-  arakli: {
-    route: "Araklı'dan sahil yolu ile doğuya; Sürmene, Of ve İyidere'yi geçip Rize Merkez'e 45 dakika. Recep Tayyip Erdoğan Bulvarı'ndan İslampaşa Mahallesi'ne dönün.",
-    conditions: ['Trabzon–Rize hattında yoğun kamyon trafiği: taş çarpması', 'Karadere Vadisi ve Bayburt yolu mıcırı', 'Sahil kesiminde deniz tuzu'],
-    popular: [
-      { slug: 'rize-ppf-kaplama', why: 'Kaput ve çamurluklarda taş izine karşı film' },
-      { slug: 'rize-seramik-kaplama', why: 'Uzun yol sürücüleri için kolay temizlenen yüzey' },
-      { slug: 'rize-cam-filmi', why: 'Sahil yolunda ısı ve UV kontrolü' },
-    ],
-    neighborhoods: ['Araklı merkez', 'Erenler', 'Yeşilyurt', 'Kalecik', 'Taşgeçit'],
-    tip: 'Araklı\'dan Rize ve Trabzon neredeyse eşit uzaklıkta; fiyat ve Google puanını karşılaştırıp karar verin, WhatsApp\'tan araç fotoğrafı gönderin.',
-    extraFaqs: [{ q: "Araklı'dan gelince aracımı aynı gün alabilir miyim?", a: 'Yıkama, far parlatma ve cam filmi aynı gün; seramik ve detaylı iç temizlik 1–2 gün, PPF 1–4 gün sürer. Teslim gününü randevuda netleştiriyoruz.' }],
-  },
   arhavi: {
     route: "Arhavi'den D-010 sahil yolu ile batıya; Fındıklı, Ardeşen, Pazar ve Çayeli'ni geçip Rize Merkez'e yaklaşık 1 saat. Şehir girişinde İslampaşa Mahallesi Barbaros Sokak No:33/A.",
     conditions: ['Artvin sahilinde deniz tuzu ve yüksek nem', 'Kamilet Vadisi ve yayla yollarında çamur, mıcır', 'Kışın Hopa–Borçka geçişinde tuzlama'],

@@ -4,7 +4,7 @@ Tarih: 11 Ekim 2026 · Amaç: yüksek bilet hizmetler (PPF 70.000 TL'den, serami
 
 ## 1. Özet karar
 - **Çekirdek:** Rize Merkez + 35 km (Rize ilinin tamamına yakını).
-- **Doğu koridoru (yeni):** Trabzon'un doğu ilçeleri (Of, Sürmene, Araklı) ve Artvin sahili (Arhavi, Hopa). Rize Merkez'e 35–90 dk; PPF/seramik gibi 1–4 günlük işler için makul mesafe.
+- **Doğu koridoru (yeni):** Trabzon'un Rize'ye en yakın ilçeleri (Of, Sürmene) ve Artvin sahili (Arhavi, Hopa). Rize Merkez'e 35–90 dk; PPF/seramik gibi 1–4 günlük işler için makul mesafe.
 - **Trabzon Merkez dahil edilmez** (ilk aşama): 79 km, güçlü yerel rakipler (Profark, Detail Doctor/3M, Ziebart). Oraya reklam vermek bütçeyi rakiplerin önünde harcar.
 - **Artvin'de kapalı stüdyolu PPF uygulayıcısı tespit edilemedi.** Hopa–Arhavi hattı için Moon Auto en yakın profesyonel seçenek; bu, reklam mesajının çekirdeği olmalı.
 
@@ -22,14 +22,13 @@ Hedeflenen ilçeler:
 |---|---|---|---|---|---|
 | Of | Trabzon | 44.120 | ~35 km | 35 dk | Rize'ye Trabzon Merkez'den daha yakın |
 | Sürmene | Trabzon | 25.281 | 39 km | 40 dk | Sahil yolu üzerinde |
-| Araklı | Trabzon | 49.230 | 46 km | 45 dk | Trabzon'un doğu kapısı; Trabzon Merkez 35 km |
 | Arhavi | Artvin | 22.025 | ~80 km | 60 dk | Artvin sahilinin en kalabalık yerleşimi |
 | Hopa | Artvin | 27.844 | ~92 km | 70 dk | Liman, Sarp sınır kapısı ticareti |
 
-Koridor toplamı ≈ 168 bin nüfus; Rize ile birlikte ≈ 515 bin kişi, tahmini 95–100 bin otomobil.
+Koridor toplamı ≈ 119 bin nüfus; Rize ile birlikte ≈ 466 bin kişi, tahmini 85–90 bin otomobil. Araklı, Trabzon Merkez'e Rize'den daha yakın olduğu için kapsam dışı bırakıldı.
 
 ## 3. Neden bu koridor mantıklı
-1. **Mesafe asimetrisi:** Of/Sürmene/Araklı'dan Rize Merkez (35–46 km), Trabzon Merkez'e (35–60 km) eşit veya daha yakın. Rize'yi seçmek için tek sebep gerekiyor: fiyat ve 4,9 ★ sosyal kanıt.
+1. **Mesafe asimetrisi:** Of ve Sürmene'den Rize Merkez (35–39 km), Trabzon Merkez'e (45–55 km) göre daha yakın. Rize'yi seçmek için tek sebep gerekiyor: fiyat ve 4,9 ★ sosyal kanıt.
 2. **Artvin'de arz yok:** Arama sonuçlarında Artvin/Hopa/Arhavi'de PPF veya seramik stüdyosu çıkmadı; en yakın alternatif Trabzon (Hopa'dan 170 km). Moon Auto 90 km.
 3. **Yüksek bilet = uzun mesafe toleransı:** 70 bin TL'lik PPF için 1 saat yol müşteriyi caydırmaz; 800 TL'lik yıkama için caydırır. Koridor reklamı yalnızca PPF/seramik/detailing paketi için yapılmalı, yıkama için değil.
 4. **Yol koşulları aynı:** Sahil yolu D-010, tüm koridorun ortak güzergâhı: kamyon trafiği, taş çarpması, deniz tuzu. "Sahil yolunda kaput taş izleri" mesajı Of'tan Hopa'ya aynı şekilde çalışır.
@@ -41,7 +40,7 @@ Koridor toplamı ≈ 168 bin nüfus; Rize ile birlikte ≈ 515 bin kişi, tahmin
 |---|---|---|
 | Rize Merkez | Luxury Car Auto Detailing (İslampaşa), Dry Car Care | Orta |
 | Trabzon Merkez | Profark Garage, Detail Doctor (3M yetkili), Ziebart, YK, UTD | **Yüksek** — ilk aşamada hedeflenmez |
-| Of / Sürmene / Araklı | Yerel oto yıkamalar; kapalı stüdyolu PPF yok | Düşük |
+| Of / Sürmene | Yerel oto yıkamalar; kapalı stüdyolu PPF yok | Düşük |
 | Arhavi / Hopa | Tespit edilemedi | **Çok düşük** |
 
 Trabzon Armut listelerinde PPF fiyat bandı 4.000–70.000 TL; kaput 5–20 bin, kaput+çamurluk 12–41 bin. Moon Auto'nun "70.000'den başlayan" fiyatı tam araç içindir; koridor reklamında **panel bazlı başlangıç fiyatı (kaput/ön set)** belirtilmezse Trabzon fiyatlarıyla karşılaştırmada pahalı algılanır. Mustafa Bey'den kaput ve ön set fiyatı alınmalı.
@@ -52,7 +51,7 @@ Trabzon Armut listelerinde PPF fiyat bandı 4.000–70.000 TL; kaput 5–20 bin,
 - Konum: Rize Merkez pin + 35 km. Yaş 22–60. Hedef: tüm hizmetler (yıkama dahil).
 
 **Reklam seti 2 — Doğu koridoru PPF/seramik**
-- Konum: Of, Sürmene, Araklı, Arhavi, Hopa (ilçe pinleri, +10 km). Yaş 25–60.
+- Konum: Of, Sürmene, Arhavi, Hopa (ilçe pinleri, +10 km). Yaş 25–60.
 - Sadece PPF, seramik ve iç-dış detailing paketi kreatifleri.
 - İlgi alanları (test): Otomobiller, BMW, Mercedes-Benz, Audi, Volkswagen, Toyota Hilux / pick-up, Araç bakımı. Advantage+ ile A/B.
 - Mesaj: "Trabzon'a gitmeden, Artvin'den 1 saat: kapalı stüdyoda PPF ve seramik. 4,9 ★ 69 yorum."
@@ -61,8 +60,8 @@ Trabzon Armut listelerinde PPF fiyat bandı 4.000–70.000 TL; kaput 5–20 bin,
 **Demografi notu:** Türkiye'de PPF/seramik müşterisinin çoğunluğu 25–45 yaş erkek; ilk 2 hafta cinsiyet filtresi uygulanmaz, veriye göre karar verilir.
 
 ## 6. Site tarafı (yapıldı)
-- `/hizmet-bolgeleri/` altına 5 yeni sayfa: of, surmene, arakli, arhavi, hopa. Her biri PPF/seramik odaklı, mesafe ve "Trabzon'a gitmeden" argümanıyla; il bilgisi (Trabzon/Artvin) şemaya işlendi.
-- Hedef kelimeler: "of seramik kaplama", "araklı ppf", "hopa seramik kaplama", "arhavi oto kuaför", "artvin ppf kaplama".
+- `/hizmet-bolgeleri/` altına 4 yeni sayfa: of, surmene, arhavi, hopa. Her biri PPF/seramik odaklı, mesafe ve "Trabzon'a gitmeden" argümanıyla; il bilgisi (Trabzon/Artvin) şemaya işlendi.
+- Hedef kelimeler: "of seramik kaplama", "sürmene ppf", "hopa seramik kaplama", "arhavi oto kuaför", "artvin ppf kaplama".
 
 ## 7. Açık noktalar
 - Kaput ve ön set PPF fiyatı (Mustafa Bey).

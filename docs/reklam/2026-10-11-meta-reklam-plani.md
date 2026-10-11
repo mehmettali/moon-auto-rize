@@ -15,7 +15,7 @@ Tarih: 11 Ekim 2026 · Hedef: Rize genelinde randevu/WhatsApp talebi
 ## 2. Hedef kitle
 
 - **Konum, reklam seti 1 (çekirdek):** Rize Merkez pin + 35 km. Tüm hizmetler.
-- **Konum, reklam seti 2 (doğu koridoru, yalnız PPF/seramik/detailing paketi):** Of, Sürmene, Araklı (Trabzon) + Arhavi, Hopa (Artvin), ilçe pinleri +10 km, yaş 25–60, 150 TL/gün. Trabzon Merkez ilk aşamada hedeflenmez (güçlü rakipler). Gerekçe ve veriler: [hedef kitle araştırması](2026-10-11-hedef-kitle-arastirmasi.md).
+- **Konum, reklam seti 2 (doğu koridoru, yalnız PPF/seramik/detailing paketi):** Of, Sürmene (Trabzon) + Arhavi, Hopa (Artvin), ilçe pinleri +10 km, yaş 25–60, 150 TL/gün. Trabzon Merkez ilk aşamada hedeflenmez (güçlü rakipler). Gerekçe ve veriler: [hedef kitle araştırması](2026-10-11-hedef-kitle-arastirmasi.md).
 - **Yaş:** 22–60. **Cinsiyet:** tümü (PPF/seramik için erkek ağırlıklı görülebilir; ilk 2 hafta daraltma yok).
 - **İlgi alanları (geniş kitle A/B için):** Otomobiller, Araç bakımı, BMW/Mercedes/Audi/VW, Car detailing. Advantage+ kitle ile karşılaştırılır.
 - **Yeniden pazarlama:** piksel ile site ziyaretçileri (30 gün), Instagram etkileşimi (90 gün), WhatsApp'a tıklayıp mesaj atmayanlar.

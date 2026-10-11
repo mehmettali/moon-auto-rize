@@ -55,11 +55,6 @@ export const DISTRICTS: District[] = [
     landmarks: 'Sürmene sahil, Çamburnu, Yeniay',
   },
   {
-    slug: 'arakli', name: 'Araklı', province: 'Trabzon', population: 49230, distanceKm: 46, driveMin: 45,
-    intro: "Araklı, Trabzon'un doğu kapısı; Rize Merkez'e 45 dakika, Trabzon Merkez'e yaklaşık aynı sürede. PPF ve seramik için Moon Auto'yu seçen Araklılı müşterilerimize uzun işlemlerde esnek teslim saati ve kapalı, tozsuz stüdyo sunuyoruz.",
-    landmarks: 'Araklı sahil, Karadere Vadisi, Bayburt yolu kavşağı',
-  },
-  {
     slug: 'arhavi', name: 'Arhavi', province: 'Artvin', population: 22025, distanceKm: 80, driveMin: 60,
     intro: "Arhavi'den Rize Merkez'e sahil yolundan 1 saat; Trabzon'daki en yakın PPF stüdyosu ise 2,5 saat. Artvin sahilinde kapalı stüdyoda PPF ve seramik kaplama yapan bir merkez bulunmadığı için Arhavili araç sahipleri Moon Auto'ya geliyor. Aracı 1–2 gün bırakıp dönüş için planlama yapıyoruz.",
     landmarks: 'Arhavi sahil, Kamilet Vadisi, Hopa yolu',
