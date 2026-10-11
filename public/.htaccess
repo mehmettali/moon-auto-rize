@@ -3,6 +3,9 @@ ErrorDocument 404 /404.html
 
 RewriteEngine On
 
+# Kaldırılan sayfalar (deploy sunucudan dosya silmez; eski URL'ler buradan yönlendirilir)
+Redirect 301 /hizmet-bolgeleri/arakli/ /hizmet-bolgeleri/
+
 # Tek canonical adres: https://www.moonauto.com.tr
 # Cloudflare arkasında X-Forwarded-Proto kontrolü sayesinde yönlendirme döngüsü oluşmaz.
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
