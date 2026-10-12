@@ -121,3 +121,14 @@ Başlık: Rize Oto Çekici & Yol Yardım · CTA: Ara
 
 Yorum: Hedef ≤60 TL/sohbet; ilk gün 31,6 TL ile hedefin altında. A çok tıklama (reel'e dokunma) ama az sohbet; B daha az tıklama, daha çok sohbet (avatar videosu niyetli izleyici getiriyor). Meta koridor setlerine çok az bütçe veriyor (CBO); 3–4 gün sonra koridor için ayrı bütçe (ABO) düşünülebilir. Öğrenme aşaması 7 gün; şimdilik dokunma.
 
+### Gün sonu güncellemesi (12 Ekim, ~21:00)
+| Set | Harcama | Gösterim | Erişim | Sıklık | Tıklama | 3 sn izleme | %50 izleme | WhatsApp sohbeti | Yeni kişi | Sohbet başına | CPM |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| B · Rize (avatar v2) | 233,80 | 3.028 | 2.229 | 1,36 | 84 | 973 | 216 | 6 | 5 | 38,99 | 77,12 |
+| B · Koridor (avatar v2) | 23,43 | 332 | 260 | 1,28 | 7 | 105 | 17 | 1 | 1 | 23,45 | 70,42 |
+| A · Koridor (seramik reel) | 16,24 | 301 | 219 | 1,37 | 14 | 89 | 6 | 0 | 0 | — | 53,95 |
+| A · Rize (seramik reel) | 195,18 | 4.485 | 3.338 | 1,34 | 342 | 1.568 | 78 | 4 | 4 | 49,03 | 43,55 |
+| **Toplam** | **468,65** | **8.146** | **~6.000** | | **447** | 2.735 | 317 | **11** | **10** | **42,6** | 57,5 |
+
+Yorum: B (avatar) 257 TL ile 7 sohbet (36,7 TL), A (reel) 211 TL ile 4 sohbet (52,8 TL). Avatar videosu %50 izlenme oranında 4 kat daha iyi (216/973 vs 78/1568) ve sohbet başına %30 daha ucuz. A'nın tıklamaları yüksek ama sohbete dönmüyor (reel'e dokunma). Koridor setleri toplam 40 TL aldı, 1 sohbet. Öğrenme aşaması sürüyor; 3. günde A/B karşılaştırmasını tekrar et, B kazanmaya devam ederse bütçeyi B'ye kaydır.
+
