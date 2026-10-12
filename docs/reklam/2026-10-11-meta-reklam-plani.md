@@ -110,3 +110,14 @@ Başlık: Rize Oto Çekici & Yol Yardım · CTA: Ara
 - Performans (23 Eyl–9 Eki): 78 gösterim, 3 tıklama, ort. konum 9,1. Sorgular: "rize ppf kaplama" (1 tık / 10 gösterim), "moon auto", "rize pasta cila", "oto kuaför fiyatları", "rize cam filmi".
 - Takip: 1 hafta sonra 7 sayfanın dizine girip girmediğine ve "Son okuma" tarihinin güncellenip güncellenmediğine bak.
 
+## İlk gün sonuçları (12 Ekim 2026, ~12:00, "Bugün" filtresi)
+| Kampanya / set | Harcama | Gösterim | Erişim | Tıklama | WhatsApp sohbeti | Sohbet başına |
+|---|---|---|---|---|---|---|
+| A · Rize 35km (seramik reel) | 100,91 TL | 2.252 | 1.856 | 170 | 3 | 33,64 TL |
+| A · Koridor (seramik reel) | 8,12 TL | 157 | 135 | 6 | 0 | — |
+| B · Rize 35km (avatar v2) | 130,18 TL | 1.645 | 1.434 | 46 | 4 | 32,55 TL |
+| B · Koridor (avatar v2) | 13,16 TL | 178 | 156 | 4 | 1 | 13,16 TL |
+| **Toplam** | **252,41 TL** | 4.232 | 3.610 | 226 | **8** | **≈31,6 TL** |
+
+Yorum: Hedef ≤60 TL/sohbet; ilk gün 31,6 TL ile hedefin altında. A çok tıklama (reel'e dokunma) ama az sohbet; B daha az tıklama, daha çok sohbet (avatar videosu niyetli izleyici getiriyor). Meta koridor setlerine çok az bütçe veriyor (CBO); 3–4 gün sonra koridor için ayrı bütçe (ABO) düşünülebilir. Öğrenme aşaması 7 gün; şimdilik dokunma.
+
