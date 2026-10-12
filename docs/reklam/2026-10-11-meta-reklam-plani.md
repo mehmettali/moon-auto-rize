@@ -32,7 +32,9 @@ Tamamlananlar:
 - Reklam seti düzeyindeki #2923012 "WhatsApp Business hesabı gereklidir" hatası, numara bağlandıktan sonra sayfa yenilenince kayboldu.
 - Konum arama açılır listesi Chrome'da kesiliyor; "Konumları Toplu Olarak Ekleyin" → Şehirler → "Sadece şehir" → "Hopa, Turkey" biçimi çalışıyor.
 
-Sonraki: yayından 24 saat sonra onay durumu ve ilk WhatsApp sohbetleri; 7. günde A/B (reel vs avatar) karşılaştırması, pahalı tarafı kıs.
+**Hedef kitle önerileri (12 Ekim 04:45):** Dört reklam setine de Advantage+ "Bir hedef kitle öner → Detaylı hedefleme" altına ilgi alanları eklendi (daraltma değil, öneri; Meta kitleyi dışına da genişletir): Otomobiller, SUV, Lüks araç, Oto kuaför, Araba yıkama, BMW, Mercedes-Benz, Volkswagen, Toyota (B-Koridor'da Toyota, A-Koridor'da Audi eklenmedi; A-Rize'de Volkswagen AG olarak girildi). Koridor setlerinde yaş önerisi 28–65+ (Advantage+ kontrolünde minimum yaş en fazla 25 olabildiği için kontrol 25'te bırakıldı). Rize setlerinde yaş önerisi 22–65+. Cinsiyet açık. Türkiye'de "yeni araç alıcıları" davranış segmenti yok.
+
+Sonraki: yayından 24 saat sonra onay durumu ve ilk WhatsApp sohbetleri; 7. günde A/B (reel vs avatar) karşılaştırması, pahalı tarafı kıs; 7–10. günde WhatsApp sohbet başlatanlar + video %50 izleyenler + site ziyaretçilerinden özel kitle ve %1–3 benzer kitle kur.
 
 Kalan engel:
 1. **Kreatif:** Instagram'daki PPF, Audi A7 ve temizlik reels'leri mustafa._karadag ile ortak (collab) gönderi; Meta bunları "ortaklık reklamı" sayıyor ve kişisel hesabın profesyonel olmasını istiyor. Çözüm: mustafa._karadag hesabını profesyonel hesaba çevirmek (Instagram → Ayarlar → Hesap türü) → sonra bu reels'ler de eklenir.
