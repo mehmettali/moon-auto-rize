@@ -132,8 +132,11 @@ Yorum: Hedef ≤60 TL/sohbet; ilk gün 31,6 TL ile hedefin altında. A çok tık
 
 Yorum: B (avatar) 257 TL ile 7 sohbet (36,7 TL), A (reel) 211 TL ile 4 sohbet (52,8 TL). Avatar videosu %50 izlenme oranında 4 kat daha iyi (216/973 vs 78/1568) ve sohbet başına %30 daha ucuz. A'nın tıklamaları yüksek ama sohbete dönmüyor (reel'e dokunma). Koridor setleri toplam 40 TL aldı, 1 sohbet. Öğrenme aşaması sürüyor; 3. günde A/B karşılaştırmasını tekrar et, B kazanmaya devam ederse bütçeyi B'ye kaydır.
 
-## Organik Keşfet reel'i (13 Ekim 2026, 00:59)
+## Organik Keşfet reel'i (13 Ekim 2026)
 - `scripts/build-kesfet-reel.py` ile 12 galeri fotoğrafından 19,4 sn'lik 9:16 reel üretildi (kanca "Rize'de bu arabayı böyle teslim ettik", hızlı kesim, zoom, altyazı kartları, kapanış "@moonautodetailingrize").
-- Meta Business Suite üzerinden Facebook sayfası + Instagram'a aynı anda yayınlandı; **müziksiz**. Sebep: Business Suite'te ses kütüphanesinden müzik eklenince Instagram'a gönderim kapanıyor ("Düzenlenmiş Reels videolarını Instagram'da yayınlama desteklenmiyor"); trend sesler yalnızca Instagram uygulamasından eklenebiliyor. Kullanıcı kararı: böyle kalsın.
-- Sonraki reel'ler için kural: Keşfet hedefliyorsak dosyayı Mustafa Bey Instagram uygulamasından, o günkü trend sesle yüklesin; masaüstünden yalnızca Facebook'a müzikli paylaşım yapılabilir.
+- 00:59'da Meta Business Suite üzerinden Facebook sayfası + Instagram'a **müziksiz** yayınlandı. Sebep: Business Suite'te ses kütüphanesinden müzik eklenince Instagram'a gönderim kapanıyor ("Düzenlenmiş Reels videolarını Instagram'da yayınlama desteklenmiyor"); trend sesler yalnızca Instagram uygulamasından eklenebiliyor.
+- 01:05 kullanıcı talimatıyla müziksiz gönderi her iki platformdan da **silindi** (Facebook: önizleme menüsü → Gönderiyi sil; Instagram: İçerik listesi → Gönderiyi yönet → Reels videosunu sil).
+- 01:13 **müzikli sürüm yeniden yayınlandı** (FB + IG, çapraz paylaşım, Herkese Açık). Müzik: `scripts/synth-reel-track.py` ile saf Python'da sentezlenen özgün parça (110 BPM, A minör; kick/snare/hi-hat, 808 bas, pad, arp, sidechain), ffmpeg ile `-14 LUFS` normalize edilip videoya gömüldü → `tmp-upload/reel/moonauto-kesfet-reel-1-muzik.mp4` (8,8 MB). Telif riski yok (kendi üretimimiz); Business Suite telif kontrolü "Hiç telif hakkı sorunu bulunmadı" dedi.
+- Meta Ses Koleksiyonu (facebook.com/sound/collection) lisanslı parça alternatifi: kullanım koşullarını kabul etmek ve dosya indirmek kullanıcı onayı gerektirdiği için kullanılmadı. İstenirse onayla bir parça indirilip aynı yöntemle gömülür ve reel yeniden yüklenir.
+- Sonraki reel'ler için kural: Keşfet hedefliyorsak en iyisi Mustafa Bey'in Instagram uygulamasından o günkü trend sesle yüklemesi; masaüstünden yayınlanacaksa ses MP4'e gömülü olmalı (Business Suite ses kütüphanesi yalnızca Facebook'a çalışıyor).
 
