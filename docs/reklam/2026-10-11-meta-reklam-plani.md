@@ -103,3 +103,10 @@ Başlık: Rize Oto Çekici & Yol Yardım · CTA: Ara
 2. Gün 1: WhatsApp Business numarası sayfaya bağlanır, kreatifler kesilir.
 3. Gün 2: A ve C kampanyaları yayına, 350 TL/gün.
 4. Gün 7: ilk değerlendirme, B ve D eklenir.
+
+## Search Console durumu (12 Ekim 2026, 05:30)
+- Mülk: https://www.moonauto.com.tr/ (doğrulanmış). Site haritası /sitemap-index.xml 25 Eylül'de gönderildi, Google en son 2 Ekim'de okudu (31 URL); canlı haritada 35 URL var, 12 Ekim'de yeniden gönderildi ve build'e `lastmod` eklendi.
+- Dizin: 24 sayfa dizinde, 7 sayfa "Keşfedildi – şu anda dizine eklenmiş değil" (hiç taranmamış; 200 dönüyor, robots ve harita sorunsuz, 38 sayfadan iç bağlantı var): /rize-oto-yikama/, /rize-oto-cekici/, /rize-motor-temizligi/, /randevu/, /hizmet-bolgeleri/guneysu/, /blog/seramik-kaplama-fiyatlari/, /blog/detayli-ic-temizlik-ne-kadar-surer/. 7'si için de URL denetiminden "Dizine eklenmesini iste" gönderildi (12 Ekim).
+- Performans (23 Eyl–9 Eki): 78 gösterim, 3 tıklama, ort. konum 9,1. Sorgular: "rize ppf kaplama" (1 tık / 10 gösterim), "moon auto", "rize pasta cila", "oto kuaför fiyatları", "rize cam filmi".
+- Takip: 1 hafta sonra 7 sayfanın dizine girip girmediğine ve "Son okuma" tarihinin güncellenip güncellenmediğine bak.
+
