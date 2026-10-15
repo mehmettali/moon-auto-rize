@@ -1,48 +1,51 @@
 ---
 import { SITE } from '../config/site';
 import { SERVICES } from '../data/services';
-const { preset = '' } = Astro.props as { preset?: string };
+import { getT, type Lang } from '../i18n';
+const { preset = '', lang = 'tr' } = Astro.props as { preset?: string; lang?: Lang };
+const t = getT(lang);
 const slots: string[] = [];
 for (let h = 8, m = 30; h < 18; ) { slots.push(`${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}`); m += 30; if (m === 60) { m = 0; h++; } }
 ---
-<form class="form" id="booking" data-wa={SITE.whatsapp} novalidate>
+<form class="form" id="booking" data-wa={SITE.whatsapp} data-i18n={JSON.stringify(t.form.js)} novalidate>
   <div class="row">
-    <label>Hizmet
+    <label>{t.form.service}
       <select name="hizmet" required>
-        <option value="">Seçin…</option>
-        {SERVICES.map((s) => <option value={s.name} selected={s.slug === preset}>{s.name}</option>)}
-        <option value="Birden fazla hizmet / teklif">Birden fazla hizmet / teklif istiyorum</option>
+        <option value="">{t.form.choose}</option>
+        {SERVICES.map((s) => <option value={t.serviceName(s.slug, s.name)} selected={s.slug === preset}>{t.serviceName(s.slug, s.name)}</option>)}
+        <option value={t.form.multi}>{t.form.multi}</option>
       </select>
     </label>
-    <label>Araç (marka / model / yıl)
-      <input name="arac" placeholder="Örn: Toyota Corolla 2022, beyaz" required />
+    <label>{t.form.car}
+      <input name="arac" placeholder={t.form.carPlaceholder} required />
     </label>
   </div>
   <div class="row">
-    <label>Tarih <span class="hint">Pazar günleri kapalıyız</span>
+    <label>{t.form.date} <span class="hint">{t.form.dateHint}</span>
       <input type="date" name="tarih" id="tarih" required />
     </label>
-    <label>Saat <span class="hint">Aynı anda {SITE.capacity} araç alıyoruz</span>
-      <select name="saat" required>{slots.map((t) => <option value={t}>{t}</option>)}</select>
+    <label>{t.form.time} <span class="hint">{t.form.timeHint(SITE.capacity)}</span>
+      <select name="saat" required>{slots.map((x) => <option value={x}>{x}</option>)}</select>
     </label>
   </div>
   <div class="row">
-    <label>Adınız Soyadınız<input name="ad" autocomplete="name" required /></label>
-    <label>Telefon<input name="telefon" type="tel" inputmode="tel" autocomplete="tel" placeholder="05xx xxx xx xx" required /></label>
+    <label>{t.form.name}<input name="ad" autocomplete="name" required /></label>
+    <label>{t.form.phone}<input name="telefon" type="tel" inputmode="tel" autocomplete="tel" placeholder={t.form.phonePlaceholder} required /></label>
   </div>
-  <label>Not <span class="hint">Aracın durumu, istediğiniz paket, ek talepler</span>
+  <label>{t.form.note} <span class="hint">{t.form.noteHint}</span>
     <textarea name="not" rows="3"></textarea>
   </label>
   <div class="form-status" id="status" role="status"></div>
   <div class="btn-row" style="margin-top:.2rem">
-    <button class="btn btn-wa" type="submit" style="font-size:1.05rem">WhatsApp ile Randevu Talebi Gönder</button>
+    <button class="btn btn-wa" type="submit" style="font-size:1.05rem">{t.form.submit}</button>
   </div>
-  <p class="hint">Bilgileriniz hazır bir WhatsApp mesajına dönüşür; "Gönder"e bastığınızda bize ulaşır ve saati onaylayarak dönüş yaparız.</p>
+  <p class="hint">{t.form.hint}</p>
 </form>
 <script>
   const form = document.getElementById('booking') as HTMLFormElement;
   const status = document.getElementById('status')!;
   const dateEl = document.getElementById('tarih') as HTMLInputElement;
+  const i18n = JSON.parse(form.dataset.i18n || '{}') as { sunday: string; opening: string; greeting: string; labels: Record<string, string> };
 
   // Bugünden öncesi seçilemez; 60 gün ileriye kadar
   const fmt = (d: Date) => { const x = new Date(d); x.setMinutes(x.getMinutes() - x.getTimezoneOffset()); return x.toISOString().slice(0, 10); };
@@ -61,16 +64,17 @@ for (let h = 8, m = 30; h < 18; ) { slots.push(`${String(h).padStart(2,'0')}:${S
     const g = (k: string) => String(d.get(k) ?? '').trim();
     const [y, m, day] = g('tarih').split('-');
     const tarih = y ? `${day}.${m}.${y}` : '-';
-    return `Merhaba Moon Auto, randevu talebim:\n• Hizmet: ${g('hizmet')}\n• Araç: ${g('arac')}\n• Tarih: ${tarih}\n• Saat: ${g('saat')}\n• Ad Soyad: ${g('ad')}\n• Telefon: ${g('telefon')}\n• Not: ${g('not') || '-'}`;
+    const L = i18n.labels;
+    return `${i18n.greeting}\n• ${L.service}: ${g('hizmet')}\n• ${L.car}: ${g('arac')}\n• ${L.date}: ${tarih}\n• ${L.time}: ${g('saat')}\n• ${L.name}: ${g('ad')}\n• ${L.phone}: ${g('telefon')}\n• ${L.note}: ${g('not') || '-'}`;
   };
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     if (!form.reportValidity()) return;
     const d = new Date(dateEl.value + 'T12:00:00');
-    if (d.getDay() === 0) { show('err', 'Pazar günleri kapalıyız. Lütfen başka bir gün seçin.'); dateEl.focus(); return; }
+    if (d.getDay() === 0) { show('err', i18n.sunday); dateEl.focus(); return; }
     const url = `https://wa.me/${form.dataset.wa}?text=${encodeURIComponent(compose())}`;
-    show('ok', 'WhatsApp açılıyor… Mesajı göndermeyi unutmayın.');
+    show('ok', i18n.opening);
     const w = window.open(url, '_blank');
     if (!w) window.location.href = url;
   });
