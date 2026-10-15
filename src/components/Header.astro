@@ -1,25 +1,36 @@
 ---
 import { SITE } from '../config/site';
+import { getT, switcherTarget, type Lang } from '../i18n';
+const { lang = 'tr' } = Astro.props as { lang?: Lang };
+const t = getT(lang);
+const path = Astro.url.pathname;
+const toTr = switcherTarget(path, 'tr');
+const toKa = switcherTarget(path, 'ka');
 ---
 <header class="header">
   <div class="container">
-    <a href="/" class="logo" aria-label="Moon Auto Rize ana sayfa">
+    <a href={t.breadcrumbs.homeHref} class="logo" aria-label={t.nav.logoHome}>
       <span class="moon" aria-hidden="true"></span>
-      <span>Moon Auto<small>Detailing &amp; Car Studio · Rize</small></span>
+      <span>Moon Auto<small>{t.nav.logoSub}</small></span>
     </a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menü">☰</button>
-    <nav class="nav" id="nav" aria-label="Ana menü">
-      <a href="/hizmetler/">Hizmetler</a>
-      <a href="/fiyatlar/">Fiyatlar</a>
-      <a href="/galeri/">Galeri</a>
-      <a href="/blog/">Blog</a>
-      <a href="/hakkimizda/">Hakkımızda</a>
-      <a href="/iletisim/">İletişim</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label={t.nav.menu}>☰</button>
+    <nav class="nav" id="nav" aria-label={t.nav.navLabel}>
+      {t.nav.items.map((i) => <a href={i.href}>{i.label}</a>)}
       <a href={`tel:${SITE.phoneE164}`} class="btn btn-outline">☎ {SITE.phoneDisplay}</a>
-      <a href="/randevu/" class="btn btn-primary">Randevu Al</a>
+      <a href={t.nav.bookHref} class="btn btn-primary">{t.nav.book}</a>
+      <span class="lang-switch" aria-label={t.switcher.label}>
+        <a href={toTr} hreflang="tr" lang="tr" aria-current={lang === 'tr' ? 'true' : undefined}>{t.switcher.tr}</a>
+        <span aria-hidden="true">|</span>
+        <a href={toKa} hreflang="ka" lang="ka" aria-current={lang === 'ka' ? 'true' : undefined}>{t.switcher.ka}</a>
+      </span>
     </nav>
   </div>
 </header>
+<style>
+  .lang-switch { display: inline-flex; gap: .4rem; align-items: center; font-size: .85rem; color: var(--muted); margin-left: .5rem; }
+  .lang-switch a { color: var(--muted); }
+  .lang-switch a[aria-current="true"] { color: var(--text); font-weight: 700; }
+</style>
 <script>
   const t = document.querySelector('.nav-toggle');
   const n = document.getElementById('nav');

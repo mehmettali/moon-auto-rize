@@ -2,43 +2,49 @@
 import { SITE } from '../config/site';
 import { SERVICES } from '../data/services';
 import { DISTRICTS } from '../data/districts';
+import { getT, serviceHref, KA_SERVICE_ROUTES, type Lang } from '../i18n';
+const { lang = 'tr' } = Astro.props as { lang?: Lang };
+const t = getT(lang);
 const year = new Date().getFullYear();
+const services = lang === 'ka' ? SERVICES.filter((s) => KA_SERVICE_ROUTES[s.slug]) : SERVICES;
 ---
 <footer class="footer">
   <div class="container grid grid-4">
     <div>
       <h4>Moon Auto Rize</h4>
-      <p>{SITE.tagline}. Seramik kaplama, PPF, pasta cila, detaylı iç temizlik ve premium oto yıkama.</p>
+      <p>{lang === 'tr' ? `${SITE.tagline}. ` : ''}{t.footer.about}</p>
       <p><a href={SITE.mapsShare} target="_blank" rel="noopener">{SITE.address.full}</a></p>
       <p><a href={`tel:${SITE.phoneE164}`}>{SITE.phoneDisplay}</a><br />{SITE.hours.text}</p>
       <p><a href={SITE.social.instagram} target="_blank" rel="noopener">Instagram</a> · <a href={SITE.social.facebook} target="_blank" rel="noopener">Facebook</a></p>
     </div>
     <div>
-      <h4>Hizmetler</h4>
-      <ul>{SERVICES.map((s) => <li><a href={`/${s.slug}/`}>{s.h1}</a></li>)}</ul>
+      <h4>{t.footer.services}</h4>
+      <ul>{services.map((s) => <li><a href={serviceHref(lang, s.slug)}>{lang === 'tr' ? s.h1 : t.serviceName(s.slug, s.name)}</a></li>)}</ul>
     </div>
     <div>
-      <h4>Hizmet Bölgeleri</h4>
-      <ul>
-        <li><a href="/hizmet-bolgeleri/">Rize Merkez</a></li>
-        {DISTRICTS.map((d) => <li><a href={`/hizmet-bolgeleri/${d.slug}/`}>{d.name} Oto Kuaför</a></li>)}
-      </ul>
+      {lang === 'tr' ? (
+        <>
+          <h4>{t.footer.regions}</h4>
+          <ul>
+            <li><a href="/hizmet-bolgeleri/">Rize Merkez</a></li>
+            {DISTRICTS.map((d) => <li><a href={`/hizmet-bolgeleri/${d.slug}/`}>{d.name} Oto Kuaför</a></li>)}
+          </ul>
+        </>
+      ) : (
+        <>
+          <h4>{t.footer.georgiaTitle}</h4>
+          <p>{t.footer.georgiaText}</p>
+          <p><a href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(t.wa.defaultText)}`} target="_blank" rel="noopener">WhatsApp</a></p>
+        </>
+      )}
     </div>
     <div>
-      <h4>Kurumsal</h4>
-      <ul>
-        <li><a href="/hakkimizda/">Hakkımızda</a></li>
-        <li><a href="/fiyatlar/">Fiyat Listesi</a></li>
-        <li><a href="/randevu/">Online Randevu</a></li>
-        <li><a href="/galeri/">Galeri</a></li>
-        <li><a href="/sss/">Sık Sorulan Sorular</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/iletisim/">İletişim</a></li>
-      </ul>
+      <h4>{t.footer.corporate}</h4>
+      <ul>{t.footer.corporateLinks.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul>
     </div>
   </div>
   <div class="container bottom">
-    <span>© {year} {SITE.legalName}. Tüm hakları saklıdır.</span>
-    <span>Rize Merkez · İslampaşa · Google'da {SITE.rating.value} ★ ({SITE.rating.count} yorum)</span>
+    <span>© {year} {SITE.legalName}. {t.footer.rights}</span>
+    <span>{t.footer.bottomRight(SITE.rating.value, SITE.rating.count)}</span>
   </div>
 </footer>
