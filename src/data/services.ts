@@ -297,12 +297,12 @@ export const getService = (slug: string) => SERVICES.find((s) => s.slug === slug
 export const priceLabel = (n: number) => (n > 0 ? formatTL(n) + "'den" : 'Fiyat için arayın');
 /** Fiyat listesinde ayrı satır olarak gösterilen ek hizmetler */
 export const EXTRA_PRICES = [
-  { name: 'Premium oto yıkama', price: 2000, slug: 'rize-oto-yikama', note: 'Kil, wax ve plastik-deri bakımı dahil' },
-  { name: 'İç-Dış Detailing Paketi – otomobil', price: 20000, slug: 'rize-detayli-ic-temizlik', note: 'Detaylı iç temizlik + pasta cila + koruma; aracın durumuna göre değişebilir' },
-  { name: 'İç-Dış Detailing Paketi – SUV / hafif ticari', price: 25000, slug: 'rize-detayli-ic-temizlik', note: 'Aynı paket, büyük araç; aracın durumuna göre değişebilir' },
-  { name: 'Wax cila', price: 2000, slug: 'rize-pasta-cila', note: 'Yıkama sonrası koruyucu wax' },
-  { name: 'Hare (hologram) giderme', price: 3000, slug: 'rize-pasta-cila', note: 'Polisaj izlerinin giderilmesi' },
-  { name: 'İç-dış yıkama – minibüs', price: 1000, slug: 'rize-oto-yikama', note: 'Standart paket' },
+  { key: 'premium-yikama', name: 'Premium oto yıkama', price: 2000, slug: 'rize-oto-yikama', note: 'Kil, wax ve plastik-deri bakımı dahil' },
+  { key: 'detailing-oto', name: 'İç-Dış Detailing Paketi – otomobil', price: 20000, slug: 'rize-detayli-ic-temizlik', note: 'Detaylı iç temizlik + pasta cila + koruma; aracın durumuna göre değişebilir' },
+  { key: 'detailing-suv', name: 'İç-Dış Detailing Paketi – SUV / hafif ticari', price: 25000, slug: 'rize-detayli-ic-temizlik', note: 'Aynı paket, büyük araç; aracın durumuna göre değişebilir' },
+  { key: 'wax', name: 'Wax cila', price: 2000, slug: 'rize-pasta-cila', note: 'Yıkama sonrası koruyucu wax' },
+  { key: 'hare', name: 'Hare (hologram) giderme', price: 3000, slug: 'rize-pasta-cila', note: 'Polisaj izlerinin giderilmesi' },
+  { key: 'yikama-minibus', name: 'İç-dış yıkama – minibüs', price: 1000, slug: 'rize-oto-yikama', note: 'Standart paket' },
 ];
 export const FEATURED = SERVICES.filter((s) => s.featured);
 export const formatTL = (n: number) => n.toLocaleString('tr-TR') + ' TL';

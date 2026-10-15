@@ -5,6 +5,11 @@ import { SITE } from './src/config/site.ts';
 export default defineConfig({
   site: SITE.url,
   trailingSlash: 'always',
+  i18n: {
+    defaultLocale: 'tr',
+    locales: ['tr', 'ka'],
+    routing: { prefixDefaultLocale: false },
+  },
   build: { format: 'directory' },
   integrations: [
     sitemap({
