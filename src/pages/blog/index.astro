@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Cta from '../../components/Cta.astro';
 import { getCollection } from 'astro:content';
-const posts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const posts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf() || a.id.localeCompare(b.id));
 ---
 <Base title="Blog | Araç Bakımı, Seramik, PPF Rehberleri – Moon Auto Rize" description="Rize'de araç bakımı rehberleri: seramik mi PPF mi, seramik kaplama fiyatları, detaylı iç temizlik, yağmurlu iklimde araç koruma." canonical="/blog/">
   <Breadcrumbs items={[{ name: 'Blog' }]} />

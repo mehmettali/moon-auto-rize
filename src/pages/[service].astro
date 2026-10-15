@@ -16,7 +16,7 @@ const s = getService(Astro.params.service!)!;
 const related = s.related.map(getService).filter(Boolean);
 const d = SERVICE_DETAILS[s.slug];
 const allFaqs = [...s.faqs, ...(d?.extraFaqs ?? [])];
-const posts = (await getCollection('blog')).filter((p) => d?.blog.includes(p.id));
+const posts = (await getCollection('blog')).filter((p) => d?.blog.includes(p.id)).sort((a, b) => a.id.localeCompare(b.id));
 const ld = {
   '@context': 'https://schema.org', '@type': 'Service',
   name: s.h1, serviceType: s.name, description: s.description,
