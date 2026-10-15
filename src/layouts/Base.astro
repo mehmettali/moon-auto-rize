@@ -4,6 +4,7 @@ import { SITE, OG_IMAGE } from '../config/site';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import WhatsApp from '../components/WhatsApp.astro';
+import { getT, alternates, KA_NOINDEX, type Lang } from '../i18n';
 
 interface Props {
   title: string;
@@ -14,9 +15,13 @@ interface Props {
   type?: 'website' | 'article';
   jsonLd?: object | object[];
   waText?: string;
+  lang?: Lang;
 }
-const { title, description, canonical = Astro.url.pathname, ogImage = OG_IMAGE, noindex = false, type = 'website', jsonLd, waText } = Astro.props;
+const { title, description, canonical = Astro.url.pathname, ogImage = OG_IMAGE, noindex = false, type = 'website', jsonLd, waText, lang = 'tr' } = Astro.props;
+const t = getT(lang);
 const canonicalUrl = new URL(canonical, SITE.url).toString();
+const alt = alternates(canonical);
+const robotsNoindex = noindex || (lang === 'ka' && KA_NOINDEX);
 
 const business = {
   '@context': 'https://schema.org',
@@ -41,24 +46,37 @@ const business = {
   sameAs: [SITE.social.instagram, SITE.social.facebook],
   potentialAction: { '@type': 'ReserveAction', target: SITE.url + '/randevu/' },
 };
+if (lang === 'ka') {
+  (business as any).inLanguage = 'ka';
+  (business as any).areaServed = [...business.areaServed, { '@type': 'City', name: 'Batumi' }, { '@type': 'State', name: 'Adjara' }, { '@type': 'Country', name: 'Georgia' }];
+}
+const FONT_CSS = `@font-face{font-family:"Noto Sans Georgian";src:url(/fonts/noto-sans-georgian-400.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap;unicode-range:U+10A0-10FF,U+1C90-1CBF,U+2D00-2D2F}@font-face{font-family:"Noto Sans Georgian";src:url(/fonts/noto-sans-georgian-700.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap;unicode-range:U+10A0-10FF,U+1C90-1CBF,U+2D00-2D2F}:root{--font:"Noto Sans Georgian",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}`;
 const ldBlocks = [business, ...(jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [])];
 ---
 <!doctype html>
-<html lang="tr">
+<html lang={t.htmlLang}>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{title}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonicalUrl} />
-  {noindex && <meta name="robots" content="noindex,nofollow" />}
+  {alt && (
+    <>
+      <link rel="alternate" hreflang="tr" href={SITE.url + alt.tr} />
+      <link rel="alternate" hreflang="ka" href={SITE.url + alt.ka} />
+      <link rel="alternate" hreflang="x-default" href={SITE.url + alt.tr} />
+    </>
+  )}
+  {lang === 'ka' && <style set:html={FONT_CSS} />}
+  {robotsNoindex && <meta name="robots" content="noindex,nofollow" />}
   <meta name="theme-color" content="#0b0f14" />
   <meta name="facebook-domain-verification" content="z4sywp9izvetaq1qb7w2m90dghvagg" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="sitemap" href="/sitemap-index.xml" />
   <meta property="og:type" content={type} />
   <meta property="og:site_name" content="Moon Auto Rize" />
-  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:locale" content={t.ogLocale} />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonicalUrl} />
@@ -88,9 +106,9 @@ const ldBlocks = [business, ...(jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [json
   )}
 </head>
 <body>
-  <Header />
+  <Header lang={lang} />
   <main><slot /></main>
-  <Footer />
-  <WhatsApp text={waText} />
+  <Footer lang={lang} />
+  <WhatsApp lang={lang} text={waText} />
 </body>
 </html>
