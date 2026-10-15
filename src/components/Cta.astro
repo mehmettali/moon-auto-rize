@@ -1,13 +1,16 @@
 ---
 import { SITE } from '../config/site';
-const { title = 'Aracınız için randevu alın', text = 'Online randevu 1 dakika sürer. Onay bilgisi telefonunuza WhatsApp ile gelir.', wa = 'Merhaba Moon Auto, randevu almak istiyorum.' } = Astro.props;
+import { getT, type Lang } from '../i18n';
+const { lang = 'tr', title, text, wa } = Astro.props as { lang?: Lang; title?: string; text?: string; wa?: string };
+const t = getT(lang);
+const waText = wa ?? t.cta.wa;
 ---
 <div class="cta">
-  <h2>{title}</h2>
-  <p style="color:var(--muted)">{text}</p>
+  <h2>{title ?? t.cta.title}</h2>
+  <p style="color:var(--muted)">{text ?? t.cta.text}</p>
   <div class="btn-row" style="justify-content:center">
-    <a class="btn btn-primary" href="/randevu/">📅 Online Randevu</a>
-    <a class="btn btn-wa" href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(wa)}`} target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn btn-primary" href={t.cta.bookHref}>{t.cta.book}</a>
+    <a class="btn btn-wa" href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(waText)}`} target="_blank" rel="noopener">{t.cta.whatsapp}</a>
     <a class="btn btn-outline" href={`tel:${SITE.phoneE164}`}>☎ {SITE.phoneDisplay}</a>
   </div>
 </div>
