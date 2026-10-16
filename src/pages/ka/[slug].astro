@@ -5,7 +5,7 @@ import Faq from '../../components/Faq.astro';
 import Cta from '../../components/Cta.astro';
 import { SITE } from '../../config/site';
 import { getService, formatTL } from '../../data/services';
-import { getT, KA_SERVICE_SLUGS, KA_SERVICE_ROUTES } from '../../i18n';
+import { getT, KA_SERVICE_SLUGS } from '../../i18n';
 import { KA_SERVICES, KA_SERVICE_PAGE as P } from '../../i18n/ka/pages';
 
 export function getStaticPaths() { return Object.keys(KA_SERVICES).map((slug) => ({ params: { slug } })); }

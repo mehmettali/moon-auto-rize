@@ -29,6 +29,7 @@ for tr, ka in PAIRS.items():
     if f'<link rel="canonical" href="{SITE}{ka}"' not in kd: errors.append(f'{ka}: canonical yanlış')
     if 'og:locale" content="ka_GE"' not in kd: errors.append(f'{ka}: og:locale ka_GE yok')
     if 'noto-sans-georgian-400.woff2' not in kd: errors.append(f'{ka}: Gürcüce font yok')
+    if 'html[lang="ka"]{--font:"Noto Sans Georgian"' not in kd: errors.append(f'{ka}: Gürcüce --font override yok')
     if '"inLanguage":"ka"' not in kd: errors.append(f'{ka}: JSON-LD inLanguage yok')
     for doc, name in ((kd, ka), (td, tr)):
         if hreflang(doc, 'tr') != SITE + tr: errors.append(f'{name}: hreflang tr != {tr}')
@@ -43,7 +44,7 @@ for tr, ka in PAIRS.items():
 
 for p in NO_PAIR:
     d = html(p)
-    if d and 'hreflang=' in d: errors.append(f'{p}: eşlemesi olmayan sayfada hreflang var')
+    if d and '<link rel="alternate" hreflang=' in d: errors.append(f'{p}: eşlemesi olmayan sayfada hreflang var')
 
 for e in errors: print('HATA', e)
 print('OK' if not errors else f'{len(errors)} hata')
