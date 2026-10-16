@@ -1,0 +1,37 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import BookingForm from '../../components/BookingForm.astro';
+import { SITE } from '../../config/site';
+import { KA_BOOKING as K } from '../../i18n/ka/pages';
+import { KA_SERVICE_NAMES } from '../../i18n/ka';
+---
+<Base lang="ka" title={K.title} description={K.description} canonical="/ka/javshani/">
+  <Breadcrumbs lang="ka" items={[{ name: K.crumb }]} />
+  <section class="section" style="padding-top:1.5rem"><div class="container two-col">
+    <div>
+      <h1>{K.h1}</h1>
+      <p class="lead">{K.lead}</p>
+      <div class="card" style="margin-top:1.5rem"><BookingForm lang="ka" /></div>
+    </div>
+    <aside class="aside">
+      <div class="card">
+        <h3>{K.aside.hours}</h3>
+        <p style="color:var(--muted)">{K.aside.hoursText}</p>
+        <h3>{K.aside.address}</h3>
+        <p style="color:var(--muted)">{SITE.address.full}</p>
+        <a class="btn btn-outline" href={SITE.mapsShare} target="_blank" rel="noopener">{K.aside.directions}</a>
+      </div>
+      <div class="card">
+        <h3>{K.aside.durations}</h3>
+        <ul class="checks" style="color:var(--muted)">{K.aside.items.map((i) => <li>{i}</li>)}</ul>
+      </div>
+    </aside>
+  </div></section>
+  <script define:vars={{ names: KA_SERVICE_NAMES }}>
+    // URL'den gelen ?hizmet=<türkçe slug> ile Gürcüce hizmet adını önceden seç
+    const p = new URLSearchParams(location.search).get('hizmet');
+    const sel = document.querySelector('select[name=hizmet]');
+    if (p && sel && names[p]) sel.value = names[p];
+  </script>
+</Base>

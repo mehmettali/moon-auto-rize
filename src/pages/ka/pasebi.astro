@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import PriceTable from '../../components/PriceTable.astro';
+import Faq from '../../components/Faq.astro';
+import Cta from '../../components/Cta.astro';
+import { KA_PRICES as K } from '../../i18n/ka/pages';
+---
+<Base lang="ka" title={K.title} description={K.description} canonical="/ka/pasebi/" waText={K.cta.wa}>
+  <Breadcrumbs lang="ka" items={[{ name: K.crumb }]} />
+  <section class="section" style="padding-top:1.5rem"><div class="container">
+    <h1>{K.h1}</h1>
+    <p class="lead">{K.lead}</p>
+    <div style="margin-top:1.5rem"><PriceTable lang="ka" /></div>
+    <p style="color:var(--muted);margin-top:1rem;font-size:.9rem">{K.note}</p>
+    <div style="margin-top:2.5rem"><Faq lang="ka" faqs={K.faqs} /></div>
+  </div></section>
+  <section class="section"><div class="container"><Cta lang="ka" title={K.cta.title} wa={K.cta.wa} /></div></section>
+</Base>

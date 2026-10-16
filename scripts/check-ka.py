@@ -31,6 +31,10 @@ for tr, ka in PAIRS.items():
     if 'noto-sans-georgian-400.woff2' not in kd: errors.append(f'{ka}: Gürcüce font yok')
     if 'html[lang="ka"]{--font:"Noto Sans Georgian"' not in kd: errors.append(f'{ka}: Gürcüce --font override yok')
     if '"inLanguage":"ka"' not in kd: errors.append(f'{ka}: JSON-LD inLanguage yok')
+    # KA_NOINDEX true iken geçerli; false'a çevrilince bu assertion TERSİNE çevrilmeli (noindex olmamalı)
+    if '<meta name="robots" content="noindex,nofollow"' not in kd: errors.append(f'{ka}: noindex yok (KA_NOINDEX true iken bekleniyor)')
+    if '"name":"Batumi"' not in kd: errors.append(f'{ka}: JSON-LD areaServed Batumi yok')
+    if 'content="noindex' in td: errors.append(f'{tr}: Türkçe sayfada noindex var')
     for doc, name in ((kd, ka), (td, tr)):
         if hreflang(doc, 'tr') != SITE + tr: errors.append(f'{name}: hreflang tr != {tr}')
         if hreflang(doc, 'ka') != SITE + ka: errors.append(f'{name}: hreflang ka != {ka}')
@@ -45,6 +49,13 @@ for tr, ka in PAIRS.items():
 for p in NO_PAIR:
     d = html(p)
     if d and '<link rel="alternate" hreflang=' in d: errors.append(f'{p}: eşlemesi olmayan sayfada hreflang var')
+
+sm = (DIST / 'sitemap-0.xml').read_text(encoding='utf-8') if (DIST / 'sitemap-0.xml').exists() else ''
+ka_noindex = any((html(k) or '').find('content="noindex') >= 0 for k in PAIRS.values())
+for ka in PAIRS.values():
+    listed = (SITE + ka) in sm
+    if ka_noindex and listed: errors.append(f'{ka}: noindex ama sitemap\'te listelenmiş')
+    if not ka_noindex and not listed: errors.append(f'{ka}: sitemap\'te yok')
 
 for e in errors: print('HATA', e)
 print('OK' if not errors else f'{len(errors)} hata')

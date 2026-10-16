@@ -1,0 +1,30 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Cta from '../../components/Cta.astro';
+import { SITE } from '../../config/site';
+import { KA_CONTACT as K } from '../../i18n/ka/pages';
+const C = K.cards;
+---
+<Base lang="ka" title={K.title} description={K.description} canonical="/ka/kontakti/" waText={C.waText}>
+  <Breadcrumbs lang="ka" items={[{ name: K.crumb }]} />
+  <section class="section" style="padding-top:1.5rem"><div class="container">
+    <h1>{K.h1}</h1>
+    <p class="lead">{K.lead}</p>
+    <img src="/images/vitrin.webp" alt={K.imgAlt} width="1600" height="739" loading="eager" style="border-radius:14px;margin:1.5rem 0" />
+    <div class="grid grid-4">
+      <div class="card"><h3>{C.address}</h3><p style="color:var(--muted)">{SITE.address.full}<br />Plus code: {SITE.plusCode}</p><a class="btn btn-outline" href={SITE.mapsShare} target="_blank" rel="noopener">{C.directions}</a></div>
+      <div class="card"><h3>{C.phone}</h3><p style="color:var(--muted)"><a href={`tel:${SITE.phoneE164}`}>{SITE.phoneDisplay}</a></p><a class="btn btn-wa" href={`https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(C.waText)}`} target="_blank" rel="noopener">WhatsApp</a></div>
+      <div class="card"><h3>{C.hours}</h3><p style="color:var(--muted)">{C.hoursText}</p><p style="color:var(--muted);font-size:.9rem">{C.capacity(SITE.capacity)}</p></div>
+      <div class="card"><h3>{C.social}</h3><p><a href={SITE.social.instagram} target="_blank" rel="noopener">Instagram @moonautodetailingrize</a><br /><a href={SITE.social.facebook} target="_blank" rel="noopener">Facebook</a><br /><a href={SITE.mapsShare} target="_blank" rel="noopener">{C.maps(SITE.rating.value)}</a></p></div>
+    </div>
+    <div style="margin-top:1.5rem;border-radius:14px;overflow:hidden;border:1px solid var(--line)">
+      <iframe src={SITE.mapsEmbed} width="100%" height="380" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title={K.mapTitle}></iframe>
+    </div>
+    <div class="card" style="margin-top:1.5rem">
+      <h3>{K.howTo.h3}</h3>
+      <p style="color:var(--muted);margin:0">{K.howTo.text}</p>
+    </div>
+  </div></section>
+  <section class="section"><div class="container"><Cta lang="ka" title={K.cta.title} text={K.cta.text} /></div></section>
+</Base>
