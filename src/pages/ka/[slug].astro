@@ -1,0 +1,70 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Faq from '../../components/Faq.astro';
+import Cta from '../../components/Cta.astro';
+import { SITE } from '../../config/site';
+import { getService, formatTL } from '../../data/services';
+import { getT, KA_SERVICE_SLUGS, KA_SERVICE_ROUTES } from '../../i18n';
+import { KA_SERVICES, KA_SERVICE_PAGE as P } from '../../i18n/ka/pages';
+
+export function getStaticPaths() { return Object.keys(KA_SERVICES).map((slug) => ({ params: { slug } })); }
+const slug = Astro.params.slug!;
+const k = KA_SERVICES[slug];
+const s = getService(k.trSlug)!;
+const t = getT('ka');
+const path = `/ka/${slug}/`;
+const name = t.serviceName(s.slug, s.name);
+const others = Object.entries(KA_SERVICE_SLUGS).filter(([x]) => x !== slug).map(([x, tr]) => ({ href: `/ka/${x}/`, name: t.serviceName(tr, tr) }));
+const ld = {
+  '@context': 'https://schema.org', '@type': 'Service', inLanguage: 'ka',
+  name: k.h1, serviceType: name, description: k.description,
+  provider: { '@id': SITE.url + '/#business' },
+  areaServed: [{ '@type': 'City', name: 'Rize' }, { '@type': 'City', name: 'Batumi' }, { '@type': 'Country', name: 'Georgia' }],
+  ...(s.priceFrom > 0 ? { offers: { '@type': 'Offer', priceCurrency: 'TRY', price: s.priceFrom, availability: 'https://schema.org/InStock', url: SITE.url + path } } : {}),
+};
+const imgs = import.meta.glob('/public/images/services/*.webp', { eager: true, query: '?url', import: 'default' }) as Record<string, string>;
+const img = Object.keys(imgs).includes(`/public/images/services/${s.key}.webp`) ? `/images/services/${s.key}.webp` : null;
+const waHref = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(k.wa)}`;
+---
+<Base lang="ka" title={k.title} description={k.description} canonical={path} jsonLd={ld} waText={k.wa}>
+  <Breadcrumbs lang="ka" items={[{ name: P.crumb, href: '/ka/pasebi/' }, { name }]} />
+  <section class="section" style="padding-top:1.5rem">
+    <div class="container two-col">
+      <article class="prose">
+        <p class="eyebrow">{k.eyebrow}</p>
+        <h1>{k.h1}</h1>
+        {k.intro.map((p) => <p>{p}</p>)}
+        {img && <img src={img} alt={P.imgAlt(k.h1)} width="1400" height="875" loading="eager" style="border-radius:14px;margin:1.5rem 0;width:100%;height:auto" />}
+        <h2>{P.benefits}</h2>
+        <ul class="checks">{k.benefits.map((b) => <li>{b}</li>)}</ul>
+        <h2>{P.steps}</h2>
+        <ol class="steps">{k.steps.map((st) => <li><span>{st}</span></li>)}</ol>
+        <p class="hint" style="color:var(--muted);font-size:.9rem">{P.priceHint}</p>
+        <div style="margin-top:2.5rem"><Faq lang="ka" faqs={k.faqs} title={P.faqTitle(name)} /></div>
+      </article>
+      <aside class="aside">
+        <div class="card">
+          <p class="eyebrow">{P.priceFrom}</p>
+          <div class="price" style="font-size:1.8rem">{s.priceFrom > 0 ? t.price.from(formatTL(s.priceFrom)) : t.price.callForPrice}</div>
+          {s.priceSuv && <p style="color:var(--muted);margin:.3rem 0 0">{P.priceSuv}: {formatTL(s.priceSuv)}</p>}
+          <p style="color:var(--muted);margin:.3rem 0 0">{k.priceNote}. {P.duration}: {s.duration}.</p>
+          <div class="btn-row" style="flex-direction:column">
+            <a class="btn btn-primary" href={`/ka/javshani/?hizmet=${s.slug}`}>{P.book}</a>
+            <a class="btn btn-wa" href={waHref} target="_blank" rel="noopener">{P.waBtn}</a>
+            <a class="btn btn-outline" href={`tel:${SITE.phoneE164}`}>☎ {SITE.phoneDisplay}</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>{P.aside.title}</h3>
+          <p style="color:var(--muted);margin:0">{SITE.address.full}<br />{P.aside.georgia}<br />Google: {SITE.rating.value} ★ ({SITE.rating.count})</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+  <section class="section section--alt"><div class="container">
+    <h2>{P.related}</h2>
+    <div class="grid grid-3">{others.map((o) => <a class="card" href={o.href}><h3>{o.name}</h3></a>)}</div>
+  </div></section>
+  <section class="section"><div class="container"><Cta lang="ka" title={k.ctaTitle} wa={k.wa} /></div></section>
+</Base>

@@ -1,0 +1,82 @@
+---
+import Base from '../../layouts/Base.astro';
+import Reviews from '../../components/Reviews.astro';
+import Cta from '../../components/Cta.astro';
+import Faq from '../../components/Faq.astro';
+import { SITE } from '../../config/site';
+import { SERVICES, formatTL } from '../../data/services';
+import { getT, KA_SERVICE_ROUTES } from '../../i18n';
+import { KA_HOME as H } from '../../i18n/ka/pages';
+const t = getT('ka');
+const featured = SERVICES.filter((s) => KA_SERVICE_ROUTES[s.slug]);
+const wa = (text: string) => `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(text)}`;
+const glob = import.meta.glob('/public/images/services/*.webp', { eager: true, query: '?url', import: 'default' }) as Record<string, string>;
+const imgs: Record<string, string> = Object.fromEntries(featured.filter((s) => Object.keys(glob).includes(`/public/images/services/${s.key}.webp`)).map((s) => [s.key, `/images/services/${s.key}.webp`]));
+---
+<Base lang="ka" title={H.title} description={H.description} canonical="/ka/" waText={t.wa.defaultText}>
+  <section class="hero hero--img">
+    <div class="container">
+      <p class="eyebrow">{H.eyebrow} · {SITE.rating.value} ★ Google</p>
+      <h1>{H.h1}</h1>
+      <p class="lead">{H.lead}</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="/ka/javshani/">{H.btnBook}</a>
+        <a class="btn btn-wa" href={wa(H.waHero)} target="_blank" rel="noopener">{H.btnWa}</a>
+        <a class="btn btn-outline" href="/ka/pasebi/">{H.btnPrices}</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>{SITE.rating.value} <span class="stars">★</span></strong><span>{SITE.rating.count} {H.stats.reviews}</span></div>
+        <div><strong>{SITE.capacity}</strong><span>{H.stats.capacity}</span></div>
+        <div><strong>{H.stats.days}</strong><span>{SITE.hours.open}–{SITE.hours.close}</span></div>
+        <div><strong>{H.stats.studio}</strong><span>{H.stats.studioSub}</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <p class="eyebrow">{H.georgia.eyebrow}</p>
+      <h2>{H.georgia.h2}</h2>
+      <ul class="checks">{H.georgia.items.map((i) => <li><strong>{i.b}</strong> {i.t}</li>)}</ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">{H.services.eyebrow}</p>
+      <h2>{H.services.h2}</h2>
+      <p class="lead">{H.services.lead}</p>
+      <div class="grid grid-3" style="margin-top:1.5rem">
+        {featured.map((s) => (
+          <article class="card">
+            {imgs[s.key] && <a href={KA_SERVICE_ROUTES[s.slug]}><img src={imgs[s.key]} alt={`${t.serviceName(s.slug, s.name)} – Moon Auto რიზე`} width="700" height="438" loading="lazy" decoding="async" /></a>}
+            <div class="icon" aria-hidden="true">{s.icon}</div>
+            <h3><a href={KA_SERVICE_ROUTES[s.slug]}>{t.serviceName(s.slug, s.name)}</a></h3>
+            <p style="color:var(--muted)">{t.priceNote(s.slug, s.priceNote)}</p>
+            <div class="price">{s.priceFrom > 0 ? t.price.from(formatTL(s.priceFrom)) : t.price.callForPrice} · {s.duration}</div>
+            <a href={KA_SERVICE_ROUTES[s.slug]} style="font-weight:700">{H.services.more}</a>
+          </article>
+        ))}
+      </div>
+      <p style="margin-top:1rem"><a href="/ka/pasebi/">{H.btnPrices} →</a></p>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container two-col">
+      <div>
+        <p class="eyebrow">{H.why.eyebrow}</p>
+        <h2>{H.why.h2}</h2>
+        <ul class="checks">{H.why.items.map((i) => <li><strong>{i.b}</strong> {i.t}</li>)}</ul>
+      </div>
+      <div>
+        <img src="/images/vitrin.webp" alt={H.why.imgAlt} width="1600" height="739" loading="lazy" style="border-radius:14px;width:100%;height:auto" />
+      </div>
+    </div>
+  </section>
+
+  <Reviews lang="ka" />
+
+  <section class="section section--alt"><div class="container"><Faq lang="ka" faqs={H.faqs} /></div></section>
+  <section class="section"><div class="container"><Cta lang="ka" title={H.cta.title} text={H.cta.text} wa={H.cta.wa} /></div></section>
+</Base>
