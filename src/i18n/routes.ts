@@ -2,7 +2,7 @@ export const LOCALES = ['tr', 'ka'] as const;
 export type Lang = (typeof LOCALES)[number];
 
 /** Gürcüce sayfalar yayınlanınca ve ana dili Gürcüce olan kişi onaylayınca false yapılır. */
-export const KA_NOINDEX = true;
+export const KA_NOINDEX = false;
 
 /** Türkçe yol → Gürcüce yol. Yalnızca çevrilen sayfalar. */
 export const KA_ROUTES: Record<string, string> = {

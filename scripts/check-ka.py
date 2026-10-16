@@ -32,8 +32,8 @@ for tr, ka in PAIRS.items():
     if 'noto-sans-georgian-400.woff2' not in kd: errors.append(f'{ka}: Gürcüce font yok')
     if 'html[lang="ka"]{--font:"Noto Sans Georgian"' not in kd: errors.append(f'{ka}: Gürcüce --font override yok')
     if '"inLanguage":"ka"' not in kd: errors.append(f'{ka}: JSON-LD inLanguage yok')
-    # KA_NOINDEX true iken geçerli; false'a çevrilince bu assertion TERSİNE çevrilmeli (noindex olmamalı)
-    if '<meta name="robots" content="noindex,nofollow"' not in kd: errors.append(f'{ka}: noindex yok (KA_NOINDEX true iken bekleniyor)')
+    # KA_NOINDEX false (16 Ekim 2026'dan itibaren): Gürcüce sayfalarda noindex OLMAMALI. Kapı tekrar açılırsa bu assertion tersine çevrilir.
+    if 'content="noindex' in kd: errors.append(f'{ka}: noindex var (KA_NOINDEX false iken olmamalı)')
     if '"name":"Batumi"' not in kd: errors.append(f'{ka}: JSON-LD areaServed Batumi yok')
     if 'content="noindex' in td: errors.append(f'{tr}: Türkçe sayfada noindex var')
     for doc, name in ((kd, ka), (td, tr)):
