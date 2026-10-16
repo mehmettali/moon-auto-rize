@@ -54,6 +54,7 @@ export const ka: UI = {
       { label: 'მთავარი', href: '/ka/' }, { label: 'ფასები', href: '/ka/pasebi/' }, { label: 'ონლაინ ჯავშანი', href: '/ka/javshani/' }, { label: 'კონტაქტი', href: '/ka/kontakti/' },
     ],
     rights: 'ყველა უფლება დაცულია.',
+    hours: 'ორშაბათი – შაბათი 08:30 – 18:30 · კვირა დასვენება',
     bottomRight: (r, c) => `რიზე · ისლამფაშა · Google ${r} ★ (${c} შეფასება)`,
     georgiaTitle: 'საქართველოდან ჩამოსულთათვის',
     georgiaText: 'სარფის საზღვრიდან ≈95 კმ, ბათუმიდან ≈150 კმ. მოგვწერეთ WhatsApp-ზე ქართულად — ქართულად გიპასუხებთ.',
@@ -66,6 +67,7 @@ export const ka: UI = {
   price: { service: 'სერვისი', car: 'მსუბუქი ავტომობილი', suv: 'ჯიპი / მსუბუქი კომერციული', duration: 'ხანგრძლივობა', note: 'შენიშვნა', extras: 'დამატებითი სერვისები', price: 'ფასი', callForPrice: 'ფასი — დაგვირეკეთ', from: (tl) => tl + '-დან' },
   serviceName: (slug, fallback) => KA_SERVICE_NAMES[slug] ?? fallback,
   priceNote: (slug, fallback) => KA_PRICE_NOTES[slug] ?? fallback,
+  duration: (d) => d.replace('Aynı gün', 'იმავე დღეს').replace(' gün', ' დღე').replace(' saat', ' საათი'),
   extra: (key, fallback) => KA_EXTRAS[key] ?? fallback,
   form: {
     service: 'სერვისი', choose: 'აირჩიეთ…', multi: 'რამდენიმე სერვისი / შეთავაზება მინდა',

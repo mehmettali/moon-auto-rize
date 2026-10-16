@@ -14,6 +14,7 @@ export interface UI {
     about: string; services: string; regions: string; corporate: string;
     corporateLinks: { label: string; href: string }[];
     rights: string;
+    hours: string;
     bottomRight: (rating: number, count: number) => string;
     georgiaTitle: string; georgiaText: string;   // tr'de boş string
   };
@@ -30,6 +31,8 @@ export interface UI {
   serviceName: (trSlug: string, fallback: string) => string;
   /** Türkçe hizmet slug → fiyat notu (tr'de SERVICES.priceNote) */
   priceNote: (trSlug: string, fallback: string) => string;
+  /** SERVICES.duration (Türkçe metin) → bu dildeki süre */
+  duration: (trDuration: string) => string;
   /** EXTRA_PRICES.key → { name, note } */
   extra: (key: string, fallback: { name: string; note: string }) => { name: string; note: string };
   form: {

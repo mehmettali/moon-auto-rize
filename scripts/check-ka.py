@@ -10,6 +10,7 @@ PAIRS = {  # tr yol → ka yol (src/i18n/routes.ts ile aynı)
 }
 NO_PAIR = ['/hakkimizda/', '/sss/', '/galeri/']
 TR_UI = ['Randevu Al', 'Hemen Ara', 'Hizmetler', 'Fiyatlar', 'İletişim', 'Ana Sayfa', 'Sık Sorulan', 'Tüm hakları', 'Seçin…', 'WhatsApp ile yazın', 'Google Yorumları', 'Detaylar →']
+TR_WORDS = [' gün', ' saat', 'Aynı gün', 'Pazartesi']
 errors = []
 
 def html(path):
@@ -44,6 +45,9 @@ for tr, ka in PAIRS.items():
     body = kd.split('<body', 1)[-1]
     for s in TR_UI:
         if s in body: errors.append(f'{ka}: çevrilmemiş arayüz metni "{s}"')
+    # Süre/saat sızıntısı: sözcük sınırıyla ara (özgün Türkçe yorum metinlerindeki "günkü" vb. yanlış pozitif olmasın)
+    for s in TR_WORDS:
+        if re.search(re.escape(s) + r'(?![^\W\d_])', body): errors.append(f'{ka}: çevrilmemiş süre/saat metni "{s}"')
     if not re.search(r'[ა-ჿ]', body): errors.append(f'{ka}: Gürcüce harf yok')
 
 for p in NO_PAIR:

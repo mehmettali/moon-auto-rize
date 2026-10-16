@@ -10,7 +10,7 @@ const from = (n: number) => (n > 0 ? t.price.from(formatTL(n)) : t.price.callFor
   <table class="table">
     <thead><tr><th>{t.price.service}</th><th>{t.price.car}</th><th>{t.price.suv}</th><th>{t.price.duration}</th><th>{t.price.note}</th></tr></thead>
     <tbody>
-      {SERVICES.map((s) => <tr><td><a href={serviceHref(lang, s.slug)}>{t.serviceName(s.slug, s.name)}</a></td><td class="price">{s.priceFrom > 0 ? formatTL(s.priceFrom) : from(0)}</td><td class="price">{cell(s.priceSuv)}</td><td>{s.duration}</td><td style="color:var(--muted)">{t.priceNote(s.slug, s.priceNote)}</td></tr>)}
+      {SERVICES.map((s) => <tr><td><a href={serviceHref(lang, s.slug)}>{t.serviceName(s.slug, s.name)}</a></td><td class="price">{s.priceFrom > 0 ? formatTL(s.priceFrom) : from(0)}</td><td class="price">{cell(s.priceSuv)}</td><td>{t.duration(s.duration)}</td><td style="color:var(--muted)">{t.priceNote(s.slug, s.priceNote)}</td></tr>)}
     </tbody>
   </table>
 </div>

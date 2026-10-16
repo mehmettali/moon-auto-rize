@@ -19,6 +19,7 @@ export const tr: UI = {
       { label: 'Galeri', href: '/galeri/' }, { label: 'Sık Sorulan Sorular', href: '/sss/' }, { label: 'Blog', href: '/blog/' }, { label: 'İletişim', href: '/iletisim/' },
     ],
     rights: 'Tüm hakları saklıdır.',
+    hours: 'Pazartesi – Cumartesi 08:30 – 18:30 · Pazar kapalı',
     bottomRight: (r, c) => `Rize Merkez · İslampaşa · Google'da ${r} ★ (${c} yorum)`,
     georgiaTitle: '', georgiaText: '',
   },
@@ -30,6 +31,7 @@ export const tr: UI = {
   price: { service: 'Hizmet', car: 'Otomobil', suv: 'SUV / Hafif Ticari', duration: 'Süre', note: 'Not', extras: 'Ek hizmetler', price: 'Fiyat', callForPrice: 'Fiyat için arayın', from: (tl) => tl + "'den" },
   serviceName: (_slug, fallback) => fallback,
   priceNote: (_slug, fallback) => fallback,
+  duration: (d) => d,
   extra: (_key, fallback) => fallback,
   form: {
     service: 'Hizmet', choose: 'Seçin…', multi: 'Birden fazla hizmet / teklif istiyorum',

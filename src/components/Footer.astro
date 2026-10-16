@@ -14,7 +14,7 @@ const services = lang === 'ka' ? SERVICES.filter((s) => KA_SERVICE_ROUTES[s.slug
       <h4>Moon Auto Rize</h4>
       <p>{lang === 'tr' ? `${SITE.tagline}. ` : ''}{t.footer.about}</p>
       <p><a href={SITE.mapsShare} target="_blank" rel="noopener">{SITE.address.full}</a></p>
-      <p><a href={`tel:${SITE.phoneE164}`}>{SITE.phoneDisplay}</a><br />{SITE.hours.text}</p>
+      <p><a href={`tel:${SITE.phoneE164}`}>{SITE.phoneDisplay}</a><br />{t.footer.hours}</p>
       <p><a href={SITE.social.instagram} target="_blank" rel="noopener">Instagram</a> · <a href={SITE.social.facebook} target="_blank" rel="noopener">Facebook</a></p>
     </div>
     <div>

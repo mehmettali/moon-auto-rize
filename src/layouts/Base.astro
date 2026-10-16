@@ -50,7 +50,7 @@ if (lang === 'ka') {
   (business as any).inLanguage = 'ka';
   (business as any).areaServed = [...business.areaServed, { '@type': 'City', name: 'Batumi' }, { '@type': 'State', name: 'Adjara' }, { '@type': 'Country', name: 'Georgia' }];
 }
-const FONT_CSS = `@font-face{font-family:"Noto Sans Georgian";src:url(/fonts/noto-sans-georgian-400.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap;unicode-range:U+10A0-10FF,U+1C90-1CBF,U+2D00-2D2F}@font-face{font-family:"Noto Sans Georgian";src:url(/fonts/noto-sans-georgian-700.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap;unicode-range:U+10A0-10FF,U+1C90-1CBF,U+2D00-2D2F}html[lang="ka"]{--font:"Noto Sans Georgian",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}`;
+const FONT_CSS = `@font-face{font-family:"Noto Sans Georgian";src:url("/fonts/noto-sans-georgian-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap;unicode-range:U+10A0-10FF,U+1C90-1CBF,U+2D00-2D2F}@font-face{font-family:"Noto Sans Georgian";src:url("/fonts/noto-sans-georgian-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap;unicode-range:U+10A0-10FF,U+1C90-1CBF,U+2D00-2D2F}html[lang="ka"]{--font:"Noto Sans Georgian",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}`;
 const ldBlocks = [business, ...(jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [])];
 ---
 <!doctype html>

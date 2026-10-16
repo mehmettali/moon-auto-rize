@@ -48,7 +48,7 @@ const waHref = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(k.wa)}`
           <p class="eyebrow">{P.priceFrom}</p>
           <div class="price" style="font-size:1.8rem">{s.priceFrom > 0 ? t.price.from(formatTL(s.priceFrom)) : t.price.callForPrice}</div>
           {s.priceSuv && <p style="color:var(--muted);margin:.3rem 0 0">{P.priceSuv}: {formatTL(s.priceSuv)}</p>}
-          <p style="color:var(--muted);margin:.3rem 0 0">{k.priceNote}. {P.duration}: {s.duration}.</p>
+          <p style="color:var(--muted);margin:.3rem 0 0">{k.priceNote}. {P.duration}: {t.duration(s.duration)}.</p>
           <div class="btn-row" style="flex-direction:column">
             <a class="btn btn-primary" href={`/ka/javshani/?hizmet=${s.slug}`}>{P.book}</a>
             <a class="btn btn-wa" href={waHref} target="_blank" rel="noopener">{P.waBtn}</a>
