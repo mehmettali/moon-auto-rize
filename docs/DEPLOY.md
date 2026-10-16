@@ -71,3 +71,10 @@ anahtarın bundan etkilenmez.
   ama eski bir dosya inatla görünürse Cloudflare → Caching → Purge Everything.
 - `scripts/deploy-vps.sh` **bu sunucu için geçersiz.** Root'lu bir VPS'e nginx kurup
   `rsync` ile atmak üzere yazılmış; cPanel'de çalışmaz. Çalıştırma.
+
+## Gürcüce sürüm (/ka/)
+
+- Sayfalar: `src/pages/ka/`; metinler `src/i18n/ka.ts` (arayüz) ve `src/i18n/ka/pages.ts` (içerik). Fiyat/NAP Türkçe veriden okunur.
+- Yeni bir Türkçe sayfayı Gürcüce'ye bağlamak için `src/i18n/routes.ts` içindeki `KA_ROUTES` tablosuna ekle; hreflang ve dil anahtarı otomatik gelir.
+- Doğrulama: `npm run check && npm run build && python3 scripts/check-ka.py`.
+- `KA_NOINDEX` (`src/i18n/routes.ts`) ana dili Gürcüce olan kişi metinleri onaylayana kadar `true`; bu durumda `/ka/` sayfaları `noindex` ile yayınlanır ve sitemap'te listelenmez. Onaydan sonra `false` yap, `scripts/check-ka.py` içindeki noindex assertion'ını yorumda yazıldığı gibi ters çevir, push et ve Search Console'da 7 `/ka/` URL'si için dizin isteği gönder.
