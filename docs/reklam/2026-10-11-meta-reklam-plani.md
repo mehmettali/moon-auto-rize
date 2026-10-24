@@ -140,3 +140,31 @@ Yorum: B (avatar) 257 TL ile 7 sohbet (36,7 TL), A (reel) 211 TL ile 4 sohbet (5
 - Meta Ses Koleksiyonu (facebook.com/sound/collection) lisanslı parça alternatifi: kullanım koşullarını kabul etmek ve dosya indirmek kullanıcı onayı gerektirdiği için kullanılmadı. İstenirse onayla bir parça indirilip aynı yöntemle gömülür ve reel yeniden yüklenir.
 - Sonraki reel'ler için kural: Keşfet hedefliyorsak en iyisi Mustafa Bey'in Instagram uygulamasından o günkü trend sesle yüklemesi; masaüstünden yayınlanacaksa ses MP4'e gömülü olmalı (Business Suite ses kütüphanesi yalnızca Facebook'a çalışıyor).
 
+## 12 gün sonuçları (12–23 Ekim 2026, Reklam Yöneticisi, 24 Ekim'de alındı)
+
+| Kampanya | Harcama | Gösterim | Erişim | Tıklama | WhatsApp sohbeti | Sohbet başına |
+|---|---|---|---|---|---|---|
+| A · Seramik reel (Rize 35km + Koridor) | 4.379,69 TL | 95.914 | 34.741 | 5.767 | 49 | 89,38 TL |
+| B · Avatar video (Rize + Koridor) | 2.457,20 TL | 48.939 | 18.491 | 844 | 53 | 46,36 TL |
+| **Toplam** | **6.836,89 TL** | 144.853 | ~53.000 | 6.611 | **102** | **67,0 TL** |
+
+Reklam seti kırılımı (aynı dönem): B·Koridor 469 TL → 13 sohbet (36,1 TL); B·Rize 1.988 TL → 40 sohbet (49,7 TL); A·Koridor 901 TL → 12 sohbet (75,1 TL); A·Rize 3.479 TL → 37 sohbet (94,0 TL).
+
+Gün gün WhatsApp sohbeti (A / B) ve harcama:
+
+| Gün | A harcama | A sohbet | B harcama | B sohbet | Toplam sohbet |
+|---|---|---|---|---|---|
+| 12 Eki | 284,77 | 6 | 314,97 | 10 | 16 |
+| 13 Eki | 184,85 | 4 | 176,21 | 8 | 12 |
+| 14 Eki | 425,01 | 4 | 164,29 | 2 | 6 |
+| 15 Eki | 330,04 | 6 | 175,48 | 5 | 11 |
+| 16 Eki | 334,52 | 1 | 172,17 | 2 | 3 |
+| 17 Eki | 454,58 | 3 | 206,25 | 3 | 6 |
+| 18 Eki | 353,32 | 4 | 251,46 | 4 | 8 |
+| 19 Eki | 457,34 | 4 | 208,97 | 2 | 6 |
+| 20 Eki | 419,11 | 4 | 171,13 | 7 | 11 |
+| 21 Eki | 428,59 | 5 | 226,00 | 3 | 8 |
+| 22 Eki | 352,50 | 4 | 185,93 | 5 | 9 |
+| 23 Eki | 328,03 | 4 | 181,38 | 2 | 6 |
+
+Yorum: A, B'nin yaklaşık 1,8 katı harcayıp daha az sohbet getirdi (49 vs 53); sohbet başına maliyet A 89 TL, B 46 TL. A'nın tıklaması çok yüksek (5.767 vs 844) ama sohbete dönmüyor — reel'e dokunma tıklaması, niyetli müşteri değil. A'nın günlük bütçesi 390 TL'ye çıkarılmış (24 Ekim'de Reklam Yöneticisi'nde görüldü; kurulum 200 TL'ydi), B 200 TL. Bugün (24 Ekim, öğleye kadar): A 240 TL → 2 sohbet, B 109 TL → 1 sohbet. İlk iki gün (12–13 Ekim) en verimli günlerdi (28 sohbet), sonra günlük 6–11 sohbete oturdu. Hedef ≤60 TL/sohbet: B hedefin altında, A hedefin 1,5 katı. Öneri: bütçeyi B'ye kaydır (A 200 → B 400 veya A'yı durdur), A için yeni kreatif (avatar tarzı, konuşmalı) dene; koridor setleri B'de en ucuz sohbeti getiriyor (36 TL) — B·Koridor'a ayrı bütçe (ABO) düşün.
