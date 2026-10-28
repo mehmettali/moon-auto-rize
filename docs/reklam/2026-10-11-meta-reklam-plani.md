@@ -168,3 +168,24 @@ Gün gün WhatsApp sohbeti (A / B) ve harcama:
 | 23 Eki | 328,03 | 4 | 181,38 | 2 | 6 |
 
 Yorum: A, B'nin yaklaşık 1,8 katı harcayıp daha az sohbet getirdi (49 vs 53); sohbet başına maliyet A 89 TL, B 46 TL. A'nın tıklaması çok yüksek (5.767 vs 844) ama sohbete dönmüyor — reel'e dokunma tıklaması, niyetli müşteri değil. A'nın günlük bütçesi 390 TL'ye çıkarılmış (24 Ekim'de Reklam Yöneticisi'nde görüldü; kurulum 200 TL'ydi), B 200 TL. Bugün (24 Ekim, öğleye kadar): A 240 TL → 2 sohbet, B 109 TL → 1 sohbet. İlk iki gün (12–13 Ekim) en verimli günlerdi (28 sohbet), sonra günlük 6–11 sohbete oturdu. Hedef ≤60 TL/sohbet: B hedefin altında, A hedefin 1,5 katı. Öneri: bütçeyi B'ye kaydır (A 200 → B 400 veya A'yı durdur), A için yeni kreatif (avatar tarzı, konuşmalı) dene; koridor setleri B'de en ucuz sohbeti getiriyor (36 TL) — B·Koridor'a ayrı bütçe (ABO) düşün.
+
+## 24–28 Ekim sonuçları (5 gün, 29 Ekim'de alındı)
+
+| Kampanya | Harcama | Gösterim | Erişim | Tıklama | WhatsApp sohbeti | Sohbet başına |
+|---|---|---|---|---|---|---|
+| A · Seramik reel (390 TL/gün) | 1.859,59 TL | 42.288 | 25.635 | 2.173 | 21 | 88,55 TL |
+| B · Avatar video (200 TL/gün) | 955,37 TL | 19.944 | 12.026 | 251 | 18 | 53,08 TL |
+| **Toplam** | **2.814,96 TL** | 62.232 | ~37.600 | 2.424 | **39** | **72,2 TL** |
+
+Reklam seti: B·Koridor 245 TL → 3 (81,8 TL); B·Rize 710 TL → 15 (47,3 TL); A·Koridor 344 TL → 6 (57,3 TL); A·Rize 1.516 TL → 15 (101,1 TL).
+
+A gün gün: 24 Eki 353 TL/4 sohbet · 25 Eki 395/1 · 26 Eki 399/3 · 27 Eki 313/4 · 28 Eki 400/9 (44 TL — dönemin en iyi günü).
+
+Kümülatif 12–28 Ekim (17 gün): A 6.239 TL → 70 sohbet (89 TL); B 3.413 TL → 71 sohbet (48 TL); toplam 9.652 TL → 141 sohbet (68,5 TL). Hedef ≤60 TL/sohbet: B tutturuyor, A %50 üstünde. Günlük toplam ~590 TL ile ~8 sohbet; trend sabit (ne iyileşme ne kötüleşme). A·Rize seti (sohbet başına 101 TL) toplam harcamanın %54'ünü alıyor — en pahalı set en çok parayı yiyor.
+
+Öneri (değişmedi): A 390 → 150 TL, B 200 → 400 TL; B·Koridor ayrı bütçe; A için yeni kreatif.
+
+## C kampanyası: Instagram profil ziyareti (29 Ekim 2026)
+- Kullanıcı talebi: "profil ziyaretçi reklamı, günde 100 TL".
+- Kurulum: Etkileşim amacı → dönüşüm konumu "Instagram veya Facebook" → performans hedefi "Instagram profil ziyaretleri" (sadece IG profili, FB sayfası kapalı), teklif "En yüksek hacim", reklam seti bütçesi 100 TL/gün, Rize +35 km, Advantage+ kitle (min yaş 18), "seçili konum dışına genişlet" kapalı. Kampanya 6994442904862, reklam seti 6994442905062, reklam 6994442905262.
+- Ders: moonautodetailingrize'nin Instagram gönderilerinin hepsi mustafa._karadag ile ortak içerik (collab); "Mevcut gönderileri kullan" yolu #3867021 hatası veriyor (ortak hesap profesyonel değil). Çözüm: "Reklam Oluştur" → Instagram medya kütüphanesinden 13 Ekim Keşfet reel videosu (1080×1920) + metin, CTA "Instagram Profiline Git".
